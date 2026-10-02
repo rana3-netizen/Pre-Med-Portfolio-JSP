@@ -1,0 +1,2065 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ria Rana · Pre-Med Portfolio</title>
+<meta name="description" content="Ria N. Rana's pre-medical electronic portfolio for the Johnson Scholars Program at Penn.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0d6b62">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d6b62'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='30' font-weight='700' fill='white'%3ERR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
+<style id="site-style">
+/* Layout: a MacBook desktop. Lock screen first; then menu bar with status items, wallpaper, draggable desktop icons, animated windows (Finder, Notes, Calendar, System Settings, Preview), magnifying dock, Control Center and Notification Center. Phones get full-screen windows. */
+:root {
+  --win: #ffffff;
+  --win-2: #f7f6f4;
+  --vib: rgba(236, 234, 231, .78);
+  --bar: #f0efec;
+  --fg: #1d1d1f;
+  --muted: #86868b;
+  --line: #dedcd7;
+  --sel: #2f6fed;
+  --sel-soft: #dce7fd;
+  --link: #a87a00;
+  --note-sel: #fae39f;
+  --soft: #fdf3d4;
+  --chip: #efece6;
+  --menubar: rgba(250, 247, 244, .55);
+  --menubar-fg: #1d1d1f;
+  --menu: rgba(246, 245, 243, .86);
+  --panel: rgba(246, 245, 243, .78);
+  --tile: rgba(255, 255, 255, .7);
+  --dock: rgba(255, 255, 255, .3);
+  --dock-line: rgba(255, 255, 255, .45);
+  --desk-label: #ffffff;
+  --shadow: 0 24px 64px rgba(0, 0, 0, .3), 0 0 0 .5px rgba(0, 0, 0, .2);
+  --cal-red: #f0453a;
+  --h-sky1: #8db8e2; --h-sky2: #cfdcec; --h-sky3: #f7cfae; --h-sun: #fff3dc; --h-1: #9fb7c4; --h-2: #6f8f9c; --h-3: #4a6b7c; --h-4: #2e4a5d; --h-5: #1d3243; --h-star: rgba(255,255,255,0);
+  --rb0: #f9d3b4; --rb1: #f2906b; --rb2: #d9496f; --rb3: #2a7d8f; --rb4: #1b2d5a; --rb5: #ffe7c7;
+  --folder: #79c3f5; --folder-back: #58aee9; --folder-hi: #a8dafa;
+  --red: #ff5f57; --yellow: #febc2e; --green: #28c840;
+  --t-clinical: #ff5f57; --t-service: #ff9f0a; --t-research: #30c75a; --t-leadership: #2f8cff; --t-reflection: #b066e8;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Rounded", "Helvetica Neue", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --win: #1e1e20; --win-2: #252527; --vib: rgba(40, 40, 44, .74); --bar: #2a2a2d; --fg: #f2f2f4; --muted: #9a9aa0; --line: #3a3a3e;
+    --sel-soft: #233a66; --link: #eabb3a; --note-sel: #5e4a12; --soft: #3a3115; --chip: #2f2f33;
+    --menubar: rgba(28, 28, 30, .5); --menubar-fg: #f5f5f7; --menu: rgba(40, 40, 43, .86); --panel: rgba(36, 36, 40, .78); --tile: rgba(255, 255, 255, .1);
+    --dock: rgba(40, 40, 44, .38); --dock-line: rgba(255, 255, 255, .16);
+    --shadow: 0 24px 64px rgba(0, 0, 0, .6), 0 0 0 .5px rgba(255, 255, 255, .16);
+    --h-sky1: #0b1530; --h-sky2: #1b2650; --h-sky3: #4a3560; --h-sun: #c9b8ff; --h-1: #34406a; --h-2: #273257; --h-3: #1c2645; --h-4: #131b34; --h-5: #0b1124; --h-star: rgba(255,255,255,.85);
+    --rb0: #3b2234; --rb1: #a4513f; --rb2: #8c2d52; --rb3: #17505d; --rb4: #0c1631; --rb5: #6b4033;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --win: #1e1e20; --win-2: #252527; --vib: rgba(40, 40, 44, .74); --bar: #2a2a2d; --fg: #f2f2f4; --muted: #9a9aa0; --line: #3a3a3e;
+  --sel-soft: #233a66; --link: #eabb3a; --note-sel: #5e4a12; --soft: #3a3115; --chip: #2f2f33;
+  --menubar: rgba(28, 28, 30, .5); --menubar-fg: #f5f5f7; --menu: rgba(40, 40, 43, .86); --panel: rgba(36, 36, 40, .78); --tile: rgba(255, 255, 255, .1);
+  --dock: rgba(40, 40, 44, .38); --dock-line: rgba(255, 255, 255, .16);
+  --shadow: 0 24px 64px rgba(0, 0, 0, .6), 0 0 0 .5px rgba(255, 255, 255, .16);
+  --h-sky1: #0b1530; --h-sky2: #1b2650; --h-sky3: #4a3560; --h-sun: #c9b8ff; --h-1: #34406a; --h-2: #273257; --h-3: #1c2645; --h-4: #131b34; --h-5: #0b1124; --h-star: rgba(255,255,255,.85);
+    --rb0: #3b2234; --rb1: #a4513f; --rb2: #8c2d52; --rb3: #17505d; --rb4: #0c1631; --rb5: #6b4033;
+  color-scheme: dark;
+}
+html, body { height: 100%; }
+body { font-family: var(--font); font-size: 13px; color: var(--fg); overflow: hidden; -webkit-font-smoothing: antialiased; background: var(--rb4); user-select: none; -webkit-user-select: none; }
+.doc, .doc *, input { user-select: text; -webkit-user-select: text; }
+* { box-sizing: border-box; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--sel); outline-offset: 1px; }
+
+.screen { position: relative; height: 100%; overflow: hidden; }
+.wall { position: absolute; inset: 0; }
+.wall svg { width: 100%; height: 100%; display: block; }
+.wall.dusk { background:
+  radial-gradient(ellipse 70% 55% at 18% 12%, var(--rb5), transparent 60%),
+  radial-gradient(ellipse 65% 60% at 85% 20%, var(--rb2), transparent 62%),
+  radial-gradient(ellipse 80% 70% at 30% 85%, var(--rb3), transparent 65%),
+  linear-gradient(160deg, var(--rb1), var(--rb4)); }
+.wall.graphite { background: radial-gradient(ellipse 90% 80% at 30% 20%, #6e6e73, transparent 70%), linear-gradient(160deg, #3a3a3c, #121214); }
+.wall.dusk svg, .wall.graphite svg { display: none; }
+.wall .w-hills { display: none; }
+.wall.hills .w-ribbons { display: none; }
+.wall.hills .w-hills { display: block; }
+.sw.hills { background: linear-gradient(180deg, #9fc4e8 0%, #f6c9a8 45%, #6f8f9c 46%, #3d5a6c 70%, #22374a); }
+
+/* ---------- menu bar ---------- */
+.menubar {
+  position: absolute; inset: 0 0 auto 0; height: 26px; z-index: 10000; display: flex; align-items: center; gap: 1px;
+  padding: 0 8px; background: var(--menubar); color: var(--menubar-fg);
+  backdrop-filter: blur(30px) saturate(1.8); -webkit-backdrop-filter: blur(30px) saturate(1.8);
+}
+.mb { border: 0; background: none; padding: 2px 9px; height: 22px; border-radius: 5px; cursor: default; font-size: 13px; white-space: nowrap; display: flex; align-items: center; gap: 5px; }
+.mb.open, .mb:active { background: rgba(127, 127, 127, .25); }
+.mb.app { font-weight: 700; }
+.mono { width: 15px; height: 15px; border-radius: 50%; background: var(--menubar-fg); color: var(--menubar); font-size: 7.5px; font-weight: 800; display: grid; place-items: center; }
+.mb-right { margin-left: auto; display: flex; align-items: center; gap: 1px; }
+.mb svg { width: 16px; height: 16px; display: block; }
+.mb .pct { font-size: 12px; font-variant-numeric: tabular-nums; }
+.clock { font-variant-numeric: tabular-nums; }
+
+.dropdown {
+  position: absolute; z-index: 25000; min-width: 230px; padding: 5px; border-radius: 9px;
+  background: var(--menu); color: var(--fg); box-shadow: var(--shadow);
+  backdrop-filter: blur(30px) saturate(1.6); -webkit-backdrop-filter: blur(30px) saturate(1.6);
+}
+.dropdown button {
+  display: flex; justify-content: space-between; align-items: center; gap: 24px; width: 100%; border: 0; background: none; text-align: left;
+  padding: 3px 10px; border-radius: 5px; cursor: default; font-size: 13px; line-height: 1.45;
+}
+.dropdown button:hover:not(:disabled) { background: var(--sel); color: #fff; }
+.dropdown button:disabled { color: var(--muted); }
+.dropdown .k { color: var(--muted); font-size: 12.5px; }
+.dropdown button:hover .k { color: inherit; }
+.dropdown hr { border: 0; border-top: 1px solid var(--line); margin: 4px 10px; }
+.dropdown .hd { font-size: 11.5px; color: var(--muted); font-weight: 600; padding: 4px 10px 2px; }
+.dropdown .tagrow { display: flex; gap: 6px; padding: 5px 10px; }
+.dropdown .tagrow .dot { width: 12px; height: 12px; }
+
+/* ---------- desktop ---------- */
+.desk { position: absolute; inset: 26px 0 0 0; }
+.dicon {
+  position: absolute; width: 92px; border: 0; background: none; display: flex; flex-direction: column; align-items: center; gap: 3px;
+  padding: 4px; cursor: default; border-radius: 6px; touch-action: none;
+}
+.dicon .ic, .ficon .ic { width: 62px; height: 54px; display: grid; place-items: center; border-radius: 6px; padding: 2px; }
+.dicon .ic svg, .ficon .ic svg { max-width: 100%; max-height: 100%; filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, .18)); }
+.dicon .lb, .ficon .lb { font-size: 12px; line-height: 1.25; text-align: center; padding: 1px 5px; border-radius: 4px; max-width: 100%; overflow-wrap: break-word; hyphens: auto; }
+.dicon .lb { color: var(--desk-label); text-shadow: 0 1px 2px rgba(0, 0, 0, .7); font-weight: 500; }
+.dicon.sel .ic, .ficon.sel .ic { background: rgba(127, 127, 127, .3); }
+.dicon.sel .lb, .ficon.sel .lb { background: var(--sel); color: #fff; text-shadow: none; }
+.rubber { position: absolute; border: 1px solid rgba(160, 190, 255, .9); background: rgba(120, 160, 255, .2); z-index: 5; pointer-events: none; }
+
+/* ---------- windows ---------- */
+.win {
+  position: absolute; display: flex; flex-direction: column; background: transparent; border-radius: 12px;
+  box-shadow: var(--shadow); overflow: hidden; resize: both; min-width: 320px; min-height: 220px; max-width: 100%;
+  transform-origin: 50% 50%;
+}
+.win.opening { animation: winIn .24s cubic-bezier(.2, .9, .3, 1); }
+.win.closing { animation: winOut .16s ease-in forwards; pointer-events: none; }
+@keyframes winIn { from { opacity: 0; transform: scale(.93); } }
+@keyframes winOut { to { opacity: 0; transform: scale(.95); } }
+.win.genie { transition: transform .38s cubic-bezier(.5, 0, .7, .4), opacity .38s ease-in; pointer-events: none; }
+.win.maxed { left: 0 !important; top: 0 !important; width: 100% !important; height: 100% !important; border-radius: 0; resize: none; }
+.bar {
+  display: flex; align-items: center; gap: 10px; height: 52px; padding: 0 14px 0 18px; background: var(--bar);
+  border-bottom: 1px solid var(--line); flex: none; touch-action: none; position: relative;
+}
+.win.slim .bar { height: 30px; }
+.win.slim .wtitle { text-align: center; padding-right: 64px; }
+.lights { display: flex; gap: 8px; flex: none; }
+.l { width: 12px; height: 12px; border-radius: 50%; border: 0; padding: 0; cursor: default; position: relative; box-shadow: inset 0 0 0 .5px rgba(0, 0, 0, .15); }
+.l.close { background: var(--red); } .l.min { background: var(--yellow); } .l.max { background: var(--green); }
+.win:not(.active) .l { background: var(--line); }
+.lights:hover .l { background-color: revert-layer; }
+.lights:hover .l.close { background: var(--red); } .lights:hover .l.min { background: var(--yellow); } .lights:hover .l.max { background: var(--green); }
+.lights:hover .l::after { position: absolute; inset: 0; display: grid; place-items: center; font-size: 9.5px; font-weight: 800; color: rgba(0, 0, 0, .55); line-height: 1; }
+.lights:hover .close::after { content: "×"; } .lights:hover .min::after { content: "–"; } .lights:hover .max::after { content: "⤢"; font-size: 8px; }
+.wtitle { font-weight: 700; font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; flex: 1; }
+.win:not(.active) .wtitle { color: var(--muted); }
+.tools, .tools-r { display: flex; gap: 2px; flex: none; align-items: center; }
+.tb { border: 0; background: none; min-width: 30px; height: 28px; border-radius: 7px; display: grid; place-items: center; cursor: default; color: var(--muted); padding: 0 6px; }
+.tb:hover:not(:disabled) { background: rgba(127, 127, 127, .16); color: var(--fg); }
+.tb:disabled { opacity: .35; }
+.tb.on { background: rgba(127, 127, 127, .2); color: var(--fg); }
+.tb svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.seg { display: flex; background: rgba(127, 127, 127, .12); border-radius: 7px; padding: 2px; }
+.seg .tb { height: 24px; min-width: 28px; }
+.fsearch { position: relative; }
+.fsearch input { width: 150px; height: 28px; border: 1px solid var(--line); background: var(--win); color: var(--fg); border-radius: 7px; padding: 0 8px 0 26px; font: inherit; font-size: 13px; }
+.fsearch svg { position: absolute; left: 8px; top: 7px; width: 14px; height: 14px; stroke: var(--muted); fill: none; stroke-width: 1.8; }
+.wbody { flex: 1; min-height: 0; display: flex; overflow: hidden; background: var(--win); }
+
+/* finder */
+.win.finder .wbody { background: transparent; }
+.win.finder .bar { background: var(--win); }
+.fside { width: 180px; flex: none; background: var(--vib); backdrop-filter: blur(40px) saturate(1.8); -webkit-backdrop-filter: blur(40px) saturate(1.8); overflow-y: auto; padding: 8px 10px; border-right: 1px solid var(--line); }
+.win.finder .fside { margin-top: -53px; padding-top: 58px; position: relative; z-index: 1; }
+.win.finder .bar { padding-left: 196px; }
+.win.finder .lights { position: absolute; left: 18px; top: 20px; z-index: 3; }
+.fside h4 { font-size: 11px; color: var(--muted); font-weight: 700; margin: 12px 8px 3px; }
+.fside h4:first-child { margin-top: 0; }
+.si {
+  display: flex; align-items: center; gap: 7px; width: 100%; border: 0; background: none; text-align: left;
+  padding: 4px 8px; border-radius: 6px; cursor: default; font-size: 13px; white-space: nowrap; min-width: 0;
+}
+.si .t2 { overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.si:hover { background: rgba(127, 127, 127, .12); }
+.si.cur { background: rgba(127, 127, 127, .22); }
+.si .g { width: 17px; flex: none; display: grid; place-items: center; color: var(--sel); }
+.si .g svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; }
+.fwrap { flex: 1; min-width: 0; display: flex; position: relative; }
+.win.finder .fwrap { margin-top: -53px; flex-direction: column; }
+.win.finder .bar { position: relative; z-index: 2; }
+.fmain { flex: 1; min-width: 0; display: flex; flex-direction: column; background: var(--win); padding-top: 53px; }
+.fgrid { flex: 1; overflow-y: auto; padding: 14px; display: grid; grid-template-columns: repeat(auto-fill, minmax(108px, 1fr)); align-content: start; gap: 4px; }
+.ficon { width: auto; border: 0; background: none; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 5px 3px; cursor: default; border-radius: 6px; }
+.ficon .dots { display: flex; gap: 3px; height: 8px; }
+.ficon .dots .dot { width: 7px; height: 7px; }
+.flist { flex: 1; overflow: auto; }
+.flist table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.flist th { position: sticky; top: 0; background: var(--win); text-align: left; font-weight: 500; color: var(--muted); padding: 5px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.flist td { padding: 4px 10px; white-space: nowrap; }
+.flist tr.row:nth-child(even) td { background: var(--win-2); }
+.flist tr.row.sel td { background: var(--sel); color: #fff; }
+.flist .nm { display: flex; align-items: center; gap: 8px; }
+.mini { width: 18px; height: 16px; display: grid; place-items: center; flex: none; }
+.mini svg { max-width: 100%; max-height: 100%; }
+.empty-f { color: var(--muted); padding: 40px; text-align: center; grid-column: 1 / -1; }
+.pathbar { border-top: 1px solid var(--line); padding: 4px 12px; font-size: 11.5px; color: var(--muted); display: flex; gap: 2px; align-items: center; overflow-x: auto; white-space: nowrap; flex: none; background: var(--win); }
+.pathbar button { border: 0; background: none; padding: 1px 4px; border-radius: 4px; cursor: default; color: var(--fg); display: inline-flex; gap: 4px; align-items: center; }
+.pathbar button:hover { background: rgba(127, 127, 127, .16); }
+.pathbar .mini { width: 14px; height: 12px; }
+.pathbar .cnt { margin-left: auto; padding-left: 12px; }
+
+/* document */
+.docwrap { flex: 1; overflow-y: auto; min-width: 0; background: var(--win); }
+.doc { max-width: 700px; margin: 0 auto; padding: 22px 34px 70px; font-size: 14.5px; }
+.doc .when { text-align: center; color: var(--muted); font-size: 12px; margin-bottom: 16px; }
+.doc h1 { font-size: 25px; line-height: 1.2; margin: 0 0 12px; font-weight: 700; text-wrap: balance; letter-spacing: -.01em; }
+.doc h2 { font-size: 17px; margin: 26px 0 8px; font-weight: 700; }
+.doc h3 { font-size: 14.5px; margin: 18px 0 6px; font-weight: 700; }
+.doc p { line-height: 1.6; margin: 0 0 12px; max-width: 65ch; }
+.doc ul { padding-left: 20px; margin: 0 0 12px; line-height: 1.6; }
+.doc a { color: var(--link); text-decoration: none; }
+.doc a:hover { text-decoration: underline; }
+.lnk { border: 0; background: none; padding: 0; color: var(--link); cursor: pointer; text-align: left; }
+.lnk:hover { text-decoration: underline; }
+.sub { color: var(--muted); font-size: 13px; }
+.doc hr { border: 0; border-top: 1px solid var(--line); margin: 24px 0; }
+.tagline { display: flex; gap: 10px; flex-wrap: wrap; margin: -4px 0 14px; font-size: 12px; color: var(--muted); }
+.tagline span { display: inline-flex; align-items: center; gap: 5px; }
+.todo { color: var(--muted); font-style: italic; border-bottom: 1px dashed var(--muted); }
+.hero { display: flex; gap: 18px; align-items: center; margin: 4px 0 16px; flex-wrap: wrap; }
+.photo { width: 96px; height: 96px; border-radius: 50%; flex: none; display: grid; place-items: center; background: linear-gradient(160deg, #a1a1a6, #6e6e73); color: #fff; font-weight: 600; font-size: 34px; font-family: var(--font-display); }
+.hero .who { min-width: 0; flex: 1; }
+.hero .name { font-size: 19px; font-weight: 700; }
+.hero .line { color: var(--muted); font-size: 13.5px; line-height: 1.5; }
+.facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; margin: 4px 0 12px; font-size: 14px; }
+.facts dt { color: var(--muted); } .facts dd { margin: 0; min-width: 0; }
+.explore { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; margin: 8px 0 14px; }
+.explore button { display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); background: var(--win-2); border-radius: 8px; padding: 8px 10px; text-align: left; cursor: pointer; font-size: 13px; min-width: 0; }
+.explore button:hover { border-color: var(--sel); }
+.explore .mi { width: 22px; height: 19px; flex: none; display: grid; place-items: center; }
+.explore .mi svg { max-width: 100%; max-height: 100%; }
+.tbl { overflow-x: auto; margin: 6px 0 14px; border: 1px solid var(--line); border-radius: 8px; }
+.doc table { border-collapse: collapse; width: 100%; font-size: 13px; }
+.doc th, .doc td { border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); padding: 7px 10px; text-align: left; vertical-align: top; line-height: 1.45; }
+.doc th:last-child, .doc td:last-child { border-right: 0; }
+.doc tr:last-child td, .doc tr:last-child th { border-bottom: 0; }
+.doc th { font-weight: 600; background: var(--win-2); white-space: nowrap; }
+.doc td.n { font-variant-numeric: tabular-nums; text-align: center; white-space: nowrap; }
+.doc td.blank { color: var(--muted); font-style: italic; text-align: center; }
+.doc table.kv th { width: 34%; white-space: normal; }
+.checks { list-style: none; padding: 0 !important; }
+.checks li { display: flex; gap: 10px; align-items: flex-start; padding: 4px 0; }
+.box { width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid var(--muted); flex: none; margin-top: 2px; display: grid; place-items: center; }
+.checks li.done .box { background: var(--link); border-color: var(--link); }
+.checks li.done .box::after { content: ""; width: 5px; height: 9px; border: solid var(--win); border-width: 0 2px 2px 0; transform: rotate(45deg) translate(-1px, -1px); }
+.checks li.done .txt { color: var(--muted); text-decoration: line-through; }
+.checks .txt { line-height: 1.5; min-width: 0; }
+.meter { margin: 8px 0 16px; display: grid; gap: 10px; }
+.meter .row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; font-size: 13.5px; }
+.meter .bar2 { grid-column: 1 / -1; height: 6px; background: var(--chip); border-radius: 3px; overflow: hidden; }
+.meter .bar2 i { display: block; height: 100%; background: var(--link); border-radius: 3px; }
+.meter .val { color: var(--muted); font-variant-numeric: tabular-nums; }
+.prompts { background: var(--soft); border-radius: 8px; padding: 12px 16px; margin: 8px 0 14px; font-size: 14px; }
+.prompts ol { margin: 6px 0 0; padding-left: 20px; line-height: 1.55; }
+.prompts .lbl { font-size: 11px; font-weight: 700; color: var(--link); letter-spacing: .05em; text-transform: uppercase; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 12px; }
+.chips span { background: var(--chip); border-radius: 999px; padding: 3px 10px; font-size: 12.5px; }
+
+/* preview, about, info */
+.preview { flex: 1; display: grid; place-items: center; background: var(--win-2); padding: 20px; text-align: center; }
+.preview .photo { width: 160px; height: 160px; font-size: 56px; margin: 0 auto 14px; }
+.aboutmac { flex: 1; overflow-y: auto; padding: 18px 26px 24px; text-align: center; background: var(--win); }
+.aboutmac .photo { width: 104px; height: 104px; margin: 4px auto 14px; font-size: 38px; }
+.aboutmac h2 { margin: 0; font-size: 24px; font-weight: 700; font-family: var(--font-display); }
+.aboutmac .ver { color: var(--muted); margin: 2px 0 16px; font-size: 12px; }
+.aboutmac dl { display: grid; grid-template-columns: max-content 1fr; gap: 5px 12px; text-align: left; font-size: 12px; margin: 0 auto 18px; max-width: 280px; }
+.aboutmac dt { text-align: right; font-weight: 600; } .aboutmac dd { margin: 0; color: var(--muted); }
+.pill-btn { border: 1px solid var(--line); background: var(--win); border-radius: 6px; padding: 3px 14px; cursor: default; box-shadow: 0 1px 1px rgba(0, 0, 0, .06); }
+.pill-btn:hover { border-color: var(--sel); }
+.pill-btn.blue { background: var(--sel); color: #fff; border-color: var(--sel); }
+.info { flex: 1; overflow-y: auto; padding: 14px 16px; background: var(--win); font-size: 12px; }
+.info .top { display: flex; gap: 10px; align-items: center; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.info .top .mi { width: 44px; height: 40px; }
+.info .top b { font-size: 13px; display: block; }
+.info h5 { margin: 12px 0 6px; font-size: 12px; }
+.info dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 10px; margin: 0; }
+.info dt { color: var(--muted); text-align: right; } .info dd { margin: 0; overflow-wrap: anywhere; }
+
+/* quick look */
+.ql { position: absolute; inset: 0; z-index: 21000; display: grid; place-items: center; padding: 40px 16px 90px; }
+.ql-box { width: min(720px, 100%); height: min(600px, 100%); background: var(--win); border-radius: 12px; box-shadow: var(--shadow); display: flex; flex-direction: column; overflow: hidden; animation: winIn .2s cubic-bezier(.2, .9, .3, 1); }
+.ql-bar { display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: var(--bar); border-bottom: 1px solid var(--line); }
+.ql-bar .x { border: 0; background: rgba(127, 127, 127, .18); width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; cursor: default; font-size: 14px; line-height: 1; }
+.ql-bar .tt { flex: 1; text-align: center; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ql-box .docwrap { flex: 1; }
+
+/* notes app */
+.notes { flex: 1; display: grid; grid-template-columns: 170px 240px minmax(0, 1fr); min-width: 0; }
+.nfold { background: var(--vib); backdrop-filter: blur(40px); -webkit-backdrop-filter: blur(40px); border-right: 1px solid var(--line); overflow-y: auto; padding: 10px 8px; }
+.nfold h4 { font-size: 11px; color: var(--muted); margin: 0 8px 4px; font-weight: 700; }
+.nfold .si .g { color: var(--link); }
+.nlist { border-right: 1px solid var(--line); overflow-y: auto; display: flex; flex-direction: column; min-width: 0; background: var(--win); }
+.nsearch { padding: 8px; border-bottom: 1px solid var(--line); }
+.nsearch input { width: 100%; border: 1px solid var(--line); background: var(--win); color: var(--fg); border-radius: 6px; padding: 5px 8px; font: inherit; }
+.nitem { display: block; width: 100%; border: 0; background: none; text-align: left; padding: 9px 12px; cursor: default; border-radius: 7px; margin: 1px 6px; width: calc(100% - 12px); }
+.nitem.cur { background: var(--note-sel); }
+.nitem .t { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.nitem .p { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px; }
+.nitem .p b { color: var(--fg); font-weight: 500; margin-right: 5px; }
+.nnote { overflow-y: auto; min-width: 0; background: var(--win); }
+.nback { display: none; }
+
+/* calendar */
+.cal { flex: 1; display: grid; grid-template-columns: 220px minmax(0, 1fr); min-width: 0; }
+.cal-side { background: var(--vib); backdrop-filter: blur(40px); -webkit-backdrop-filter: blur(40px); border-right: 1px solid var(--line); padding: 14px; overflow-y: auto; }
+.cal-side h4 { margin: 0 0 8px; font-size: 11px; color: var(--muted); font-weight: 700; }
+.ev { display: grid; grid-template-columns: 3px 1fr; gap: 8px; margin-bottom: 10px; font-size: 12px; line-height: 1.4; }
+.ev i { border-radius: 2px; background: var(--cal-red); }
+.ev.blue i { background: var(--t-leadership); } .ev.orange i { background: var(--t-service); }
+.ev .d { color: var(--muted); }
+.cal-main { display: flex; flex-direction: column; min-width: 0; background: var(--win); }
+.cal-head { display: flex; align-items: baseline; gap: 6px; padding: 10px 16px; }
+.cal-head h3 { margin: 0; font-size: 24px; font-weight: 700; font-family: var(--font-display); }
+.cal-head h3 span { font-weight: 400; }
+.cal-head .nav { margin-left: auto; display: flex; gap: 4px; }
+.cal-grid { flex: 1; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); grid-auto-rows: minmax(64px, 1fr); border-top: 1px solid var(--line); overflow-y: auto; }
+.cal-dow { font-size: 11px; color: var(--muted); text-align: right; padding: 4px 8px; border-bottom: 1px solid var(--line); }
+.cal-day { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 4px 6px; font-size: 12px; min-width: 0; }
+.cal-day:nth-child(7n) { border-right: 0; }
+.cal-day .num { text-align: right; font-variant-numeric: tabular-nums; }
+.cal-day.out .num { color: var(--muted); opacity: .6; }
+.cal-day.today .num span { background: var(--cal-red); color: #fff; border-radius: 999px; padding: 1px 6px; }
+.cal-day .chipev { display: block; margin-top: 3px; font-size: 11px; padding: 1px 5px; border-radius: 4px; background: rgba(240, 69, 58, .16); color: var(--fg); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 2px solid var(--cal-red); }
+
+/* settings */
+.set { flex: 1; display: grid; grid-template-columns: 210px minmax(0, 1fr); min-width: 0; }
+.set-side { background: var(--vib); backdrop-filter: blur(40px); -webkit-backdrop-filter: blur(40px); border-right: 1px solid var(--line); padding: 10px 8px; overflow-y: auto; }
+.set-side .me { display: flex; gap: 10px; align-items: center; padding: 8px; border-radius: 8px; margin-bottom: 8px; width: 100%; border: 0; background: none; text-align: left; cursor: default; }
+.set-side .me .photo { width: 38px; height: 38px; font-size: 14px; }
+.set-side .me b { display: block; font-size: 13px; } .set-side .me span { font-size: 11px; color: var(--muted); }
+.sico { width: 22px; height: 22px; border-radius: 6px; display: grid; place-items: center; flex: none; color: #fff; }
+.sico svg { width: 14px; height: 14px; stroke: #fff; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.set-main { overflow-y: auto; padding: 18px 24px; background: var(--win); }
+.set-main h2 { margin: 0 0 14px; font-size: 18px; }
+.group { background: var(--win-2); border: 1px solid var(--line); border-radius: 10px; margin-bottom: 14px; }
+.group .r { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 14px; border-bottom: 1px solid var(--line); font-size: 13px; }
+.group .r:last-child { border-bottom: 0; }
+.group .r span:last-child { color: var(--muted); text-align: right; }
+.choices { display: flex; gap: 16px; flex-wrap: wrap; padding: 14px; }
+.choice { border: 0; background: none; cursor: default; display: flex; flex-direction: column; align-items: center; gap: 6px; font-size: 12px; }
+.choice .sw { width: 92px; height: 60px; border-radius: 8px; border: 3px solid transparent; box-shadow: 0 0 0 1px var(--line); overflow: hidden; }
+.choice.on .sw { border-color: var(--sel); }
+.sw.light { background: linear-gradient(#f5f5f7 0 22%, #ffffff 22%); }
+.sw.dark { background: linear-gradient(#2c2c2e 0 22%, #1c1c1e 22%); }
+.sw.auto { background: linear-gradient(90deg, #ffffff 50%, #1c1c1e 50%); }
+.sw.ribbons { background: linear-gradient(160deg, #f9d3b4, #f2906b 35%, #d9496f 55%, #2a7d8f 75%, #1b2d5a); }
+.sw.dusk { background: radial-gradient(circle at 20% 15%, #ffe7c7, transparent 50%), linear-gradient(160deg, #f2906b, #1b2d5a); }
+.sw.graphite { background: linear-gradient(160deg, #6e6e73, #121214); }
+
+/* spotlight */
+.spot { position: absolute; inset: 0; z-index: 22000; display: flex; justify-content: center; align-items: flex-start; padding: 18vh 16px 0; }
+.spot-box { width: 100%; max-width: 640px; background: var(--panel); border-radius: 16px; box-shadow: var(--shadow); overflow: hidden; backdrop-filter: blur(40px) saturate(1.8); -webkit-backdrop-filter: blur(40px) saturate(1.8); animation: winIn .16s ease-out; }
+.spot-in { display: flex; align-items: center; gap: 10px; padding: 12px 16px; }
+.spot-in svg { width: 22px; height: 22px; stroke: var(--muted); fill: none; stroke-width: 2; flex: none; }
+.spot-in input { flex: 1; border: 0; background: none; font: inherit; font-size: 22px; color: var(--fg); outline: none; min-width: 0; font-weight: 300; }
+.spot-res { border-top: 1px solid var(--line); max-height: 48vh; overflow-y: auto; padding: 4px 6px 6px; }
+.spot-res:empty { display: none; }
+.spot-res .hd { font-size: 11px; font-weight: 700; color: var(--muted); padding: 6px 10px 2px; }
+.sr { display: flex; align-items: center; gap: 10px; width: 100%; border: 0; background: none; padding: 5px 10px; border-radius: 7px; text-align: left; cursor: default; }
+.sr .mi { width: 24px; height: 22px; display: grid; place-items: center; flex: none; }
+.sr .mi svg { max-width: 100%; max-height: 100%; }
+.sr .w { min-width: 0; flex: 1; }
+.sr .w div:last-child { color: var(--muted); font-size: 11.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sr.on { background: var(--sel); color: #fff; }
+.sr.on .w div:last-child { color: rgba(255, 255, 255, .8); }
+
+/* control center + notification center + banners */
+.cc { position: absolute; top: 31px; right: 8px; z-index: 24000; width: 320px; max-width: calc(100% - 16px); padding: 10px; border-radius: 16px; background: var(--panel); box-shadow: var(--shadow); backdrop-filter: blur(40px) saturate(1.8); -webkit-backdrop-filter: blur(40px) saturate(1.8); display: grid; grid-template-columns: 1fr 1fr; gap: 10px; animation: winIn .16s ease-out; }
+.cc .tile { background: var(--tile); border-radius: 12px; padding: 10px; display: flex; flex-direction: column; gap: 8px; }
+.cc .wide { grid-column: 1 / -1; }
+.cc .tg { display: flex; gap: 8px; align-items: center; border: 0; background: none; padding: 0; text-align: left; cursor: default; }
+.cc .tg .c { width: 28px; height: 28px; border-radius: 50%; background: var(--sel); display: grid; place-items: center; flex: none; }
+.cc .tg.off .c { background: rgba(127, 127, 127, .3); }
+.cc .tg .c svg { width: 15px; height: 15px; stroke: #fff; fill: none; stroke-width: 2; stroke-linecap: round; }
+.cc .tg b { display: block; font-size: 12px; } .cc .tg span { font-size: 11px; color: var(--muted); }
+.cc label { font-size: 12px; font-weight: 600; }
+.cc input[type=range] { width: 100%; accent-color: #ffffff; }
+.cc .segs { display: flex; gap: 4px; }
+.cc .segs button { flex: 1; border: 0; border-radius: 7px; padding: 5px; background: rgba(127, 127, 127, .15); cursor: default; font-size: 12px; }
+.cc .segs button.on { background: var(--sel); color: #fff; }
+.ncenter { position: absolute; top: 26px; right: 0; bottom: 0; width: 360px; max-width: 100%; z-index: 24000; padding: 12px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; animation: slideIn .25s cubic-bezier(.2, .9, .3, 1); }
+@keyframes slideIn { from { transform: translateX(40px); opacity: 0; } }
+.card { background: var(--panel); border-radius: 16px; padding: 12px 14px; box-shadow: 0 6px 20px rgba(0, 0, 0, .18); backdrop-filter: blur(40px) saturate(1.8); -webkit-backdrop-filter: blur(40px) saturate(1.8); color: var(--fg); }
+.card .h { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--muted); margin-bottom: 4px; }
+.card .h .ai { width: 18px; height: 18px; border-radius: 5px; overflow: hidden; }
+.card .h .ai svg { width: 100%; height: 100%; display: block; }
+.card .h .tm { margin-left: auto; }
+.card b { font-size: 13px; display: block; }
+.card p { margin: 2px 0 0; font-size: 12.5px; line-height: 1.4; }
+.card.clickable { cursor: default; text-align: left; border: 0; width: 100%; font: inherit; color: inherit; }
+.wcal { display: grid; grid-template-columns: auto 1fr; gap: 14px; }
+.wcal .big .dw { color: var(--cal-red); font-size: 12px; font-weight: 700; text-transform: uppercase; }
+.wcal .big .dn { font-size: 40px; font-weight: 300; line-height: 1; font-family: var(--font-display); }
+.wprog { display: grid; gap: 8px; margin-top: 6px; }
+.wprog .row { font-size: 12px; display: grid; grid-template-columns: 1fr auto; gap: 3px 8px; }
+.wprog .bar3 { grid-column: 1 / -1; height: 5px; border-radius: 3px; background: rgba(127, 127, 127, .2); overflow: hidden; }
+.wprog .bar3 i { display: block; height: 100%; background: var(--sel); }
+.banners { position: absolute; top: 34px; right: 10px; z-index: 23000; display: flex; flex-direction: column; gap: 8px; width: 350px; max-width: calc(100% - 20px); }
+.banners .card { animation: slideIn .35s cubic-bezier(.2, .9, .3, 1); }
+.banners .card.out { transition: transform .3s ease-in, opacity .3s; transform: translateX(380px); opacity: 0; }
+
+/* dock */
+.dock {
+  position: absolute; left: 50%; bottom: 6px; transform: translateX(-50%); z-index: 9000; display: flex; align-items: flex-end; gap: 4px;
+  padding: 5px 6px 4px; border-radius: 20px; background: var(--dock); border: 1px solid var(--dock-line);
+  backdrop-filter: blur(30px) saturate(1.6); -webkit-backdrop-filter: blur(30px) saturate(1.6); max-width: calc(100% - 16px);
+}
+.dk { position: relative; border: 0; background: none; padding: 0 1px; cursor: default; display: flex; flex-direction: column; align-items: center; }
+.dk .app-ic { width: 52px; height: 52px; display: grid; place-items: center; transition: width .18s ease, height .18s ease; }
+.dock.mag .dk .app-ic { transition: none; }
+.dk .app-ic > svg, .dk .app-ic > .sq { width: 100%; height: 100%; display: block; border-radius: 23%; overflow: hidden; box-shadow: 0 2px 5px rgba(0, 0, 0, .25); }
+.dk.trash .app-ic > svg { box-shadow: none; border-radius: 0; }
+.dk .run { width: 4px; height: 4px; border-radius: 50%; background: var(--menubar-fg); margin-top: 2px; opacity: 0; }
+.dk.running .run { opacity: .75; }
+.dk.bounce .app-ic { animation: bounce .55s cubic-bezier(.3, 0, .5, 1) 2; }
+@keyframes bounce { 50% { transform: translateY(-20px); } }
+.dk .tip { position: absolute; bottom: calc(100% + 14px); left: 50%; transform: translateX(-50%); background: var(--menu); color: var(--fg); padding: 3px 10px; border-radius: 6px; font-size: 12.5px; white-space: nowrap; box-shadow: var(--shadow); opacity: 0; pointer-events: none; backdrop-filter: blur(20px); }
+.dk:hover .tip { opacity: 1; }
+.dock-sep { width: 1px; align-self: stretch; background: var(--dock-line); margin: 6px 4px 10px; }
+.sq.minw { background: var(--win); display: grid; place-items: center; font-size: 24px; }
+
+/* lock screen */
+.lock { position: absolute; inset: 0; z-index: 30000; display: flex; flex-direction: column; align-items: center; color: #fff; backdrop-filter: blur(30px) saturate(1.3); -webkit-backdrop-filter: blur(30px) saturate(1.3); background: rgba(0, 0, 0, .12); cursor: default; transition: opacity .45s ease, transform .45s ease; }
+.lock.gone { opacity: 0; transform: scale(1.04); pointer-events: none; }
+.lock .ld { margin-top: 8vh; font-size: clamp(16px, 2.2vw, 24px); font-weight: 600; opacity: .9; text-shadow: 0 1px 8px rgba(0, 0, 0, .25); }
+.lock .lt { font-family: var(--font-display); font-size: clamp(76px, 15vw, 150px); font-weight: 700; line-height: 1; letter-spacing: -.02em; opacity: .92; text-shadow: 0 2px 20px rgba(0, 0, 0, .25); font-variant-numeric: tabular-nums; }
+.lock .lu { margin-top: auto; margin-bottom: 9vh; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.lock .lu .photo { width: 64px; height: 64px; font-size: 22px; box-shadow: 0 4px 16px rgba(0, 0, 0, .3); }
+.lock .lu b { font-size: 15px; text-shadow: 0 1px 6px rgba(0, 0, 0, .3); }
+.lock .lu button { border: 0; background: rgba(255, 255, 255, .22); color: #fff; padding: 6px 16px; border-radius: 999px; font-size: 12.5px; cursor: default; backdrop-filter: blur(10px); }
+.lock .lu button:hover { background: rgba(255, 255, 255, .32); }
+.lock .lu .hint { font-size: 11.5px; opacity: .75; }
+.screen.locked .menubar, .screen.locked .desk, .screen.locked .dock { visibility: hidden; }
+
+@media (max-width: 720px) {
+  .mb.hide-sm { display: none; }
+  .win { left: 0 !important; top: 0 !important; width: 100% !important; height: calc(100% - 74px) !important; border-radius: 0; resize: none; min-width: 0; }
+  .lights .min, .lights .max { display: none; }
+  .fside { display: none; }
+  .win.finder .bar { padding-left: 52px; }
+  .fsearch input { width: 100px; }
+  .doc { padding: 16px 16px 60px; }
+  .notes { grid-template-columns: minmax(0, 1fr); }
+  .nfold { display: none; }
+  .notes.reading .nlist { display: none; }
+  .notes:not(.reading) .nnote { display: none; }
+  .nback { display: block; border: 0; background: none; color: var(--link); padding: 10px 16px 0; font-size: 15px; }
+  .cal, .set { grid-template-columns: minmax(0, 1fr); }
+  .cal-side { display: none; }
+  .set-side { display: none; }
+  .dk .app-ic { width: 42px !important; height: 42px !important; }
+  .dk .tip { display: none; }
+  .dicon { width: 84px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .win.opening, .win.closing, .dk.bounce .app-ic, .ncenter, .banners .card, .spot-box, .cc, .ql-box { animation: none !important; }
+  .win.genie, .lock { transition: none !important; }
+}
+
+/* ================= Notes app (portfolio editor) ================= */
+:root {
+  --n-rail: #f4f5f1; --n-paper: #fdfdfb; --n-ink: #1c2422; --n-muted: #66706c; --n-line: #dfe2dc;
+  --n-accent: #0d6b62; --n-accent-soft: #d9ece8; --n-accent-ink: #ffffff; --n-ok: #2f7a3d; --n-ok-soft: #e1f0e2; --n-warn: #9a5b00; --n-warn-soft: #f7ead2;
+  --n-r1: #e8eeec; --n-r2: #c9e2dd; --n-r3: #8cc5bb; --n-r4: #0d6b62; --n-r-ink: #1c2422; --n-r4-ink: #ffffff;
+  --n-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --n-ui: "Figtree", -apple-system, system-ui, "Segoe UI", sans-serif;
+  --n-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --n-rail: #171c1b; --n-paper: #1b2120; --n-ink: #e7ecea; --n-muted: #9aa5a1; --n-line: #2c3433;
+  --n-accent: #62c6b8; --n-accent-soft: #1d3a36; --n-accent-ink: #0b1d1a; --n-ok: #7fcf8c; --n-ok-soft: #1f3423; --n-warn: #e9b45e; --n-warn-soft: #3a2c14;
+  --n-r1: #243230; --n-r2: #2c4a45; --n-r3: #3f7d73; --n-r4: #62c6b8; --n-r-ink: #e7ecea; --n-r4-ink: #0b1d1a; } }
+:root[data-theme="dark"] {
+  --n-rail: #171c1b; --n-paper: #1b2120; --n-ink: #e7ecea; --n-muted: #9aa5a1; --n-line: #2c3433;
+  --n-accent: #62c6b8; --n-accent-soft: #1d3a36; --n-accent-ink: #0b1d1a; --n-ok: #7fcf8c; --n-ok-soft: #1f3423; --n-warn: #e9b45e; --n-warn-soft: #3a2c14;
+  --n-r1: #243230; --n-r2: #2c4a45; --n-r3: #3f7d73; --n-r4: #62c6b8; --n-r-ink: #e7ecea; --n-r4-ink: #0b1d1a; }
+
+.win.notesapp .bar { background: var(--n-rail); }
+.win.notesapp .wbody { background: var(--n-paper); }
+.pn { flex: 1; display: grid; grid-template-columns: minmax(230px, 290px) minmax(0, 1fr); min-width: 0; min-height: 0; background: var(--n-paper); color: var(--n-ink); font-family: var(--n-ui); font-size: 15px; line-height: 1.55; }
+.pn button { cursor: pointer; }
+.pn :focus-visible { outline: 2px solid var(--n-accent); outline-offset: 2px; border-radius: 4px; }
+.pn .rail { background: var(--n-rail); border-right: 1px solid var(--n-line); display: flex; flex-direction: column; min-height: 0; }
+.pn .rail-head { padding: 14px 14px 8px; display: flex; flex-direction: column; gap: 10px; }
+.pn .owner { display: flex; align-items: center; gap: 10px; }
+.pn .mono-badge { width: 34px; height: 34px; border-radius: 50%; background: var(--n-accent); color: var(--n-accent-ink); display: grid; place-items: center; font-family: var(--n-display); font-weight: 700; font-size: 15px; flex: none; }
+.pn .owner b { display: block; font-size: 14px; line-height: 1.2; }
+.pn .owner span { font-size: 12px; color: var(--n-muted); }
+.pn .search { width: 100%; border: 1px solid var(--n-line); background: var(--n-paper); border-radius: 8px; padding: 7px 10px; font: inherit; font-size: 14px; color: var(--n-ink); }
+.pn .list { overflow-y: auto; padding: 2px 8px 16px; flex: 1; min-height: 0; }
+.pn .group-label { font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--n-muted); padding: 12px 10px 6px; }
+.pn .item { display: block; width: 100%; text-align: left; border: 0; background: none; border-radius: 9px; padding: 9px 10px; border-bottom: 1px solid var(--n-line); color: var(--n-ink); font: inherit; }
+.pn .item:hover { background: color-mix(in srgb, var(--n-accent-soft) 45%, transparent); }
+.pn .item[aria-current="true"] { background: var(--n-accent-soft); border-bottom-color: transparent; }
+.pn .item .t { font-weight: 600; font-size: 14px; display: flex; justify-content: space-between; gap: 8px; }
+.pn .item .t small { font-family: var(--n-mono); font-size: 10.5px; font-weight: 400; color: var(--n-muted); white-space: nowrap; padding-top: 2px; }
+.pn .item .p { font-size: 13px; color: var(--n-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pn .rail-foot { padding: 10px 14px 12px; font-size: 12px; color: var(--n-muted); border-top: 1px solid var(--n-line); }
+.pn .pane { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+.pn .back { display: none; border: 0; background: none; color: var(--n-accent); font-weight: 600; padding: 10px 16px 0; font: inherit; text-align: left; }
+.pn .scroll { overflow-y: auto; flex: 1; min-height: 0; }
+.pn .note { max-width: 800px; margin: 0 auto; padding: 26px 28px 80px; display: flex; flex-direction: column; gap: 28px; }
+.pn .note-head { display: flex; flex-direction: column; gap: 6px; }
+.pn .eyebrow { font-family: var(--n-mono); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--n-accent); }
+.pn h1 { font-family: var(--n-display); font-weight: 700; font-size: clamp(26px, 3.6vw, 36px); line-height: 1.12; margin: 0; text-wrap: balance; }
+.pn .dateline { font-size: 12.5px; color: var(--n-muted); font-family: var(--n-mono); }
+.pn section { display: flex; flex-direction: column; gap: 12px; scroll-margin-top: 12px; }
+.pn h2 { font-family: var(--n-display); font-size: 21px; font-weight: 600; margin: 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.pn h2 .code { font-family: var(--n-mono); font-size: 12px; color: var(--n-muted); font-weight: 400; }
+.pn h3 { font-size: 14px; font-weight: 600; margin: 0; }
+.pn .hint { font-size: 13px; color: var(--n-muted); margin: 0; max-width: 68ch; }
+.pn .reqline { font-size: 13.5px; padding: 9px 12px; border-radius: 8px; background: var(--n-rail); border: 1px solid var(--n-line); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.pn .ed { white-space: pre-wrap; word-break: break-word; min-height: 1.4em; border-radius: 5px; }
+.pn .ed:empty::before { content: attr(data-ph); color: var(--n-muted); font-style: italic; opacity: .8; }
+.pn .editing .ed { background: color-mix(in srgb, var(--n-accent-soft) 40%, transparent); outline: 1px dashed color-mix(in srgb, var(--n-accent) 45%, transparent); padding: 2px 5px; cursor: text; }
+.pn .editing .ed:focus { outline: 2px solid var(--n-accent); background: var(--n-paper); }
+.pn .prose { font-family: var(--n-display); font-size: 17px; line-height: 1.65; max-width: 65ch; }
+.pn input.inp { font: inherit; font-size: 13.5px; color: var(--n-ink); background: var(--n-paper); border: 1px solid var(--n-line); border-radius: 6px; padding: 3px 6px; max-width: 100%; }
+.pn .hero { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: center; }
+.pn .portrait { width: 92px; height: 108px; border-radius: 10px; background: linear-gradient(160deg, var(--n-accent), color-mix(in srgb, var(--n-accent) 55%, #000)); color: var(--n-accent-ink); display: grid; place-items: center; font-family: var(--n-display); font-size: 34px; font-weight: 700; }
+.pn .badges { display: flex; flex-wrap: wrap; gap: 8px; }
+.pn .badge { background: var(--n-rail); border: 1px solid var(--n-line); border-radius: 999px; padding: 3px 12px; font-size: 12.5px; }
+.pn .stats { display: flex; flex-wrap: wrap; gap: 1px; background: var(--n-line); border: 1px solid var(--n-line); border-radius: 10px; overflow: hidden; }
+.pn .stat { flex: 1 1 120px; background: var(--n-paper); padding: 12px 14px; display: flex; flex-direction: column; gap: 2px; }
+.pn .stat b { font-family: var(--n-mono); font-size: 22px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.pn .stat span { font-size: 11px; letter-spacing: .07em; text-transform: uppercase; color: var(--n-muted); font-weight: 600; }
+.pn .stat small { font-size: 12px; color: var(--n-muted); }
+.pn .seg { display: inline-flex; border: 1px solid var(--n-line); border-radius: 8px; overflow: hidden; }
+.pn .seg button { border: 0; background: none; padding: 5px 11px; font: inherit; font-size: 13px; font-weight: 600; color: var(--n-muted); }
+.pn .seg button[aria-pressed="true"] { background: var(--n-accent); color: var(--n-accent-ink); }
+.pn .checks { display: flex; flex-direction: column; border: 1px solid var(--n-line); border-radius: 10px; overflow: hidden; }
+.pn .check { display: grid; grid-template-columns: 1fr minmax(120px, 200px) auto; gap: 14px; align-items: center; padding: 10px 14px; border: 0; border-bottom: 1px solid var(--n-line); background: none; text-align: left; font: inherit; color: inherit; width: 100%; }
+.pn .check:last-child { border-bottom: 0; }
+.pn button.check:hover { background: color-mix(in srgb, var(--n-accent-soft) 35%, transparent); }
+.pn .check .what { display: flex; flex-direction: column; min-width: 0; }
+.pn .check .what small { color: var(--n-muted); font-size: 12.5px; }
+.pn .meter { height: 6px; background: var(--n-line); border-radius: 6px; overflow: hidden; }
+.pn .meter i { display: block; height: 100%; background: var(--n-accent); border-radius: 6px; }
+.pn .meter-wrap { display: flex; flex-direction: column; gap: 4px; }
+.pn .meter-wrap span { font-family: var(--n-mono); font-size: 11.5px; color: var(--n-muted); font-variant-numeric: tabular-nums; }
+.pn .chip { font-size: 11.5px; font-weight: 600; padding: 2px 9px; border-radius: 999px; white-space: nowrap; justify-self: end; }
+.pn .chip.met { background: var(--n-ok-soft); color: var(--n-ok); }
+.pn .chip.prog { background: var(--n-warn-soft); color: var(--n-warn); }
+.pn .chip.none { background: var(--n-line); color: var(--n-muted); }
+.pn .tbl-wrap { overflow-x: auto; border: 1px solid var(--n-line); border-radius: 10px; }
+.pn table { border-collapse: collapse; width: 100%; font-size: 14px; }
+.pn th { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--n-muted); font-weight: 600; text-align: left; padding: 9px 12px; background: var(--n-rail); border-bottom: 1px solid var(--n-line); white-space: nowrap; }
+.pn td { padding: 8px 12px; border-bottom: 1px solid var(--n-line); vertical-align: top; min-width: 90px; }
+.pn td.wide { min-width: 220px; }
+.pn td.num, .pn th.num { text-align: right; font-family: var(--n-mono); font-variant-numeric: tabular-nums; min-width: 64px; }
+.pn tbody tr:last-child td { border-bottom: 0; }
+.pn tr.grp td { background: var(--n-rail); font-size: 11px; letter-spacing: .07em; text-transform: uppercase; font-weight: 700; color: var(--n-muted); padding: 6px 12px; }
+.pn td.empty { color: var(--n-muted); font-style: italic; text-align: center; padding: 18px; }
+.pn td.x { min-width: 0; width: 1%; padding: 6px; }
+.pn .del { border: 0; background: none; color: var(--n-muted); font-size: 16px; line-height: 1; padding: 4px 6px; border-radius: 5px; }
+.pn .del:hover { color: var(--n-warn); background: var(--n-warn-soft); }
+.pn .add { align-self: flex-start; border: 1px dashed var(--n-accent); color: var(--n-accent); background: none; border-radius: 8px; padding: 6px 12px; font: inherit; font-size: 13px; font-weight: 600; }
+.pn .totals { display: flex; gap: 18px; flex-wrap: wrap; font-size: 13px; color: var(--n-muted); }
+.pn .totals b { font-family: var(--n-mono); color: var(--n-ink); font-weight: 500; }
+.pn .cards { display: flex; flex-direction: column; gap: 14px; }
+.pn .ncard { border: 1px solid var(--n-line); border-radius: 10px; padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; }
+.pn .ncard.accent { border-left: 4px solid var(--n-accent); }
+.pn .card-top { display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
+.pn .card-title { font-family: var(--n-display); font-size: 18px; font-weight: 600; flex: 1; min-width: 0; }
+.pn .meta { font-family: var(--n-mono); font-size: 11.5px; letter-spacing: .04em; text-transform: uppercase; color: var(--n-accent); }
+.pn .question { font-family: var(--n-display); font-style: italic; color: var(--n-muted); }
+.pn .kv { display: grid; grid-template-columns: minmax(140px, 220px) 1fr; gap: 6px 16px; font-size: 14px; }
+.pn .kv > label { color: var(--n-muted); font-size: 13px; padding-top: 2px; }
+.pn .kv > div { min-width: 0; }
+.pn .wc { font-family: var(--n-mono); font-size: 11.5px; color: var(--n-muted); }
+.pn .wc.ok { color: var(--n-ok); }
+.pn details.prompts { font-size: 13.5px; color: var(--n-muted); }
+.pn details.prompts summary { cursor: pointer; font-weight: 600; color: var(--n-accent); width: max-content; }
+.pn details.prompts ol { margin: 8px 0 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; max-width: 68ch; }
+.pn .empty-card { border: 1px dashed var(--n-line); border-radius: 10px; padding: 18px; color: var(--n-muted); font-style: italic; text-align: center; }
+.pn .filebox { border: 1.5px dashed color-mix(in srgb, var(--n-accent) 55%, transparent); background: color-mix(in srgb, var(--n-accent-soft) 35%, transparent); border-radius: 10px; padding: 14px 16px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.pn .filebox .fi { font-size: 22px; }
+.pn .filebox .fx { flex: 1; min-width: 160px; display: flex; flex-direction: column; gap: 2px; }
+.pn .filebox .fx b { font-family: var(--n-display); font-size: 16px; }
+.pn .linkbtn { border: 1px solid var(--n-line); background: var(--n-paper); border-radius: 8px; padding: 5px 12px; font-size: 13px; font-weight: 600; color: var(--n-ink); text-decoration: none; }
+.pn .linkbtn:hover { border-color: var(--n-accent); }
+.pn .scale { display: flex; gap: 6px 16px; flex-wrap: wrap; font-size: 12.5px; color: var(--n-muted); }
+.pn .scale b { font-family: var(--n-mono); color: var(--n-ink); }
+.pn .comp { border-bottom: 1px solid var(--n-line); padding: 14px 0; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 20px; }
+.pn .comp:last-child { border-bottom: 0; }
+.pn .comp .name { font-weight: 600; }
+.pn .comp .desc { font-size: 13px; color: var(--n-muted); grid-column: 1; }
+.pn .rates { display: flex; gap: 14px; grid-row: 1 / span 2; grid-column: 2; align-items: flex-start; }
+.pn .rate { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.pn .rate small { font-family: var(--n-mono); font-size: 10.5px; color: var(--n-muted); }
+.pn .rate.cur small { color: var(--n-accent); font-weight: 600; }
+.pn .dots { display: flex; gap: 3px; }
+.pn .dot { width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--n-accent); background: none; padding: 0; }
+.pn .dot.on { background: var(--n-accent); }
+.pn .pill { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font-family: var(--n-mono); font-size: 12.5px; font-weight: 600; background: var(--n-r1); color: var(--n-r-ink); }
+.pn .pill.p2 { background: var(--n-r2); } .pn .pill.p3 { background: var(--n-r3); } .pn .pill.p4 { background: var(--n-r4); color: var(--n-r4-ink); }
+.pn .pill.p0 { background: none; border: 1px dashed var(--n-line); color: var(--n-muted); }
+.pn .comp .evidence { grid-column: 1 / -1; font-size: 14px; display: flex; flex-direction: column; gap: 4px; }
+.pn .comp .evidence small { font-family: var(--n-mono); font-size: 10.5px; color: var(--n-muted); text-transform: uppercase; letter-spacing: .05em; }
+.pn .yn { display: inline-flex; border: 1px solid var(--n-line); border-radius: 6px; overflow: hidden; }
+.pn .yn button { border: 0; background: none; padding: 2px 9px; font: inherit; font-size: 12.5px; font-weight: 600; color: var(--n-muted); }
+.pn .yn button[aria-pressed="true"] { background: var(--n-accent); color: var(--n-accent-ink); }
+.pn .ynv { font-family: var(--n-mono); font-weight: 600; }
+.pn .suggest { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; color: var(--n-muted); }
+.pn .suggest button { border: 1px solid var(--n-accent); color: var(--n-accent); background: none; border-radius: 999px; padding: 2px 10px; font: inherit; font-size: 12.5px; }
+.pn .hbars { display: flex; flex-direction: column; gap: 8px; }
+.pn .hbar { display: grid; grid-template-columns: minmax(90px, 180px) 1fr auto; gap: 10px; align-items: center; font-size: 13px; }
+.pn .hbar .lbl { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pn .hbar .trk { height: 10px; border-radius: 0 4px 4px 0; overflow: hidden; }
+.pn .hbar .trk i { display: block; height: 100%; background: var(--n-accent); border-radius: 0 4px 4px 0; min-width: 2px; }
+.pn .hbar .v { font-family: var(--n-mono); font-size: 12px; font-variant-numeric: tabular-nums; color: var(--n-ink); }
+.pn .two { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+.pn .todo-list { display: flex; flex-direction: column; border: 1px solid var(--n-line); border-radius: 10px; overflow: hidden; }
+.pn .todo-list button { display: flex; gap: 10px; align-items: flex-start; text-align: left; border: 0; border-bottom: 1px solid var(--n-line); background: none; padding: 10px 14px; font: inherit; font-size: 14px; color: var(--n-ink); }
+.pn .todo-list button:last-child { border-bottom: 0; }
+.pn .todo-list button:hover { background: color-mix(in srgb, var(--n-accent-soft) 35%, transparent); }
+.pn .todo-list .ring { width: 16px; height: 16px; border-radius: 50%; border: 1.5px solid var(--n-accent); flex: none; margin-top: 3px; }
+.pn .todo-list small { display: block; color: var(--n-muted); font-size: 12.5px; }
+.pn .countdown { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.pn .countdown b { font-family: var(--n-display); font-size: 40px; line-height: 1; font-weight: 700; color: var(--n-accent); }
+.pn .ring-big { width: 92px; height: 92px; flex: none; }
+.pn .overview { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+.notes-status { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.nbtn { border: 1px solid var(--line); background: var(--win); color: var(--fg); border-radius: 7px; padding: 3px 12px; font: inherit; font-size: 12.5px; font-weight: 600; cursor: default; }
+.nbtn.primary { background: var(--n-accent); color: var(--n-accent-ink); border-color: var(--n-accent); }
+@media (max-width: 720px) {
+  .pn { grid-template-columns: minmax(0, 1fr); }
+  .pn.app-note .rail { display: none; }
+  .pn.app-list .pane { display: none; }
+  .pn .back { display: block; }
+  .pn .note { padding: 18px 16px 64px; }
+  .pn .hero { grid-template-columns: 1fr; }
+  .pn .check { grid-template-columns: 1fr auto; }
+  .pn .check .meter-wrap { grid-column: 1 / -1; grid-row: 2; }
+  .pn .kv { grid-template-columns: 1fr; }
+  .pn .comp { grid-template-columns: 1fr; }
+  .pn .rates { grid-row: auto; grid-column: 1; }
+  .notes-status { display: none; }
+}
+@media (prefers-reduced-motion: no-preference) { .pn .meter i, .pn .hbar .trk i { transition: width .4s ease; } }
+
+.cal-day .chipev { border: 0; border-left: 2px solid var(--cal-red); width: 100%; text-align: left; cursor: default; font: inherit; font-size: 11px; color: var(--fg); }
+
+</style>
+</head>
+<body style="margin:0">
+<div class="screen locked" id="screen">
+  <div class="wall" id="wall">
+    <svg class="w-hills" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="hsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--h-sky1)"></stop><stop offset=".45" style="stop-color:var(--h-sky2)"></stop><stop offset=".7" style="stop-color:var(--h-sky3)"></stop></linearGradient>
+        <radialGradient id="hsun" cx=".62" cy=".56" r=".32"><stop offset="0" style="stop-color:var(--h-sun)"></stop><stop offset=".25" style="stop-color:var(--h-sun);stop-opacity:.55"></stop><stop offset="1" style="stop-color:var(--h-sun);stop-opacity:0"></stop></radialGradient>
+        <linearGradient id="hmist" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".22"></stop><stop offset="1" stop-color="#ffffff" stop-opacity="0"></stop></linearGradient>
+      </defs>
+      <rect width="1600" height="1000" fill="url(#hsky)"></rect>
+      <rect width="1600" height="1000" fill="url(#hsun)"></rect>
+      <g style="fill:var(--h-star)"><circle cx="140" cy="90" r="1.4"></circle><circle cx="320" cy="170" r="1"></circle><circle cx="510" cy="70" r="1.6"></circle><circle cx="760" cy="140" r="1.1"></circle><circle cx="930" cy="60" r="1.3"></circle><circle cx="1180" cy="120" r="1"></circle><circle cx="1350" cy="50" r="1.5"></circle><circle cx="1490" cy="190" r="1.1"></circle><circle cx="240" cy="290" r=".9"></circle><circle cx="1050" cy="250" r=".9"></circle><circle cx="660" cy="300" r="1"></circle><circle cx="1420" cy="320" r=".8"></circle></g>
+      <path d="M0 560 C 160 520 260 470 400 500 S 640 560 780 520 S 1040 430 1200 470 S 1460 540 1600 500 V1000 H0Z" style="fill:var(--h-1)"></path>
+      <path d="M0 560 C 160 520 260 470 400 500 S 640 560 780 520 S 1040 430 1200 470 S 1460 540 1600 500 V620 H0Z" fill="url(#hmist)"></path>
+      <path d="M0 640 C 200 590 330 610 480 640 S 760 560 940 600 S 1240 680 1420 620 S 1560 600 1600 610 V1000 H0Z" style="fill:var(--h-2)"></path>
+      <path d="M0 720 C 180 690 300 660 460 700 S 760 770 980 710 S 1300 650 1600 720 V1000 H0Z" style="fill:var(--h-3)"></path>
+      <path d="M0 820 C 220 770 420 790 620 830 S 980 860 1180 800 S 1480 770 1600 800 V1000 H0Z" style="fill:var(--h-4)"></path>
+      <path d="M0 920 C 260 880 520 900 760 930 S 1260 960 1600 900 V1000 H0Z" style="fill:var(--h-5)"></path>
+    </svg>
+    <svg class="w-ribbons" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="wbg" x1="0" y1="0" x2=".3" y2="1"><stop offset="0" style="stop-color:var(--rb5)"></stop><stop offset=".45" style="stop-color:var(--rb0)"></stop><stop offset="1" style="stop-color:var(--rb1)"></stop></linearGradient>
+        <linearGradient id="w1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--rb1)"></stop><stop offset="1" style="stop-color:var(--rb2)"></stop></linearGradient>
+        <linearGradient id="w2" x1="0" y1="0" x2="1" y2=".6"><stop offset="0" style="stop-color:var(--rb2)"></stop><stop offset="1" style="stop-color:var(--rb3)"></stop></linearGradient>
+        <linearGradient id="w3" x1="0" y1=".2" x2="1" y2="1"><stop offset="0" style="stop-color:var(--rb3)"></stop><stop offset="1" style="stop-color:var(--rb4)"></stop></linearGradient>
+        <linearGradient id="hl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity="0"></stop><stop offset=".5" stop-color="#ffffff" stop-opacity=".55"></stop><stop offset="1" stop-color="#ffffff" stop-opacity="0"></stop></linearGradient>
+        <filter id="soft"><feGaussianBlur stdDeviation="6"></feGaussianBlur></filter>
+      </defs>
+      <rect width="1600" height="1000" fill="url(#wbg)"></rect>
+      <path d="M-100 520 C 220 380, 480 640, 820 470 S 1380 300, 1720 420 L1720 1100 L-100 1100 Z" fill="url(#w1)" opacity=".92"></path>
+      <path d="M-100 640 C 260 520, 560 760, 900 600 S 1420 470, 1720 590 L1720 1100 L-100 1100 Z" fill="url(#w2)" opacity=".95"></path>
+      <path d="M-100 780 C 300 680, 640 880, 980 740 S 1460 640, 1720 760 L1720 1100 L-100 1100 Z" fill="url(#w3)"></path>
+      <path d="M-100 520 C 220 380, 480 640, 820 470 S 1380 300, 1720 420" fill="none" stroke="url(#hl)" stroke-width="3" filter="url(#soft)"></path>
+      <path d="M-100 640 C 260 520, 560 760, 900 600 S 1420 470, 1720 590" fill="none" stroke="url(#hl)" stroke-width="2"></path>
+      <path d="M-100 780 C 300 680, 640 880, 980 740 S 1460 640, 1720 760" fill="none" stroke="url(#hl)" stroke-width="2" opacity=".6"></path>
+    </svg>
+  </div>
+
+  <div class="menubar" id="menubar">
+    <button class="mb" data-menu="logo" aria-label="Ria menu"><span class="mono">RR</span></button>
+    <button class="mb app" data-menu="app" id="appname">Finder</button>
+    <button class="mb hide-sm" data-menu="file">File</button>
+    <button class="mb hide-sm" data-menu="edit">Edit</button>
+    <button class="mb hide-sm" data-menu="view">View</button>
+    <button class="mb" data-menu="go">Go</button>
+    <button class="mb hide-sm" data-menu="window">Window</button>
+    <button class="mb hide-sm" data-menu="help">Help</button>
+    <div class="mb-right">
+      <button class="mb hide-sm" data-menu="battery" aria-label="Battery"><span class="pct">87%</span><svg viewBox="0 0 26 13" fill="none"><rect x=".75" y=".75" width="21.5" height="11.5" rx="3.2" stroke="currentColor" stroke-opacity=".5" stroke-width="1.2"></rect><rect x="2.5" y="2.5" width="16" height="8" rx="1.6" fill="currentColor"></rect><path d="M24 4.5v4" stroke="currentColor" stroke-opacity=".5" stroke-width="1.6" stroke-linecap="round"></path></svg></button>
+      <button class="mb" data-menu="wifi" aria-label="Wi-Fi"><svg viewBox="0 0 18 14" fill="currentColor"><path d="M9 13.2 6.6 10.6a3.4 3.4 0 0 1 4.8 0z"></path><path d="M4.6 8.6a6.3 6.3 0 0 1 8.8 0l-1.3 1.4a4.4 4.4 0 0 0-6.2 0z"></path><path d="M2.4 6.3a9.4 9.4 0 0 1 13.2 0l-1.3 1.4a7.5 7.5 0 0 0-10.6 0z"></path><path d="M.2 4a12.5 12.5 0 0 1 17.6 0l-1.3 1.4a10.6 10.6 0 0 0-15 0z"></path></svg></button>
+      <button class="mb" id="spotBtn" aria-label="Spotlight"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6.8" cy="6.8" r="4.8"></circle><path d="M10.4 10.4 14.5 14.5" stroke-linecap="round"></path></svg></button>
+      <button class="mb" id="ccBtn" aria-label="Control Center"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1.5" y="2.5" width="13" height="4.5" rx="2.25"></rect><circle cx="12.25" cy="4.75" r="1.3" fill="currentColor"></circle><rect x="1.5" y="9" width="13" height="4.5" rx="2.25"></rect><circle cx="3.75" cy="11.25" r="1.3" fill="currentColor"></circle></svg></button>
+      <button class="mb clock" id="clock" aria-label="Notification Center"></button>
+    </div>
+  </div>
+
+  <div class="desk" id="desk"></div>
+  <div class="banners" id="banners"></div>
+  <div class="dock" id="dock"></div>
+
+  <div class="lock" id="lock" role="button" tabindex="0" aria-label="Unlock">
+    <div class="ld" id="lockDate"></div>
+    <div class="lt" id="lockTime"></div>
+    <div class="lu">
+      <div class="photo">RR</div>
+      <b>Ria Rana</b>
+      <button id="unlockBtn">Click to unlock</button>
+      <span class="hint">or press Return</span>
+    </div>
+  </div>
+</div>
+<script type="application/json" id="portfolio-data">{"about":{"name":"Ria N. Rana","yearLabel":"Sophomore · JSP Year 1","major":"Health & Societies","school":"University of Pennsylvania, Class of 2029","program":"Johnson Scholars Program, Perelman School of Medicine","hometown":"Dallas, Texas","bio":"I'm a Health & Societies major at Penn and a Johnson Scholar. Each week I run blood pressure screenings at Philadelphia shelters with the Student Health Outreach Program, and in the lab I help design experiments on how collagenase breaks down collagen gels. Screening patients at Chosen 300 and Philly House has shown me how much of health is shaped outside the clinic, by housing, access and follow-up. I want to be a physician who cares for the patient in front of me and also works on the systems around them.","pmName":"","pfYear":0,"_updated":"2026-10-01"},"profile":{"cvName":"","cvLink":"","cvUpdated":"","highlights":"Health & Societies, University of Pennsylvania (expected May 2029); Johnson Scholars Program; SHOP volunteer and Policy and Outcomes Team member; research on collagenase degradation of collagen gels; author of a Housing-Health Integration Task Force proposal to Philadelphia City Council (July 2026).","transcriptLink":"","gpa":[{"credits":"","cum":"","sci":"","term":"As of this submission"}],"competencies":[{"name":"Service Orientation","desc":"A genuine desire to help others, shown through volunteerism, advocacy and community engagement.","y1":0,"y2":0,"y3":0,"ev1":"","ev2":"","ev3":""},{"name":"Social Skills & Communication","desc":"Listening actively, communicating clearly and building rapport with diverse individuals.","y1":0,"y2":0,"y3":0,"ev1":"","ev2":"","ev3":""},{"name":"Cultural Competence","desc":"Awareness of and respect for cultures and identities different from your own, and how culture shapes health beliefs.","y1":0,"y2":0,"y3":0,"ev1":"","ev2":"","ev3":""},{"name":"Teamwork","desc":"Collaborating toward shared goals, sharing credit, and knowing when to lead and when to follow.","y1":0,"y2":0,"y3":0,"ev1":"","ev2":"","ev3":""},{"name":"Oral Communication","desc":"Speaking clearly and appropriately for the audience: presentations, patient communication, advocacy, teaching.","y1":0,"y2":0,"y3":0,"ev1":"","ev2":"","ev3":""},{"name":"Ethical Responsibility","desc":"Acting on ethical principles in academic, clinical and community settings, and recognizing ethical dilemmas.","y1":0,"y2":0,"y3":0,"ev1":"","ev2":"","ev3":""},{"name":"Reliability & Dependability","desc":"Following through on commitments and showing up prepared and on time.","y1":0,"y2":0,"y3":0,"ev1":"","ev2":"","ev3":""},{"name":"Resilience & Adaptability","desc":"Recovering from setbacks, managing stress and adjusting when circumstances change.","y1":0,"y2":0,"y3":0,"ev1":"","ev2":"","ev3":""},{"name":"Capacity for Improvement","desc":"Seeking feedback, reflecting honestly and making concrete changes in response.","y1":0,"y2":0,"y3":0,"ev1":"","ev2":"","ev3":""}],"statement":{"v1":"","v1Link":"","v2":"","v2Link":"","changes":""},"_updated":"2026-10-01"},"shadowing":{"log":[],"physicians":[],"takeaways":{},"reflections":[],"_updated":""},"service":{"log":[],"orgs":[{"contact":"","dates":"","logs":"","mission":"","name":"Student Health Outreach Program (SHOP)","outcomes":"Helped launch a grant-funded naloxone training campaign at shelters and food distribution sites.","resp":"Weekly blood pressure screenings at Philadelphia homeless shelters, mainly Chosen 300 Spring Garden and Philly House. Substance-use policy work on the Policy and Outcomes Team.","role":"Volunteer; Policy and Outcomes Team member"}],"reflections":[],"impact":"","_updated":"2026-10-01"},"academic":{"artifacts":[{"competencies":"Service Orientation, Oral Communication","course":"Policy proposal to Philadelphia City Council, modeled on San Diego's Community Information Exchange","instructor":"","link":"","readiness":"","revise":"","term":"Summer 2026","title":"Housing-Health Integration Task Force proposal","why":""}],"mcat":{"taken":"No","score":"","planned":"","resources":"","practice":"","target":"","strengths":"","improve":""},"research":[{"dates":"","influence":"","lab":"","methods":"","outputs":"","pi":"","role":"Helps design the experimental protocol and coordinates with a lab collaborator.","skills":"","title":"Collagenase degradation of collagen gels"}],"_updated":"2026-10-01"},"leadership":{"activities":[{"dates":"","hrs":"","notes":"Helped launch a grant-funded naloxone training campaign at shelters and food distribution sites.","org":"Student Health Outreach Program (SHOP)","role":"Volunteer, Policy and Outcomes Team"},{"dates":"Jul 2026","hrs":"","notes":"Proposed a Housing-Health Integration Task Force to Philadelphia City Council, modeled on San Diego's Community Information Exchange. Met with City Council and the Office of Homeless Services about treating homelessness as public health infrastructure.","org":"Housing-Health policy proposal","role":"Author"}],"events":[],"meetings":[],"_updated":"2026-10-01"},"identity":{"reflection":"","_updated":""}}</script>
+<script id="app">
+/* ================= site source (captured before anything renders) ================= */
+const PRISTINE = (() => { const sc = document.getElementById("screen"), st = document.getElementById("site-style"); return { screen: sc ? sc.outerHTML : "", css: st ? st.textContent : "", app: document.currentScript ? document.currentScript.textContent : "" }; })();
+const HEAD_META = `<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ria Rana · Pre-Med Portfolio</title>
+<meta name="description" content="Ria N. Rana's pre-medical electronic portfolio for the Johnson Scholars Program at Penn.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0d6b62">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d6b62'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='30' font-weight='700' fill='white'%3ERR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">`;
+let EMBED = {}; try { EMBED = JSON.parse((document.getElementById("portfolio-data") || {}).textContent || "{}"); } catch (e) { EMBED = {}; }
+
+/* ================= tiny DOM helper ================= */
+function h(tag, attrs, ...kids) {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (v == null || v === false) continue;
+    if (k === "class") el.className = v;
+    else if (k === "text") el.textContent = v;
+    else if (k === "html") el.innerHTML = v;
+    else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+    else el.setAttribute(k, v === true ? "" : v);
+  }
+  for (const c of kids.flat(Infinity)) if (c != null && c !== false && c !== "") el.append(c.nodeType ? c : document.createTextNode(String(c)));
+  return el;
+}
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const clone = o => JSON.parse(JSON.stringify(o));
+
+/* ================= portfolio data model ================= */
+const SECS = ["about", "profile", "shadowing", "service", "academic", "leadership", "identity"];
+const COMPS = [
+  ["Service Orientation", "A genuine desire to help others, shown through volunteerism, advocacy and community engagement."],
+  ["Social Skills & Communication", "Listening actively, communicating clearly and building rapport with diverse individuals."],
+  ["Cultural Competence", "Awareness of and respect for cultures and identities different from your own, and how culture shapes health beliefs."],
+  ["Teamwork", "Collaborating toward shared goals, sharing credit, and knowing when to lead and when to follow."],
+  ["Oral Communication", "Speaking clearly and appropriately for the audience: presentations, patient communication, advocacy, teaching."],
+  ["Ethical Responsibility", "Acting on ethical principles in academic, clinical and community settings, and recognizing ethical dilemmas."],
+  ["Reliability & Dependability", "Following through on commitments and showing up prepared and on time."],
+  ["Resilience & Adaptability", "Recovering from setbacks, managing stress and adjusting when circumstances change."],
+  ["Capacity for Improvement", "Seeking feedback, reflecting honestly and making concrete changes in response."]
+];
+const DEFAULTS = () => ({
+  about: { name: "Ria N. Rana", yearLabel: "Sophomore · JSP Year 1", major: "Health & Societies", school: "University of Pennsylvania, Class of 2029", program: "Johnson Scholars Program, Perelman School of Medicine", hometown: "Dallas, Texas", bio: "", pmName: "", pfYear: 0, _updated: "" },
+  profile: { cvName: "", cvLink: "", cvUpdated: "", highlights: "", transcriptLink: "", gpa: [{ term: "As of this submission", cum: "", sci: "", credits: "" }],
+    competencies: COMPS.map(([name, desc]) => ({ name, desc, y1: 0, y2: 0, y3: 0, ev1: "", ev2: "", ev3: "" })),
+    statement: { v1: "", v1Link: "", v2: "", v2Link: "", changes: "" }, _updated: "" },
+  shadowing: { log: [], physicians: [], takeaways: {}, reflections: [], _updated: "" },
+  service: { log: [], orgs: [], reflections: [], impact: "", _updated: "" },
+  academic: { artifacts: [], mcat: { taken: "", score: "", planned: "", resources: "", practice: "", target: "", strengths: "", improve: "" }, research: [], _updated: "" },
+  leadership: { activities: [], events: [], meetings: [], _updated: "" },
+  identity: { reflection: "", _updated: "" }
+});
+function normalize(sec, d) {
+  const base = DEFAULTS()[sec];
+  const out = { ...base, ...d };
+  for (const k of Object.keys(base)) if (base[k] && typeof base[k] === "object" && !Array.isArray(base[k]) && out[k] && typeof out[k] === "object") out[k] = { ...base[k], ...out[k] };
+  if (sec === "profile") {
+    out.competencies = COMPS.map(([name, desc], i) => { const c = (d.competencies || [])[i] || {}; return { name, desc, y1: +c.y1 || 0, y2: +c.y2 || 0, y3: +c.y3 || 0, ev1: c.ev1 ?? c.evidence ?? "", ev2: c.ev2 || "", ev3: c.ev3 || "" }; });
+    if (!Array.isArray(out.gpa) || !out.gpa.length) out.gpa = clone(base.gpa);
+  }
+  if (sec === "shadowing" && (!out.takeaways || typeof out.takeaways !== "object")) out.takeaways = {};
+  return out;
+}
+let state = DEFAULTS();
+SECS.forEach(sc => { if (EMBED[sc]) state[sc] = normalize(sc, EMBED[sc]); });
+const get = p => p.split(".").reduce((o, k) => o == null ? o : o[k], state);
+function setP(p, v) { const ks = p.split("."); let o = state; for (const k of ks.slice(0, -1)) o = o[k]; o[ks[ks.length - 1]] = v; touched(ks[0]); }
+
+/* ---------- number & date helpers ---------- */
+const num = v => { const n = parseFloat(String(v ?? "").replace(/[^0-9.]/g, "")); return isFinite(n) ? n : 0; };
+const sum = (rows, k) => rows.reduce((a, r) => a + num(r[k]), 0);
+const fmtH = n => (Math.round(n * 10) / 10).toString();
+const words = s => (String(s || "").trim().match(/\S+/g) || []).length;
+const filled = s => String(s ?? "").trim().length > 0;
+const todayISO = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
+function parseD(s) {
+  if (!s) return null;
+  s = String(s).trim();
+  let m = s.match(/^(\d{4})-(\d{2})-(\d{2})$/); if (m) return new Date(+m[1], +m[2] - 1, +m[3]);
+  m = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/); if (m) return new Date(+m[3] < 100 ? 2000 + +m[3] : +m[3], +m[1] - 1, +m[2]);
+  const t = Date.parse(s); return isNaN(t) ? null : new Date(t);
+}
+const fmtDate = (s, opts = { month: "short", day: "numeric", year: "numeric" }) => { const d = parseD(s); return d ? d.toLocaleDateString("en-US", opts) : (s || ""); };
+const keyOf = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+
+/* ---------- program year ---------- */
+const YEARS = ["Sophomore", "Junior", "Senior"];
+const pfY = () => Math.max(0, Math.min(2, +state.about.pfYear || 0));
+const yearWindow = () => { const y = 2026 + pfY(); return [new Date(y, 5, 1), new Date(y + 1, 4, 31, 23, 59)]; };
+const dueDate = () => new Date(2027 + pfY(), 5, 30);
+const logsDate = () => new Date(2027 + pfY(), 4, 31);
+function inYear(start, end) {
+  const [a, b] = yearWindow(); const s = parseD(start), e = parseD(end);
+  if (!s && !e) return true;
+  return (s || e) <= b && (e || new Date(8640000000000000)) >= a && (s || e) <= b;
+}
+
+/* ---------- specialty grouping ---------- */
+const SPEC_GROUPS = [
+  ["Primary Care", /family|primary|internal|pediatric|peds|geriatric/i],
+  ["Hospital-Based Medicine", /hospitalist|hospital med|emergency|\bER\b|\bED\b|critical|intensive|icu|anesthes/i],
+  ["Surgical Specialties", /surg|orthop|neurosurg|plastic|ob[-\s/]?gyn|obstetric|gynec|reproductive/i],
+  ["Diagnostic & Specialty", /radiol|imaging|patholog|neurolog|dermat|ophthal|psychiat|mental|rehab|pm&r|cardiol|oncol|gastro|nephro|pulmon|endocrin/i],
+  ["Community & Public Health", /community|fqhc|occupational|environmental|preventive|public health/i]
+];
+const specGroup = s => (SPEC_GROUPS.find(([, re]) => re.test(s || "")) || ["Other"])[0];
+const specKey = s => String(s || "").trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "unspecified";
+
+/* ================= derived metrics ================= */
+function metrics() {
+  const s = state.shadowing, v = state.service, p = state.profile;
+  const shThis = s.log.filter(r => inYear(r.date)).reduce((a, r) => a + num(r.hours), 0);
+  const svThis = v.log.filter(r => inYear(r.start, r.end)).reduce((a, r) => a + num(r.hours), 0);
+  const phys = new Set(s.log.map(r => (r.physician || "").trim().toLowerCase()).filter(Boolean));
+  const specs = new Set(s.log.map(r => specKey(r.specialty)).filter(k => k !== "unspecified"));
+  const groups = new Set(s.log.filter(r => filled(r.specialty)).map(r => specGroup(r.specialty)));
+  const gpaRow = [...p.gpa].reverse().find(g => filled(g.cum));
+  const yk = "y" + (pfY() + 1), ek = "ev" + (pfY() + 1);
+  const orgHours = {};
+  v.log.forEach(r => { const k = (r.org || "").trim(); if (k) orgHours[k] = (orgHours[k] || 0) + num(r.hours); });
+  const orgHas = name => v.orgs.some(o => { const a = (o.name || "").toLowerCase(), b = name.toLowerCase(); return a && (a.includes(b) || b.includes(a) || a.split(/\W+/)[0] === b.split(/\W+/)[0]); });
+  const needProfiles = Object.entries(orgHours).filter(([n, hrs]) => hrs >= 10 && !orgHas(n)).map(([n]) => n);
+  return {
+    shTotal: sum(s.log, "hours"), shThis, svTotal: sum(v.log, "hours"), svThis,
+    phys: phys.size, physList: [...new Set(s.log.map(r => (r.physician || "").trim()).filter(Boolean))],
+    specs: specs.size, groups: groups.size,
+    shRef: s.reflections.filter(r => words(r.body) >= 50).length, svRef: v.reflections.filter(r => words(r.body) >= 50).length,
+    health: v.log.filter(r => r.health === "Y").length,
+    gpa: gpaRow ? gpaRow.cum : "", rated: p.competencies.filter(c => c[yk] > 0).length, evid: p.competencies.filter(c => filled(c[ek])).length,
+    orgHours, needProfiles,
+    missingContacts: [...new Set(s.log.map(r => (r.physician || "").trim()).filter(Boolean))].filter(n => !s.physicians.some(ph => (ph.name || "").toLowerCase().includes(n.toLowerCase().replace(/^dr\.?\s*/, "").split(/[ ,]/).filter(Boolean).pop() || "~"))),
+    leader: state.leadership.activities.some(a => /lead|coordinator|president|chair|captain|director|founder|officer|treasurer|secretary|shift leader|head/i.test(a.role || "")),
+    identityWords: words(state.identity.reflection), impactWords: words(v.impact)
+  };
+}
+function requirements() {
+  const y = pfY(), m = metrics(), p = state.profile;
+  const R = [];
+  R.push({ sec: "shadowing", a: "2A", what: "Clinical shadowing hours", note: y ? "cumulative" : "this year", have: y ? m.shTotal : m.shThis, need: [20, 40, 50][y], unit: "hrs" });
+  if (y === 0) R.push({ sec: "shadowing", a: "2A", what: "Physicians shadowed", have: m.phys, need: 1 });
+  if (y === 1) R.push({ sec: "shadowing", a: "2C", what: "Physicians or specialties", have: Math.max(m.phys, m.specs), need: 2 });
+  if (y === 2) R.push({ sec: "shadowing", a: "2C", what: "Distinct specialty areas", have: m.groups, need: 3 });
+  R.push({ sec: "shadowing", a: "2D", what: "Shadowing reflections", note: "400–600 words each, cumulative", have: m.shRef, need: [1, 3, 6][y] });
+  R.push({ sec: "service", a: "3A", what: "Community service hours", note: y ? "cumulative" : "this year", have: y ? m.svTotal : m.svThis, need: [90, 180, 360][y], unit: "hrs" });
+  R.push({ sec: "service", a: "3C", what: "Service reflections", note: "400–600 words each, cumulative", have: m.svRef, need: [2, 4, 4][y] });
+  if (y === 0) R.push({ sec: "service", a: "3A", what: "Health-related service activity", have: m.health, need: 1 });
+  if (y === 1) R.push({ sec: "leadership", a: "5A", what: "Leadership role documented", have: m.leader ? 1 : 0, need: 1 });
+  if (y === 2) R.push({ sec: "service", a: "3D", what: "Impact Narrative essay", note: "600–800 words", have: m.impactWords, need: 600, unit: "words" });
+  R.push({ sec: "profile", a: "1A", what: ["CV linked", "CV updated", "CV finalized"][y], have: filled(p.cvLink) ? 1 : 0, need: 1 });
+  R.push({ sec: "profile", a: "1C", what: `Competency self-assessment, Year ${y + 1}`, note: "rating and evidence for all nine", have: Math.min(m.rated, m.evid), need: 9 });
+  if (y === 1) R.push({ sec: "academic", a: "4C", what: "Research documented", have: state.academic.research.some(r => filled(r.title) && filled(r.role)) ? 1 : 0, need: 1 });
+  if (y === 1) R.push({ sec: "profile", a: "1D", what: "Personal statement, Versions 1 and 2", have: [p.statement.v1 || p.statement.v1Link, p.statement.v2 || p.statement.v2Link].filter(filled).length, need: 2 });
+  return R.map(r => ({ ...r, done: r.have >= r.need }));
+}
+function recommended() {
+  const m = metrics(), p = state.profile, a = state.academic, l = state.leadership;
+  return [
+    { sec: "about", a: "", what: "Bio (3–5 sentences)", done: words(state.about.bio) >= 40 },
+    { sec: "about", a: "", what: "Program Manager named", done: filled(state.about.pmName) },
+    { sec: "profile", a: "1B", what: "GPA summary entered", done: filled(m.gpa) },
+    { sec: "profile", a: "1B", what: "Unofficial transcript linked", done: filled(p.transcriptLink) },
+    { sec: "shadowing", a: "2B", what: "Contact record for every physician", done: m.phys > 0 && !m.missingContacts.length },
+    { sec: "service", a: "3B", what: "Profile for each organization with 10+ hours", done: !m.needProfiles.length && state.service.orgs.length > 0 },
+    { sec: "academic", a: "4A", what: "2–3 academic artifacts with cover sheets", done: a.artifacts.filter(x => filled(x.title)).length >= 2 },
+    { sec: "academic", a: "4B", what: "MCAT preparation record started", done: filled(a.mcat.taken) && (filled(a.mcat.planned) || filled(a.mcat.score)) },
+    { sec: "academic", a: "4C", what: "Research involvement documented", done: a.research.some(r => filled(r.title) && filled(r.pi)) },
+    { sec: "leadership", a: "5B", what: "Workshops and program events logged", done: l.events.length > 0 },
+    { sec: "leadership", a: "5C", what: "Program Manager meeting recorded", done: l.meetings.length > 0 },
+    { sec: "identity", a: "6", what: "Professional identity reflection (300–500 words)", done: m.identityWords >= 300 }
+  ];
+}
+function nextUp() {
+  const m = metrics(), out = [];
+  requirements().filter(r => !r.done).forEach(r => {
+    const left = Math.max(0, r.need - r.have);
+    let t = r.what, d = `${fmtH(r.have)} of ${r.need}${r.unit ? " " + r.unit : ""}`;
+    if (r.unit === "hrs") t = `Log ${fmtH(left)} more ${r.what.toLowerCase().replace(" hours", "")} hours`;
+    if (/reflections/.test(r.what)) t = `Write ${left} more ${r.what.toLowerCase()}`;
+    out.push({ sec: r.sec, a: r.a, t, d, req: true });
+  });
+  if (m.missingContacts.length) out.push({ sec: "shadowing", a: "2B", t: `Add contact records for ${m.missingContacts.join(", ")}`, d: "Physicians in your log without a contact row" });
+  if (m.needProfiles.length) out.push({ sec: "service", a: "3B", t: `Add an organization profile for ${m.needProfiles.join(", ")}`, d: "Organizations with 10+ logged hours" });
+  recommended().filter(r => !r.done && !/contact|organization/i.test(r.what)).forEach(r => out.push({ sec: r.sec, a: r.a, t: r.what, d: "Recommended" }));
+  return out;
+}
+function completeness() {
+  const all = [...requirements(), ...recommended()];
+  return SECS.map(sec => { const items = all.filter(i => i.sec === sec); const done = items.filter(i => i.done).length; return { sec, done, total: items.length, pct: items.length ? Math.round(done / items.length * 100) : 100 }; });
+}
+
+/* ================= persistence (db) ================= */
+const Store = {
+  db: null, mode: "loading", canWrite: true, timers: {}, busy: {}, again: {}, dirty: new Set(), msg: "", isStatic: !window.claude, draftAt: 0, exportedAt: 0,
+  queue(sec) {
+    if (this.mode === "static") {
+      if (!this.canWrite) return;
+      clearTimeout(this.timers._local);
+      this.timers._local = setTimeout(() => {
+        try { localStorage.setItem("rr-draft", JSON.stringify({ at: Date.now(), data: snapshotData() })); this.draftAt = Date.now(); this.msg = ""; }
+        catch (e) { this.msg = "Couldn't save in this browser"; }
+        updateStatus();
+      }, 500);
+      this.draftAt = Date.now(); updateStatus(); return;
+    }
+    if (this.mode === "local" || !this.canWrite) { updateStatus(); return; }
+    this.dirty.add(sec); clearTimeout(this.timers[sec]);
+    this.timers[sec] = setTimeout(() => this.flush(sec), 800); updateStatus();
+  },
+  async flush(sec) {
+    if (!this.db || !this.canWrite) return;
+    if (this.busy[sec]) { this.again[sec] = true; return; }
+    this.busy[sec] = true; this.dirty.delete(sec); updateStatus();
+    try { await this.db.doc("portfolio/" + sec).set(clone(state[sec])); this.msg = ""; }
+    catch (e) {
+      const c = e && e.code;
+      if (c === "invalid_argument" || c === "not_granted" || c === "revoked") { this.canWrite = false; this.msg = "View only"; Notes.editing = false; Notes.render(); }
+      else if (c === "quota_exceeded") this.msg = "Storage is full";
+      else if (c === "unavailable" || c === "resource_exhausted") { this.busy[sec] = false; setTimeout(() => this.queue(sec), 1500 + Math.random() * 1500); updateStatus(); return; }
+      else this.msg = "Couldn't save";
+    }
+    this.busy[sec] = false;
+    if (this.again[sec]) { this.again[sec] = false; this.flush(sec); }
+    updateStatus();
+  },
+  saving() { return this.dirty.size > 0 || Object.values(this.busy).some(Boolean); },
+  async init() {
+    if (this.isStatic) {
+      this.mode = "static";
+      let owner = false;
+      try {
+        owner = localStorage.getItem("rr-owner") === "1";
+        if (location.hash === "#edit") { localStorage.setItem("rr-owner", "1"); owner = true; }
+        if (location.hash === "#view") { localStorage.removeItem("rr-owner"); owner = false; }
+      } catch (e) { owner = location.hash === "#edit"; }
+      if (location.hash === "#edit" || location.hash === "#view") { try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {} }
+      this.canWrite = owner;
+      if (owner) {
+        try {
+          const d = JSON.parse(localStorage.getItem("rr-draft") || "null");
+          this.exportedAt = +localStorage.getItem("rr-exported") || 0;
+          if (d && d.data) { SECS.forEach(sc => { if (d.data[sc]) state[sc] = normalize(sc, d.data[sc]); }); this.draftAt = d.at || 0; }
+        } catch (e) {}
+      }
+      updateStatus(); return;
+    }
+    let db = null, user = null;
+    try { db = window.claude && claude.use ? await claude.use("db") : null; } catch (e) { db = null; }
+    try { user = window.claude && claude.use ? await claude.use("user") : null; } catch (e) { user = null; }
+    if (!db) { this.mode = "local"; updateStatus(); return; }
+    this.db = db; this.mode = "live";
+    try { if (user) { const c = await user.can("data.write"); if (c === false) this.canWrite = false; } } catch (e) {}
+    SECS.forEach(sec => {
+      db.doc("portfolio/" + sec).onSnapshot(snap => {
+        if (this.dirty.has(sec) || this.busy[sec] || (snap.metadata && snap.metadata.hasPendingWrites)) return;
+        const next = snap.exists ? normalize(sec, clone(snap.data())) : DEFAULTS()[sec];
+        if (JSON.stringify(next) === JSON.stringify(state[sec])) return;
+        state[sec] = next; remoteChanged();
+      }, err => { if (err && err.code === "revoked") { this.canWrite = false; this.msg = "View only"; updateStatus(); } });
+    });
+    updateStatus();
+  }
+};
+let remoteTimer = null;
+function remoteChanged() { clearTimeout(remoteTimer); remoteTimer = setTimeout(() => refreshAll(true), 120); }
+function touched(sec) {
+  state[sec]._updated = todayISO();
+  Store.queue(sec);
+  Notes.live();
+  clearTimeout(touched.t); touched.t = setTimeout(() => refreshAll(false), 400);
+}
+function refreshAll(remote) {
+  if (remote) {
+    const ae = document.activeElement;
+    const typing = ae && ae.closest && ae.closest(".pn .note") && (ae.isContentEditable || ae.tagName === "INPUT");
+    if (typing) Notes.live(); else Notes.render();
+  } else Notes.rail();
+  if (wins.calendar) renderCalendar(wins.calendar);
+  if (wins.notes) Notes.toolbar();
+  renderDock();
+}
+function updateStatus() { if (wins.notes) Notes.toolbar(); }
+function statusText() {
+  if (Store.msg) return Store.msg;
+  if (Store.mode === "static") { if (!Store.canWrite) return ""; return Store.draftAt > Store.exportedAt ? "Saved in this browser · export to publish" : "Matches the published file"; }
+  if (Store.mode === "loading") return "Loading…";
+  if (Store.mode === "local") return "Changes stay in this view";
+  if (!Store.canWrite) return "View only";
+  return Store.saving() ? "Saving…" : "Saved";
+}
+
+/* ================= Notes app ================= */
+const NOTE_LIST = [
+  { id: "tracker", title: "Summary Tracker", label: "Live", pinned: true },
+  { id: "about", title: "About Me", label: "Home", pinned: true },
+  { id: "profile", title: "Personal Profile & CV", label: "Section 1" },
+  { id: "shadowing", title: "Clinical Shadowing Log", label: "Section 2" },
+  { id: "service", title: "Community Service", label: "Section 3" },
+  { id: "academic", title: "Academic Work & Research", label: "Section 4" },
+  { id: "leadership", title: "Leadership & Development", label: "Section 5" },
+  { id: "identity", title: "Professional Identity", label: "Section 6" }
+];
+const Notes = {
+  current: "tracker", editing: false, query: "", computed: [], root: null, showNote: true,
+  open(id, anchor) {
+    if (id) this.current = id;
+    this.showNote = true;
+    if (!this.root) return;
+    this.render();
+    const sc = this.root.querySelector(".scroll");
+    if (anchor) { const t = this.root.querySelector(`[data-anchor="${anchor}"]`); if (t) { sc.scrollTop = t.offsetTop - 10; t.animate && !reduced() && t.animate([{ background: "var(--n-accent-soft)" }, { background: "transparent" }], { duration: 1400 }); } }
+    else sc.scrollTop = 0;
+  },
+  mount(win) {
+    const body = win.el.querySelector(".wbody");
+    const rail = h("aside", { class: "rail" },
+      h("div", { class: "rail-head" },
+        h("div", { class: "owner" }, h("div", { class: "mono-badge", "aria-hidden": "true" }, "R"), h("div", {}, h("b", { class: "own-name" }, state.about.name), h("span", {}, "JSP Pre-Med Portfolio"))),
+        h("input", { class: "search", type: "search", placeholder: "Search portfolio", "aria-label": "Search portfolio", oninput: e => { this.query = e.target.value.toLowerCase(); this.rail(); } })),
+      h("nav", { class: "list", "aria-label": "Portfolio notes" }),
+      h("div", { class: "rail-foot" }, "Johnson Scholars Program · Penn"));
+    const pane = h("main", { class: "pane" }, h("button", { class: "back", onclick: () => { this.showNote = false; this.layout(); } }, "‹ Notes"), h("div", { class: "scroll" }));
+    this.root = h("div", { class: "pn" }, rail, pane);
+    body.replaceChildren(this.root);
+    win.el.querySelector(".tools-r").addEventListener("click", e => {
+      const b = e.target.closest("[data-nact]"); if (!b) return;
+      if (b.dataset.nact === "edit") { this.editing = !this.editing; this.render(); }
+      if (b.dataset.nact === "export") exportSite();
+    });
+    this.render();
+  },
+  layout() { if (this.root) this.root.className = "pn " + (this.showNote ? "app-note" : "app-list"); },
+  render() { if (!this.root) return; this.layout(); this.rail(); this.toolbar(); this.note(); },
+  toolbar() {
+    const w = wins.notes; if (!w) return;
+    const can = Store.canWrite && this.current !== "tracker";
+    const canExport = Store.canWrite && (Store.mode === "static" || Store.mode === "live");
+    w.el.querySelector(".tools-r").innerHTML = `<span class="notes-status" aria-live="polite">${esc(statusText())}</span>${canExport ? `<button class="nbtn" data-nact="export" title="Save this portfolio as a website file (index.html)">Export site</button>` : ""}${can ? `<button class="nbtn ${this.editing ? "primary" : ""}" data-nact="edit">${this.editing ? "Done" : "Edit"}</button>` : ""}`;
+    const nm = this.root && this.root.querySelector(".own-name"); if (nm) nm.textContent = state.about.name;
+  },
+  rail() {
+    if (!this.root) return;
+    const list = this.root.querySelector(".list");
+    const match = n => !this.query || (n.title + " " + (n.id === "tracker" ? "" : JSON.stringify(state[n.id]))).toLowerCase().includes(this.query);
+    const item = n => h("button", { class: "item", "aria-current": String(n.id === this.current), onclick: () => { this.editing = this.editing && n.id !== "tracker"; this.open(n.id); } },
+      h("div", { class: "t" }, h("span", {}, n.title), h("small", {}, n.id === "tracker" ? "now" : fmtDate(state[n.id]._updated, { month: "short", day: "numeric" }) || "—")),
+      h("div", { class: "p" }, preview(n.id)));
+    const pinned = NOTE_LIST.filter(n => n.pinned && match(n)), rest = NOTE_LIST.filter(n => !n.pinned && match(n));
+    list.replaceChildren(
+      pinned.length ? h("div", { class: "group-label" }, "Pinned") : "", ...pinned.map(item),
+      rest.length ? h("div", { class: "group-label" }, "Sections") : "", ...rest.map(item),
+      !pinned.length && !rest.length ? h("p", { class: "hint", style: "padding:12px 10px" }, `Nothing matches “${this.query}”.`) : "");
+  },
+  note() {
+    const sc = this.root.querySelector(".scroll"), y = sc.scrollTop;
+    EDIT = this.editing && Store.canWrite && this.current !== "tracker";
+    this.computed = [];
+    const id = this.current, n = NOTE_LIST.find(x => x.id === id) || NOTE_LIST[0];
+    const head = (id === "about" || id === "tracker") ? [] : [h("div", { class: "note-head" }, h("span", { class: "eyebrow" }, n.label), h("h1", {}, n.title), h("span", { class: "dateline" }, state[id]._updated ? "Updated " + fmtDate(state[id]._updated) : "Not updated yet"))];
+    sc.replaceChildren(h("article", { class: "note" + (EDIT ? " editing" : "") }, ...head, ...R[id]()));
+    sc.scrollTop = y;
+  },
+  live() { this.computed.forEach(f => { try { f(); } catch (e) {} }); }
+};
+let EDIT = false;
+const live = (el, fn) => { const run = () => { const v = fn(); if (typeof v === "string" || typeof v === "number") el.textContent = v; }; run(); Notes.computed.push(run); return el; };
+const liveFn = fn => { fn(); Notes.computed.push(fn); };
+
+/* ---------- editable primitives ---------- */
+function txt(path, { ph = "Not added yet", cls = "", single = false, tag = "div" } = {}) {
+  const el = h(tag, { class: "ed " + cls, "data-ph": EDIT ? ph : "—" });
+  el.textContent = get(path) ?? "";
+  if (EDIT) {
+    el.contentEditable = "plaintext-only";
+    if (el.contentEditable !== "plaintext-only") el.contentEditable = "true";
+    el.spellcheck = true;
+    el.addEventListener("input", () => { setP(path, el.innerText.replace(/\n$/, "")); if (!el.innerText.trim()) el.textContent = ""; });
+    if (single) el.addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); el.blur(); } });
+    el.addEventListener("paste", e => { e.preventDefault(); document.execCommand("insertText", false, (e.clipboardData || window.clipboardData).getData("text/plain")); });
+  }
+  return el;
+}
+function dateField(path) {
+  if (!EDIT) return h("span", {}, get(path) ? fmtDate(get(path)) : "—");
+  return h("input", { class: "inp", type: "date", value: get(path) || "", "aria-label": "Date", oninput: e => setP(path, e.target.value) });
+}
+function ynField(path) {
+  const v = get(path);
+  if (!EDIT) return h("span", { class: "ynv" }, v || "—");
+  return h("span", { class: "yn", role: "group", "aria-label": "Health-related" }, ["Y", "N"].map(o => h("button", { "aria-pressed": String(v === o), onclick: e => { setP(path, v === o ? "" : o); e.currentTarget.parentElement.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.textContent === get(path)))); } }, o)));
+}
+function cell(path, c) {
+  if (c.type === "date") return dateField(path);
+  if (c.type === "yn") return ynField(path);
+  return txt(path, { ph: c.ph || "", single: !c.multi });
+}
+function table(path, cols, { empty = "Nothing logged yet.", addLabel = "Add row", newRow = null, sortBy = null } = {}) {
+  const rows = get(path);
+  const order = rows.map((r, i) => i);
+  if (sortBy && !EDIT) order.sort((a, b) => (parseD(rows[a][sortBy]) || 0) - (parseD(rows[b][sortBy]) || 0));
+  const tb = h("tbody");
+  if (!rows.length) tb.append(h("tr", {}, h("td", { class: "empty", colspan: cols.length + (EDIT ? 1 : 0) }, EDIT ? empty + " Use the button below to add one." : empty)));
+  order.forEach(i => tb.append(h("tr", {},
+    cols.map(c => h("td", { class: c.cls || "" }, cell(`${path}.${i}.${c.key}`, c))),
+    EDIT && h("td", { class: "x" }, h("button", { class: "del", title: "Remove row", "aria-label": "Remove row", onclick: () => { rows.splice(i, 1); touched(path.split(".")[0]); Notes.note(); } }, "×")))));
+  return h("div", { style: "display:flex;flex-direction:column;gap:10px" },
+    h("div", { class: "tbl-wrap" }, h("table", {}, h("thead", {}, h("tr", {}, cols.map(c => h("th", { class: c.cls === "num" ? "num" : "" }, c.label)), EDIT && h("th", {}))), tb)),
+    EDIT && h("button", { class: "add", onclick: () => { rows.push(newRow ? newRow() : Object.fromEntries(cols.map(c => [c.key, ""]))); touched(path.split(".")[0]); Notes.note(); } }, "+ " + addLabel));
+}
+function kvFields(path, fields) {
+  return h("div", { class: "kv" }, fields.flatMap(f => [h("label", {}, f.label), f.type === "date" ? dateField(`${path}.${f.key}`) : f.type === "link" ? linkField(`${path}.${f.key}`, f.ph) : txt(`${path}.${f.key}`, { single: !f.multi, ph: f.ph || "Not added yet" })]));
+}
+function linkField(path, ph = "Paste a link") {
+  const v = get(path);
+  if (EDIT) return txt(path, { single: true, ph });
+  return filled(v) && /^https?:\/\//i.test(v) ? h("a", { class: "linkbtn", href: v, target: "_blank", rel: "noopener", style: "align-self:flex-start;display:inline-block" }, "Open ↗") : h("span", { class: "hint" }, filled(v) ? v : "—");
+}
+function cards(path, { titleKey = "title", titlePh = "Untitled", fields = [], empty = "None yet.", addLabel = "Add", reflection = null, extra = null } = {}) {
+  const items = get(path);
+  const wrap = h("div", { class: "cards" });
+  if (reflection && reflection.prompts) wrap.append(h("details", { class: "prompts" }, h("summary", {}, "Reflection prompts"), h("ol", {}, reflection.prompts.map(p => h("li", {}, p)))));
+  if (!items.length) wrap.append(h("div", { class: "empty-card" }, empty));
+  items.forEach((it, i) => {
+    const base = `${path}.${i}`;
+    const card = h("article", { class: "ncard" + (reflection ? " accent" : "") });
+    if (reflection) card.append(txt(`${base}.meta`, { cls: "meta", single: true, ph: reflection.metaPh }));
+    card.append(h("div", { class: "card-top" }, txt(`${base}.${titleKey}`, { cls: "card-title", ph: titlePh, single: true }),
+      EDIT && h("button", { class: "del", title: "Remove", "aria-label": "Remove", onclick: () => { items.splice(i, 1); touched(path.split(".")[0]); Notes.note(); } }, "×")));
+    if (fields.length) card.append(kvFields(base, fields));
+    if (extra) card.append(extra(it, i));
+    if (reflection) {
+      card.append(txt(`${base}.body`, { cls: "prose", ph: "Write the reflection here. Address all of the prompts." }));
+      card.append(txt(`${base}.question`, { cls: "question", ph: "Closing question this raises for you as a future physician" }));
+      const [lo, hi] = reflection.range;
+      card.append(live(h("div", { class: "wc" }), () => { const w = words(get(`${base}.body`)); const el = card.querySelector(".wc"); if (el) el.classList.toggle("ok", w >= lo && w <= hi); return `${w} words · target ${lo}–${hi}`; }));
+    }
+    wrap.append(card);
+  });
+  if (EDIT) wrap.append(h("button", { class: "add", onclick: () => { const o = { [titleKey]: "" }; fields.forEach(f => o[f.key] = ""); if (reflection) Object.assign(o, { meta: "", body: "", question: "" }); items.push(o); touched(path.split(".")[0]); Notes.note(); } }, "+ " + addLabel));
+  return wrap;
+}
+const sec = (title, code, ...kids) => h("section", { "data-anchor": code ? code.split(" ")[0] : null }, h("h2", {}, title, code && h("span", { class: "code" }, code)), ...kids);
+const hint = t => h("p", { class: "hint" }, t);
+function chipFor(r) { const st = r.done ? ["met", "Met"] : r.have > 0 ? ["prog", "In progress"] : ["none", "Not started"]; return h("span", { class: "chip " + st[0] }, st[1]); }
+function reqLine(secId) {
+  const el = h("div", { class: "reqline" });
+  liveFn(() => {
+    const rs = requirements().filter(r => r.sec === secId);
+    el.replaceChildren(h("b", {}, `${YEARS[pfY()]} requirement:`), h("span", {}, rs.map(r => `${r.what.toLowerCase()} ${fmtH(r.have)}/${r.need}${r.unit ? " " + r.unit : ""}`).join(" · ")), rs.every(r => r.done) ? h("span", { class: "chip met" }, "Met") : h("span", { class: "chip prog" }, "In progress"));
+  });
+  return el;
+}
+function statStrip(items) {
+  return h("div", { class: "stats" }, items.map(([label, fn, sub]) => h("div", { class: "stat" }, live(h("b"), fn), h("span", {}, label), sub ? live(h("small"), sub) : "")));
+}
+function checklist(list, { clickable = true } = {}) {
+  return h("div", { class: "checks" }, list.map(r => {
+    const pct = Math.min(100, r.need ? r.have / r.need * 100 : (r.done ? 100 : 0));
+    const kids = [h("div", { class: "what" }, h("span", {}, r.what), r.note && h("small", {}, r.note)),
+      r.need != null ? h("div", { class: "meter-wrap" }, h("div", { class: "meter", role: "img", "aria-label": `${fmtH(r.have)} of ${r.need}` }, h("i", { style: `width:${pct}%` })), h("span", {}, `${fmtH(r.have)} / ${r.need}${r.unit ? " " + r.unit : ""}`)) : h("span"),
+      r.need != null ? chipFor(r) : h("span", { class: "chip " + (r.done ? "met" : "none") }, r.done ? "Done" : "To do")];
+    return clickable ? h("button", { class: "check", onclick: () => Notes.open(r.sec, r.a) }, ...kids) : h("div", { class: "check" }, ...kids);
+  }));
+}
+function hbars(rows, unit) {
+  if (!rows.length) return h("div", { class: "empty-card" }, "Appears as you log hours.");
+  const max = Math.max(...rows.map(r => r[1]), 1);
+  return h("div", { class: "hbars" }, rows.map(([l, v]) => h("div", { class: "hbar", title: `${l}: ${fmtH(v)} ${unit}` }, h("span", { class: "lbl" }, l), h("span", { class: "trk" }, h("i", { style: `width:${v / max * 100}%` })), h("span", { class: "v" }, fmtH(v)))));
+}
+
+/* ---------- note renderers ---------- */
+const R = {};
+R.tracker = () => {
+  const box = h("div", { style: "display:flex;flex-direction:column;gap:28px" });
+  liveFn(() => {
+    const req = requirements(), met = req.filter(r => r.done).length, m = metrics();
+    const days = Math.ceil((dueDate() - new Date()) / 864e5), logDays = Math.ceil((logsDate() - new Date()) / 864e5);
+    const comp = completeness();
+    const pct = Math.round(req.reduce((a, r) => a + Math.min(1, r.need ? r.have / r.need : 0), 0) / req.length * 100);
+    const C = 2 * Math.PI * 38;
+    const ring = h("div", { class: "ring-big", html: `<svg viewBox="0 0 92 92" role="img" aria-label="${pct}% toward this year's requirements"><circle cx="46" cy="46" r="38" fill="none" stroke="var(--n-line)" stroke-width="8"/><circle cx="46" cy="46" r="38" fill="none" stroke="var(--n-accent)" stroke-width="8" stroke-linecap="round" stroke-dasharray="${C * pct / 100} ${C}" transform="rotate(-90 46 46)"/><text x="46" y="52" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="17" fill="var(--n-ink)">${pct}%</text></svg>` });
+    const recent = [
+      ...state.shadowing.log.map(r => ({ d: r.date, t: `Shadowed ${r.physician || "a physician"}`, s: `${fmtH(num(r.hours))} hrs · ${r.specialty || "specialty not set"}`, sec: "shadowing", a: "2A" })),
+      ...state.service.log.map(r => ({ d: r.start, t: `${r.org || "Service"}: ${r.role || "volunteer"}`, s: `${fmtH(num(r.hours))} hrs`, sec: "service", a: "3A" })),
+      ...state.leadership.events.map(r => ({ d: r.date, t: r.event || "Event", s: r.host || "", sec: "leadership", a: "5B" })),
+      ...state.leadership.meetings.map(r => ({ d: r.date, t: `Meeting with ${r.pm || "Program Manager"}`, s: r.topics || "", sec: "leadership", a: "5C" }))
+    ].filter(x => parseD(x.d)).sort((a, b) => parseD(b.d) - parseD(a.d)).slice(0, 6);
+    const shBy = {}; state.shadowing.log.forEach(r => { const k = (r.specialty || "").trim() || "Unspecified"; shBy[k] = (shBy[k] || 0) + num(r.hours); });
+    const todo = nextUp().slice(0, 6);
+    box.replaceChildren(
+      h("div", { class: "note-head" }, h("span", { class: "eyebrow" }, Store.canWrite ? "Live · updates as you edit" : "Live summary of this portfolio"), h("h1", {}, "Summary Tracker"),
+        h("div", { style: "display:flex;gap:12px;align-items:center;flex-wrap:wrap" },
+          h("div", { class: "seg", role: "group", "aria-label": "Program year" }, YEARS.map((y, i) => h("button", { "aria-pressed": String(i === pfY()), disabled: !Store.canWrite && Store.mode === "live" ? true : null, onclick: () => { state.about.pfYear = i; touched("about"); Notes.note(); } }, y))),
+          h("span", { class: "hint" }, `${2026 + pfY()}–${2027 + pfY()} portfolio`))),
+      h("div", { class: "overview" }, ring,
+        h("div", { style: "display:flex;flex-direction:column;gap:6px;min-width:0" },
+          h("div", { class: "countdown" }, h("b", {}, String(Math.max(0, days))), h("span", {}, `days until the portfolio link is due (${dueDate().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })})`)),
+          h("span", { class: "hint" }, `${met} of ${req.length} requirements met · logs must be current through ${logsDate().toLocaleDateString("en-US", { month: "long", day: "numeric" })} (${Math.max(0, logDays)} days)`))),
+      statStrip([["Shadowing hrs", () => fmtH(m.shTotal), () => `${fmtH(m.shThis)} this year`], ["Service hrs", () => fmtH(m.svTotal), () => `${fmtH(m.svThis)} this year`], ["Cumulative GPA", () => m.gpa || "—"], ["Specialties", () => String(m.specs)], ["Reflections", () => String(m.shRef + m.svRef + (m.identityWords >= 300 ? 1 : 0))]]),
+      sec("Requirements", YEARS[pfY()], hint("From the JSP portfolio guide. Select a row to open that part of the portfolio."), checklist(req)),
+      sec("Next up", null, todo.length ? h("div", { class: "todo-list" }, todo.map(t => h("button", { onclick: () => Notes.open(t.sec, t.a) }, h("span", { class: "ring" }), h("span", {}, t.t, h("small", {}, t.d))))) : h("div", { class: "empty-card" }, "Everything for this year is complete.")),
+      sec("Section completeness", null, h("div", { class: "checks" }, comp.map(c => { const n = NOTE_LIST.find(x => x.id === c.sec); return h("button", { class: "check", onclick: () => Notes.open(c.sec) }, h("div", { class: "what" }, h("span", {}, n.title), h("small", {}, n.label)), h("div", { class: "meter-wrap" }, h("div", { class: "meter" }, h("i", { style: `width:${c.pct}%` })), h("span", {}, `${c.done} / ${c.total} items`)), h("span", { class: "chip " + (c.pct === 100 ? "met" : c.done ? "prog" : "none") }, c.pct + "%")); }))),
+      h("div", { class: "two" },
+        sec("Shadowing hours by specialty", null, hbars(Object.entries(shBy).sort((a, b) => b[1] - a[1]), "hrs")),
+        sec("Service hours by organization", null, hbars(Object.entries(m.orgHours).sort((a, b) => b[1] - a[1]), "hrs"))),
+      sec("Recent activity", null, recent.length ? h("div", { class: "todo-list" }, recent.map(r => h("button", { onclick: () => Notes.open(r.sec, r.a) }, h("span", { class: "dateline", style: "min-width:92px" }, fmtDate(r.d)), h("span", {}, r.t, h("small", {}, r.s))))) : h("div", { class: "empty-card" }, "Dated log entries, events and meetings show up here."))
+    );
+  });
+  return [box];
+};
+R.about = () => {
+  const a = state.about;
+  const parts = (a.name || "R").trim().split(/\s+/);
+  const initials = (parts[0][0] + (parts.length > 1 ? parts[parts.length - 1][0] : "")).toUpperCase();
+  const m = () => metrics();
+  return [
+    h("div", { class: "hero" }, h("div", { class: "portrait", "aria-hidden": "true" }, initials),
+      h("div", { class: "note-head" }, h("span", { class: "eyebrow" }, "Pre-Medical Electronic Portfolio"), txt("about.name", { tag: "h1", single: true }),
+        h("div", { class: "badges" }, ["yearLabel", "major", "school", "hometown"].map(k => EDIT ? h("span", { class: "badge" }, txt("about." + k, { single: true, tag: "span" })) : filled(a[k]) && h("span", { class: "badge" }, a[k]))),
+        h("span", { class: "dateline" }, a._updated ? "Updated " + fmtDate(a._updated) : ""))),
+    sec("About", null, txt("about.bio", { cls: "prose", ph: "A 3–5 sentence bio: who you are and why you are pursuing medicine." })),
+    statStrip([["Shadowing hrs", () => fmtH(m().shTotal)], ["Service hrs", () => fmtH(m().svTotal)], ["Cumulative GPA", () => m().gpa || "—"], ["Specialties", () => String(m().specs)]]),
+    h("article", { class: "ncard accent" },
+      h("h3", {}, "About this portfolio"),
+      h("p", { class: "hint", style: "font-size:14px;color:var(--n-ink)" }, "A living record reviewed each year by my Program Manager. It tracks growth across clinical exposure, community engagement and academic preparation through logs and written reflections. It is not a résumé; it is evidence of growth and intentionality."),
+      h("div", { class: "kv" }, h("label", {}, "Program Manager"), txt("about.pmName", { single: true, ph: "Program Manager's name" }), h("label", {}, "Program"), txt("about.program", { single: true }),
+        h("label", {}, "Logs current through"), live(h("div"), () => logsDate().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })),
+        h("label", {}, "Submission"), live(h("div"), () => `Due ${dueDate().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}`)),
+      h("p", { class: "hint" }, "Confidential, for advising purposes only.")),
+    sec("In this portfolio", null, h("div", { class: "checks" }, NOTE_LIST.filter(n => n.id !== "about").map(n => h("button", { class: "check", style: "grid-template-columns:90px 1fr auto", onclick: () => Notes.open(n.id) },
+      h("span", { class: "eyebrow" }, n.label), h("span", {}, n.title), live(h("span", { class: "chip none" }), () => preview(n.id).slice(0, 38))))))
+  ];
+};
+R.profile = () => {
+  const p = state.profile, yk = pfY() + 1;
+  return [
+    sec("Curriculum vitae", "1A",
+      h("div", { class: "filebox" }, h("span", { class: "fi", "aria-hidden": "true" }, "📄"),
+        h("div", { class: "fx" }, EDIT ? txt("profile.cvName", { single: true, ph: "File name, e.g. Ria_Rana_CV_2026.pdf", tag: "b" }) : h("b", {}, p.cvName || "CV not linked yet"),
+          h("span", { class: "hint" }, "Last updated: ", EDIT ? dateField("profile.cvUpdated") : (p.cvUpdated ? fmtDate(p.cvUpdated) : "—"))),
+        linkField("profile.cvLink", "Paste a shareable Google Drive or PDF link")),
+      h("h3", {}, "Highlights"), txt("profile.highlights", { ph: "Education, research, leadership and honors in a few lines." })),
+    sec("GPA & academic summary", "1B", h("div", { class: "kv" }, h("label", {}, "Unofficial transcript"), linkField("profile.transcriptLink")),
+      table("profile.gpa", [{ key: "term", label: "Academic term", ph: "Fall 2025" }, { key: "cum", label: "Cumulative GPA", cls: "num" }, { key: "sci", label: "Science GPA (BCPM)", cls: "num" }, { key: "credits", label: "Credit hours", cls: "num" }], { addLabel: "Add term" })),
+    sec("AAMC core competency self-assessment", "1C",
+      hint(`Rated each year as a growth tool, not a performance evaluation. Evidence: 3–4 sentences for Year ${yk}.`),
+      h("div", { class: "scale" }, [["1", "Beginning exposure"], ["2", "Developing"], ["3", "Proficient"], ["4", "Exemplary"]].map(([n, t]) => h("span", {}, h("b", {}, n), " ", t))),
+      h("div", {}, p.competencies.map((c, i) => h("div", { class: "comp" },
+        h("div", { class: "name" }, c.name), h("div", { class: "desc" }, c.desc),
+        h("div", { class: "rates" }, ["y1", "y2", "y3"].map((y, yi) => h("div", { class: "rate" + (yi === pfY() ? " cur" : "") },
+          EDIT ? h("div", { class: "dots", role: "radiogroup", "aria-label": `${c.name}, Year ${yi + 1}` }, [1, 2, 3, 4].map(n => h("button", { class: "dot" + (c[y] >= n ? " on" : ""), title: `Rate ${n}`, "aria-label": `Rate ${n}`, onclick: () => { c[y] = c[y] === n ? 0 : n; touched("profile"); Notes.note(); } })))
+            : h("span", { class: "pill p" + (c[y] || 0), "aria-label": `Year ${yi + 1}: ${c[y] || "not rated"}` }, c[y] || "–"),
+          h("small", {}, `Yr ${yi + 1}`)))),
+        h("div", { class: "evidence" }, h("small", {}, `Evidence · Year ${yk}`), txt(`profile.competencies.${i}.ev${yk}`, { ph: EDIT ? "Evidence and justification for this year's rating" : "No evidence written yet" }),
+          ...[1, 2, 3].filter(k => k !== yk && filled(c["ev" + k])).map(k => h("details", { class: "prompts" }, h("summary", {}, `Year ${k} evidence`), h("div", { style: "margin-top:6px" }, txt(`profile.competencies.${i}.ev${k}`))))))))),
+    sec("Personal statement", "1D · Junior year", hint("5,300 characters or fewer (the AMCAS limit). Include Version 1, Version 2, and a note on what changed between drafts and why."),
+      h("div", { class: "cards" }, ["v1", "v2"].map((v, i) => h("article", { class: "ncard" }, h("div", { class: "card-top" }, h("h3", {}, `Version ${i + 1}`), linkField(`profile.statement.${v}Link`, "Optional link to the draft")),
+        txt(`profile.statement.${v}`, { cls: "prose", ph: i ? "Revised draft." : "Draft due by the end of junior year." }),
+        live(h("div", { class: "wc" }), () => `${(get("profile.statement." + v) || "").length.toLocaleString()} / 5,300 characters`))),
+        h("article", { class: "ncard accent" }, h("h3", {}, "What changed between drafts"), txt("profile.statement.changes", { ph: "A brief note on the revision and the feedback behind it." }))))
+  ];
+};
+R.shadowing = () => {
+  const s = state.shadowing, m = metrics();
+  const bySpec = {};
+  s.log.forEach(r => { if (!filled(r.specialty)) return; const k = specKey(r.specialty); bySpec[k] = bySpec[k] || { name: r.specialty.trim(), hrs: 0, group: specGroup(r.specialty) }; bySpec[k].hrs += num(r.hours); });
+  const groups = {}; Object.entries(bySpec).forEach(([k, v]) => (groups[v.group] = groups[v.group] || []).push([k, v]));
+  const groupOrder = [...SPEC_GROUPS.map(g => g[0]), "Other"].filter(g => groups[g]);
+  return [
+    reqLine("shadowing"),
+    statStrip([["Hours logged", () => fmtH(metrics().shTotal), () => `${fmtH(metrics().shThis)} this year`], ["Physicians", () => String(metrics().phys)], ["Specialties", () => String(metrics().specs)], ["Reflections", () => String(metrics().shRef)]]),
+    sec("Shadowing activity log", "2A", hint("Log each session as it happens. This information may be verified."),
+      table("shadowing.log", [{ key: "date", label: "Date", type: "date" }, { key: "hours", label: "Hrs", cls: "num" }, { key: "physician", label: "Physician", ph: "Dr. Name, MD" }, { key: "specialty", label: "Specialty / setting", ph: "Internal Medicine" }, { key: "site", label: "Site" }, { key: "notes", label: "Observation notes", cls: "wide", multi: true }],
+        { empty: "No shadowing sessions logged yet.", addLabel: "Log a session", sortBy: "date", newRow: () => ({ date: todayISO(), hours: "", physician: "", specialty: "", site: "", notes: "" }) }),
+      h("div", { class: "totals" }, h("span", {}, "Total this year: ", live(h("b"), () => fmtH(metrics().shThis) + " hrs")), h("span", {}, "Cumulative: ", live(h("b"), () => fmtH(metrics().shTotal) + " hrs")))),
+    sec("Physician contact records", "2B",
+      table("shadowing.physicians", [{ key: "name", label: "Physician & credentials" }, { key: "specialty", label: "Specialty" }, { key: "institution", label: "Institution / practice" }, { key: "contact", label: "Email or phone" }], { empty: "No physicians recorded yet.", addLabel: "Add physician" }),
+      EDIT && m.missingContacts.length ? h("div", { class: "suggest" }, "From your log:", m.missingContacts.map(n => h("button", { onclick: () => { const r = s.log.find(x => (x.physician || "").trim() === n) || {}; s.physicians.push({ name: n, specialty: r.specialty || "", institution: r.site || "", contact: "" }); touched("shadowing"); Notes.note(); } }, "+ " + n))) : ""),
+    sec("Specialty exposure", "2C", hint("Built from the log. The goal is at least 3 distinct areas by senior year. Add a one or two sentence takeaway for each."),
+      groupOrder.length ? h("div", { class: "tbl-wrap" }, h("table", {}, h("thead", {}, h("tr", {}, h("th", {}, "Specialty / area"), h("th", { class: "num" }, "Hrs"), h("th", {}, "Key takeaway"))),
+        h("tbody", {}, groupOrder.map(g => [h("tr", { class: "grp" }, h("td", { colspan: 3 }, g)), ...groups[g].sort((a, b) => b[1].hrs - a[1].hrs).map(([k, v]) => { if (s.takeaways[k] == null) s.takeaways[k] = ""; return h("tr", {}, h("td", {}, v.name), h("td", { class: "num" }, fmtH(v.hrs)), h("td", { class: "wide" }, txt(`shadowing.takeaways.${k}`, { ph: "One or two sentences" }))); })]))))
+        : h("div", { class: "empty-card" }, "Specialties appear here as you log sessions.")),
+    sec("Shadowing reflections", "2D", hint("400–600 words each. Title with physician, specialty and date range."),
+      cards("shadowing.reflections", { titlePh: "Reflection title", empty: "No reflections yet. Sophomore year requires one.", addLabel: "Add reflection",
+        reflection: { metaPh: "Dr. Name · Specialty · Month–Month Year", range: [400, 600], prompts: ["What did you observe about the physician-patient relationship? What surprised you about how the physician communicated, made decisions or handled uncertainty?", "Describe one specific clinical situation or patient interaction that stands out. What happened and what did you learn?", "How did this experience confirm, challenge or complicate your decision to pursue medicine?", "What questions does it raise about your specialty interests, your values or your preparation?"] } }))
+  ];
+};
+R.service = () => {
+  const v = state.service, m = metrics();
+  return [
+    reqLine("service"),
+    statStrip([["Hours logged", () => fmtH(metrics().svTotal), () => `${fmtH(metrics().svThis)} this year`], ["Organizations", () => String(Object.keys(metrics().orgHours).length || v.orgs.length)], ["Health-related", () => String(metrics().health)], ["Reflections", () => String(metrics().svRef)]]),
+    sec("Service activity log", "3A", hint("Record individual events and sustained involvement. Leave the end date blank for ongoing work."),
+      table("service.log", [{ key: "start", label: "Start", type: "date" }, { key: "end", label: "End", type: "date" }, { key: "hours", label: "Hrs", cls: "num" }, { key: "org", label: "Organization" }, { key: "role", label: "Activity / role" }, { key: "population", label: "Population served" }, { key: "health", label: "Health?", type: "yn" }, { key: "healthNote", label: "Description", cls: "wide", multi: true }],
+        { empty: "No service hours logged yet.", addLabel: "Log service", sortBy: "start", newRow: () => ({ start: todayISO(), end: "", hours: "", org: "", role: "", population: "", health: "", healthNote: "" }) }),
+      h("div", { class: "totals" }, h("span", {}, "Total this year: ", live(h("b"), () => fmtH(metrics().svThis) + " hrs")), h("span", {}, "Cumulative: ", live(h("b"), () => fmtH(metrics().svTotal) + " hrs"))),
+      h("p", { class: "hint" }, "Attach signed service logs to the organization profile below.")),
+    sec("Organization profiles", "3B", hint("One profile for each organization with 10 or more hours. Logged hours fill in from the service log."),
+      EDIT && m.needProfiles.length ? h("div", { class: "suggest" }, "Needs a profile:", m.needProfiles.map(n => h("button", { onclick: () => { v.orgs.push({ name: n, mission: "", role: "", dates: "", contact: "", resp: "", outcomes: "", logs: "" }); touched("service"); Notes.note(); } }, "+ " + n))) : "",
+      cards("service.orgs", { titleKey: "name", titlePh: "Organization name", addLabel: "Add organization", empty: "No organization profiles yet.",
+        fields: [{ key: "mission", label: "Mission / focus area", multi: true }, { key: "role", label: "Role / title" }, { key: "dates", label: "Dates of involvement" }, { key: "contact", label: "Supervisor & email" }, { key: "resp", label: "Key responsibilities", multi: true }, { key: "outcomes", label: "Notable contributions or outcomes", multi: true }, { key: "logs", label: "Signed service logs", type: "link", ph: "Link to signed logs" }],
+        extra: (o) => h("div", { class: "kv" }, h("label", {}, "Logged hours"), live(h("div", { class: "dateline", style: "font-size:13.5px;color:var(--n-ink)" }), () => { const mm = metrics(); const name = (o.name || "").toLowerCase(); let t = 0; Object.entries(mm.orgHours).forEach(([k, hrs]) => { const kk = k.toLowerCase(); if (name && (kk.includes(name) || name.includes(kk) || kk.split(/\W+/)[0] === name.split(/\W+/)[0])) t += hrs; }); return fmtH(t) + " hrs from the log"; })) })),
+    sec("Service reflections", "3C", hint("400–600 words each. Title with organization, activity type and date range."),
+      cards("service.reflections", { titlePh: "Reflection title", empty: "No reflections yet. Sophomore year requires two.", addLabel: "Add reflection",
+        reflection: { metaPh: "Organization · Activity · Dates", range: [400, 600], prompts: ["Who did you serve, and what did you learn about their community, needs or lived experiences? Did any assumptions shift?", "Describe one meaningful moment or interaction and why it stands out.", "How does this work connect to your future role as a physician? What health equity issues or social determinants of health did you observe?", "How have you grown personally, professionally, or in your understanding of service through this work?"] } })),
+    sec("Impact Narrative essay", "3D · Senior year", hint("600–800 words synthesizing three years of service: populations served, cumulative impact, the physician you want to become, and one health equity issue you will work on."),
+      h("article", { class: "ncard accent" }, txt("service.impact", { cls: "prose", ph: "Due with the senior-year portfolio." }), live(h("div", { class: "wc" }), () => `${words(state.service.impact)} words · target 600–800`)))
+  ];
+};
+R.academic = () => [
+  sec("Artifact cover sheets", "4A", hint("Two or three academic artifacts per year, each with a cover sheet and a link."),
+    cards("academic.artifacts", { titlePh: "Artifact title", empty: "No artifacts added yet.", addLabel: "Add artifact",
+      fields: [{ key: "course", label: "Course / context" }, { key: "term", label: "Semester & year" }, { key: "instructor", label: "Instructor" }, { key: "competencies", label: "AAMC competencies shown" }, { key: "why", label: "Why I selected it (2–3 sentences)", multi: true }, { key: "readiness", label: "What it shows about readiness for medicine (3–4 sentences)", multi: true }, { key: "revise", label: "What I would revise and why", multi: true }, { key: "link", label: "Artifact file", type: "link", ph: "Link to the artifact" }] })),
+  sec("MCAT preparation record", "4B", h("article", { class: "ncard" }, kvFields("academic.mcat", [{ key: "taken", label: "Taken the MCAT?", ph: "Yes / No" }, { key: "score", label: "Official score & test date" }, { key: "planned", label: "Planned test date" }, { key: "resources", label: "Preparation resources", multi: true }, { key: "practice", label: "Diagnostic / practice scores", multi: true }, { key: "target", label: "Target score & rationale", multi: true }, { key: "strengths", label: "Areas of strength", multi: true }, { key: "improve", label: "Areas to improve & study plan", multi: true }]))),
+  sec("Research involvement", "4C", hint("Lab work, independent study, summer programs or community-based research. With no research yet, document the plan."),
+    cards("academic.research", { titlePh: "Project name", addLabel: "Add research", empty: "No research documented yet.",
+      fields: [{ key: "pi", label: "PI / supervisor & contact" }, { key: "lab", label: "Institution / lab" }, { key: "dates", label: "Dates of involvement" }, { key: "role", label: "Role & responsibilities", multi: true }, { key: "methods", label: "Research question / methods", multi: true }, { key: "outputs", label: "Products / outputs", multi: true }, { key: "skills", label: "Skills gained", multi: true }, { key: "influence", label: "How it shaped my interest in medicine", multi: true }] }))
+];
+R.leadership = () => [
+  sec("Leadership & extracurricular activity log", "5A", table("leadership.activities", [{ key: "org", label: "Organization / activity" }, { key: "role", label: "Role / title" }, { key: "dates", label: "Dates" }, { key: "hrs", label: "Hrs/wk", cls: "num" }, { key: "notes", label: "Key contributions or takeaways", cls: "wide", multi: true }], { addLabel: "Add activity", empty: "No activities yet." })),
+  sec("Workshops, conferences & program events", "5B", table("leadership.events", [{ key: "date", label: "Date", type: "date" }, { key: "event", label: "Event / workshop" }, { key: "host", label: "Host" }, { key: "takeaway", label: "Key takeaway (2–3 sentences)", cls: "wide", multi: true }], { empty: "No events recorded yet.", addLabel: "Add event", sortBy: "date", newRow: () => ({ date: todayISO(), event: "", host: "", takeaway: "" }) })),
+  sec("Program Manager meeting record", "5C", table("leadership.meetings", [{ key: "date", label: "Date", type: "date" }, { key: "pm", label: "Program Manager" }, { key: "topics", label: "Topics discussed", cls: "wide", multi: true }, { key: "actions", label: "Action items / next steps", cls: "wide", multi: true }], { empty: "No meetings recorded yet.", addLabel: "Add meeting", sortBy: "date", newRow: () => ({ date: todayISO(), pm: state.about.pmName || "", topics: "", actions: "" }) }))
+];
+R.identity = () => [
+  sec("Annual identity reflection", "6", hint("300–500 words each year, judged on depth, honesty and self-awareness."),
+    h("details", { class: "prompts" }, h("summary", {}, "Reflection prompts"), h("ol", {},
+      h("li", {}, "Describe your professional identity as a pre-medical student right now. How do your background, values and experiences inform the physician you want to become?"),
+      h("li", {}, "Which parts of your identity (cultural, racial, socioeconomic, linguistic or otherwise) do you believe will be assets in your practice? Have experiences in health or service settings shaped how you think about them?"),
+      h("li", {}, "What challenges did you face this year, how did you navigate them, and what did they teach you about your resilience, limits or need for support?"))),
+    h("article", { class: "ncard accent" }, txt("identity.reflection", { cls: "prose", ph: "Not written yet." }), live(h("div", { class: "wc" }), () => `${words(state.identity.reflection)} words · target 300–500`)))
+];
+function preview(id) {
+  const s = state, m = metrics();
+  switch (id) {
+    case "tracker": { const r = requirements(); return `${r.filter(x => x.done).length} of ${r.length} requirements met · ${YEARS[pfY()]}`; }
+    case "about": return s.about.bio || s.about.major;
+    case "profile": return `${m.gpa ? "GPA " + m.gpa + " · " : ""}${m.rated}/9 competencies rated`;
+    case "shadowing": return `${fmtH(m.shTotal)} hrs · ${s.shadowing.log.length} sessions · ${m.phys} physicians`;
+    case "service": return `${fmtH(m.svTotal)} hrs · ${Object.keys(m.orgHours).join(", ") || s.service.orgs.map(o => o.name).filter(Boolean).join(", ") || "nothing logged yet"}`;
+    case "academic": return s.academic.research.map(r => r.title).filter(Boolean).join(", ") || `${s.academic.artifacts.length} artifacts`;
+    case "leadership": return `${s.leadership.activities.length} activities · ${s.leadership.meetings.length} PM meetings`;
+    case "identity": return s.identity.reflection ? `${words(s.identity.reflection)} words` : "Not written yet";
+  }
+  return "";
+}
+
+/* ================= Finder file system ================= */
+const TAGS = { clinical: ["Clinical", "var(--t-clinical)"], service: ["Service", "var(--t-service)"], research: ["Research", "var(--t-research)"], leadership: ["Leadership", "var(--t-leadership)"], reflection: ["Reflection", "var(--t-reflection)"] };
+const F = (name, emoji, sec, a, data, tags, pv) => ({ name, emoji, type: "note", sec, a, data, tags: tags || [], pv });
+const FS = {
+  home: { name: "ria", type: "folder", children: ["about", "portfolio", "tracker"] },
+  about: { name: "About Me", type: "folder", children: ["about-me", "photo"] },
+  portfolio: { name: "Portfolio", type: "folder", children: ["s1", "s2", "s3", "s4", "s5", "s6"] },
+  s1: { name: "1 · Profile & CV", type: "folder", children: ["cv", "gpa", "competencies", "statement"] },
+  s2: { name: "2 · Clinical Shadowing", type: "folder", children: ["shadow-log", "physicians", "specialties", "shadow-reflections"] },
+  s3: { name: "3 · Community Service", type: "folder", children: ["service-log", "orgs", "service-reflections", "impact"] },
+  s4: { name: "4 · Academic Work & Research", type: "folder", children: ["artifacts", "mcat", "research"] },
+  s5: { name: "5 · Leadership & Development", type: "folder", children: ["activities", "workshops", "pm-meetings"] },
+  s6: { name: "6 · Professional Identity", type: "folder", children: ["identity"] },
+  trash: { name: "Trash", type: "folder", children: [] },
+  tracker: F("Summary Tracker", "📊", "tracker", "", "", [], () => preview("tracker")),
+  "about-me": F("about me", "👋", "about", "", "about", [], () => preview("about")),
+  photo: { name: "photo.png", type: "image" },
+  cv: F("curriculum vitae", "📄", "profile", "1A", "profile.cvName profile.highlights", [], () => state.profile.cvName || "CV link not added"),
+  gpa: F("gpa summary", "📊", "profile", "1B", "profile.gpa", [], () => metrics().gpa ? "Cumulative GPA " + metrics().gpa : "GPA not entered"),
+  competencies: F("competency self-assessment", "🧭", "profile", "1C", "profile.competencies", ["reflection"], () => `${metrics().rated}/9 rated for Year ${pfY() + 1}`),
+  statement: F("personal statement", "✍️", "profile", "1D", "profile.statement", ["reflection"], () => "Junior year · V1 and V2"),
+  "shadow-log": F("shadowing log", "🩺", "shadowing", "2A", "shadowing.log", ["clinical"], () => `${fmtH(metrics().shTotal)} hrs · ${state.shadowing.log.length} sessions`),
+  physicians: F("physician contacts", "📇", "shadowing", "2B", "shadowing.physicians", ["clinical"], () => `${state.shadowing.physicians.length} physicians`),
+  specialties: F("specialty exposure", "🗂️", "shadowing", "2C", "shadowing.takeaways", ["clinical"], () => `${metrics().specs} specialties`),
+  "shadow-reflections": F("shadowing reflections", "💭", "shadowing", "2D", "shadowing.reflections", ["clinical", "reflection"], () => `${state.shadowing.reflections.length} written`),
+  "service-log": F("service log", "🤝", "service", "3A", "service.log", ["service"], () => `${fmtH(metrics().svTotal)} hrs logged`),
+  orgs: F("organization profiles", "🏥", "service", "3B", "service.orgs", ["service"], () => state.service.orgs.map(o => o.name).filter(Boolean).join(", ") || "None yet"),
+  "service-reflections": F("service reflections", "💭", "service", "3C", "service.reflections", ["service", "reflection"], () => `${state.service.reflections.length} written`),
+  impact: F("impact narrative", "🌍", "service", "3D", "service.impact", ["service", "reflection"], () => "Senior year · 600–800 words"),
+  artifacts: F("artifact cover sheets", "🏛️", "academic", "4A", "academic.artifacts", ["research"], () => `${state.academic.artifacts.length} artifacts`),
+  mcat: F("mcat record", "📚", "academic", "4B", "academic.mcat", [], () => state.academic.mcat.planned ? "Planned " + state.academic.mcat.planned : "Plan not set"),
+  research: F("research involvement", "🔬", "academic", "4C", "academic.research", ["research"], () => state.academic.research.map(r => r.title).filter(Boolean).join(", ") || "None yet"),
+  activities: F("activity log", "🌱", "leadership", "5A", "leadership.activities", ["leadership"], () => `${state.leadership.activities.length} activities`),
+  workshops: F("workshops & events", "🎤", "leadership", "5B", "leadership.events", ["leadership"], () => `${state.leadership.events.length} events`),
+  "pm-meetings": F("program manager meetings", "🗓️", "leadership", "5C", "leadership.meetings", ["leadership"], () => `${state.leadership.meetings.length} meetings`),
+  identity: F("identity reflection", "🪞", "identity", "6", "identity.reflection", ["reflection"], () => preview("identity"))
+};
+const PARENT = {};
+Object.entries(FS).forEach(([id, n]) => (n.children || []).forEach(c => PARENT[c] = id));
+const textOf = id => { const n = FS[id]; const data = (n.data || "").split(" ").filter(Boolean).map(p => JSON.stringify(get(p) ?? "")).join(" "); return (n.name + " " + data).toLowerCase(); };
+
+/* ================= icons ================= */
+const SVG_FOLDER = `<svg viewBox="0 0 64 52" aria-hidden="true"><path d="M4 9a4 4 0 0 1 4-4h15l5 5h28a4 4 0 0 1 4 4v4H4z" fill="var(--folder-back)"/><rect x="4" y="14" width="56" height="34" rx="4" fill="var(--folder)"/><rect x="4" y="14" width="56" height="3" rx="1.5" fill="var(--folder-hi)"/></svg>`;
+const SVG_NOTE = `<svg viewBox="0 0 48 60" aria-hidden="true"><path d="M6 2h26l12 12v42a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" fill="#ffffff" stroke="#cfccc5"/><path d="M32 2v10a2 2 0 0 0 2 2h10" fill="#efece6" stroke="#cfccc5"/><rect x="10" y="10" width="15" height="3" rx="1.5" fill="#e9b931"/><g stroke="#d9d6cf" stroke-width="2" stroke-linecap="round"><path d="M10 24h28M10 31h28M10 38h28M10 45h18"/></g></svg>`;
+const SVG_TRACK = `<svg viewBox="0 0 48 60" aria-hidden="true"><path d="M6 2h26l12 12v42a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" fill="#ffffff" stroke="#cfccc5"/><path d="M32 2v10a2 2 0 0 0 2 2h10" fill="#efece6" stroke="#cfccc5"/><g fill="#0d6b62"><rect x="10" y="38" width="6" height="12" rx="1.5"/><rect x="20" y="30" width="6" height="20" rx="1.5"/><rect x="30" y="22" width="6" height="28" rx="1.5"/></g></svg>`;
+const SVG_IMAGE = `<svg viewBox="0 0 60 50" aria-hidden="true"><rect x="3" y="3" width="54" height="44" rx="4" fill="#ffffff" stroke="#cfccc5"/><rect x="7" y="7" width="46" height="32" rx="2" fill="#f6d38a"/><circle cx="30" cy="20" r="6" fill="#e86f6f"/><path d="M18 39a12 10 0 0 1 24 0z" fill="#e86f6f"/></svg>`;
+const iconFor = id => FS[id].type === "folder" ? SVG_FOLDER : FS[id].type === "image" ? SVG_IMAGE : id === "tracker" ? SVG_TRACK : SVG_NOTE;
+const G = {
+  home: `<svg viewBox="0 0 16 16"><path d="M2.5 7.5 8 3l5.5 4.5V13a.5.5 0 0 1-.5.5H10V10H6v3.5H3a.5.5 0 0 1-.5-.5z"/></svg>`,
+  folder: `<svg viewBox="0 0 16 16"><path d="M2 4.5A1 1 0 0 1 3 3.5h3l1.5 1.5H13a1 1 0 0 1 1 1V12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/></svg>`,
+  grid: `<svg viewBox="0 0 16 16"><rect x="2.5" y="2.5" width="4.5" height="4.5" rx="1"/><rect x="9" y="2.5" width="4.5" height="4.5" rx="1"/><rect x="2.5" y="9" width="4.5" height="4.5" rx="1"/><rect x="9" y="9" width="4.5" height="4.5" rx="1"/></svg>`,
+  list: `<svg viewBox="0 0 16 16"><path d="M5.5 4h8M5.5 8h8M5.5 12h8M2.5 4h0M2.5 8h0M2.5 12h0"/></svg>`,
+  recents: `<svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6"/><path d="M8 4.5V8l2.5 1.5"/></svg>`,
+  desktop: `<svg viewBox="0 0 16 16"><rect x="1.5" y="2.5" width="13" height="8.5" rx="1.2"/><path d="M5.5 14h5M8 11v3"/></svg>`,
+  laptop: `<svg viewBox="0 0 16 16"><rect x="3" y="3" width="10" height="7" rx="1"/><path d="M1 12.5h14"/></svg>`,
+  trash: `<svg viewBox="0 0 16 16"><path d="M3 4.5h10M6 4.5V3h4v1.5M4.2 4.5l.7 9h6.2l.7-9"/></svg>`,
+  share: `<svg viewBox="0 0 16 16"><path d="M8 10V2M5 4.5 8 1.5l3 3M3.5 7.5v6h9v-6"/></svg>`,
+  tag: `<svg viewBox="0 0 16 16"><path d="M2 2h6l6 6-6 6-6-6z"/><circle cx="5.5" cy="5.5" r="1"/></svg>`,
+  chevL: `<svg viewBox="0 0 16 16"><path d="m10 3-5 5 5 5"/></svg>`,
+  chevR: `<svg viewBox="0 0 16 16"><path d="m6 3 5 5-5 5"/></svg>`
+};
+const calIcon = () => { const d = new Date(); const dw = d.toLocaleDateString("en-US", { weekday: "short" }).toUpperCase(); return `<svg viewBox="0 0 50 50"><rect width="50" height="50" fill="#ffffff"/><text x="25" y="15" text-anchor="middle" font-family="-apple-system,system-ui,sans-serif" font-size="9" font-weight="700" fill="#f0453a">${dw}</text><text x="25" y="41" text-anchor="middle" font-family="-apple-system,system-ui,sans-serif" font-size="27" font-weight="400" fill="#1d1d1f">${d.getDate()}</text></svg>`; };
+const APP_ICONS = {
+  finder: `<svg viewBox="0 0 50 50"><defs><linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5cb8ff"/><stop offset="1" stop-color="#1f6fe0"/></linearGradient></defs><rect width="50" height="50" fill="url(#gf)"/><path d="M11 17a3 3 0 0 1 3-3h8l3 3h11a3 3 0 0 1 3 3v13a3 3 0 0 1-3 3H14a3 3 0 0 1-3-3z" fill="#ffffff" opacity=".95"/></svg>`,
+  notes: `<svg viewBox="0 0 50 50"><rect width="50" height="50" fill="#ffffff"/><rect width="50" height="14" fill="#f7c948"/><g stroke="#d8d5ce" stroke-width="1.6"><path d="M8 24h34M8 31h34M8 38h34"/></g></svg>`,
+  tracker: `<svg viewBox="0 0 50 50"><defs><linearGradient id="gt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c8a7e"/><stop offset="1" stop-color="#0b5049"/></linearGradient></defs><rect width="50" height="50" fill="url(#gt)"/><circle cx="25" cy="25" r="13" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="5"/><path d="M25 12a13 13 0 0 1 12.4 17" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/></svg>`,
+  photo: `<svg viewBox="0 0 50 50"><defs><linearGradient id="gp" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6d38a"/><stop offset="1" stop-color="#e86f6f"/></linearGradient></defs><rect width="50" height="50" fill="url(#gp)"/><circle cx="25" cy="20" r="7" fill="#ffffff" opacity=".9"/><path d="M11 41a14 11 0 0 1 28 0z" fill="#ffffff" opacity=".9"/></svg>`,
+  settings: `<svg viewBox="0 0 50 50"><defs><linearGradient id="gs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9a9aa0"/><stop offset="1" stop-color="#5b5b60"/></linearGradient></defs><rect width="50" height="50" fill="url(#gs)"/><circle cx="25" cy="25" r="13" fill="none" stroke="#e6e6ea" stroke-width="6" stroke-dasharray="4 3.2"/><circle cx="25" cy="25" r="9.5" fill="#d4d4d9"/><circle cx="25" cy="25" r="4" fill="#77777d"/></svg>`,
+  trash: `<svg viewBox="0 0 50 50"><path d="M11 12h28l-2.6 33a3 3 0 0 1-3 2.8H16.6a3 3 0 0 1-3-2.8z" fill="rgba(255,255,255,.55)" stroke="rgba(255,255,255,.85)" stroke-width="1"/><g stroke="rgba(120,120,128,.55)" stroke-width="1.2"><path d="M19 16l1 28M25 16v28M31 16l-1 28"/></g><rect x="9" y="8.5" width="32" height="4.5" rx="2" fill="rgba(255,255,255,.8)"/></svg>`
+};
+
+/* ================= mac helpers ================= */
+const screen = $("screen"), desk = $("desk");
+const isPhone = () => window.matchMedia("(max-width: 720px)").matches;
+const coarse = () => window.matchMedia("(pointer: coarse)").matches;
+const reduced = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const kindOf = id => ({ folder: "Folder", note: "Note", image: "PNG image" })[FS[id].type];
+const tagDots = id => (FS[id].tags || []).map(t => `<span class="dot" style="background:${TAGS[t][1]}"></span>`).join("");
+const allNotes = () => Object.keys(FS).filter(id => FS[id].type === "note");
+const sizeOf = id => FS[id].type === "folder" ? `${(FS[id].children || []).length} items` : FS[id].type === "image" ? "248 KB" : `${Math.max(2, Math.round(textOf(id).length / 300))} KB`;
+const storeL = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
+const pathOf = id => { if (id === "desktop" || id === "recents") return ["home", id]; const p = []; let c = id; while (c) { p.unshift(c); c = PARENT[c]; } return p; };
+const L = (id, text) => `<button class="lnk" data-open="${id}">${text}</button>`;
+
+function setTheme(t) { if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); else document.documentElement.removeAttribute("data-theme"); storeL.set("rr-theme", t); refreshOpen("settings"); }
+const curTheme = () => document.documentElement.getAttribute("data-theme") || "auto";
+function setWall(w) { $("wall").className = "wall " + w; storeL.set("rr-wall2", w); refreshOpen("settings"); }
+const curWall = () => ($("wall").className.split(" ")[1] || "hills");
+(() => { const t = storeL.get("rr-theme"); if (t && t !== "auto") document.documentElement.setAttribute("data-theme", t); $("wall").className = "wall " + (storeL.get("rr-wall2") || "hills"); })();
+
+/* ================= window manager ================= */
+let zTop = 10, cascade = 0, finderCount = 0, activeKey = null;
+const wins = {};
+function openWin(key, opts) {
+  if (wins[key]) { restore(key); focus(key); if (opts.reuse) opts.reuse(wins[key]); return wins[key]; }
+  const el = document.createElement("section");
+  el.className = "win opening " + (opts.cls || "");
+  el.setAttribute("role", "dialog");
+  const W = desk.clientWidth, H = desk.clientHeight;
+  const w = Math.min(opts.w, W - 24), hh = Math.min(opts.h, H - 96);
+  let x = opts.x ?? Math.round((W - w) / 2 - 40 + (cascade % 6) * 24);
+  let y = opts.y ?? Math.round(22 + (cascade % 6) * 24);
+  cascade++;
+  x = Math.max(8, Math.min(x, W - w - 8)); y = Math.max(4, Math.min(y, H - 140));
+  el.style.cssText = `left:${x}px;top:${y}px;width:${w}px;height:${hh}px`;
+  if (opts.noResize) el.style.resize = "none";
+  el.innerHTML = `<header class="bar"><div class="lights"><button class="l close" aria-label="Close window"></button><button class="l min" aria-label="Minimize window"></button><button class="l max" aria-label="Zoom window"></button></div><div class="tools"></div><div class="wtitle"></div><div class="tools-r"></div></header><div class="wbody"></div>`;
+  desk.appendChild(el);
+  el.addEventListener("animationend", () => el.classList.remove("opening"), { once: true });
+  const win = { key, el, app: opts.app, dockId: opts.dockId, title: "", state: opts.state || {}, render: opts.render, onClose: opts.onClose };
+  wins[key] = win;
+  const bar = el.querySelector(".bar");
+  el.querySelector(".close").onclick = e => { e.stopPropagation(); closeWin(key); };
+  el.querySelector(".min").onclick = e => { e.stopPropagation(); minimize(key); };
+  el.querySelector(".max").onclick = e => { e.stopPropagation(); el.classList.toggle("maxed"); };
+  bar.addEventListener("dblclick", e => { if (!e.target.closest("button, input")) el.classList.toggle("maxed"); });
+  el.addEventListener("pointerdown", () => focus(key));
+  bar.addEventListener("pointerdown", e => {
+    if (e.target.closest("button, input") || isPhone() || el.classList.contains("maxed")) return;
+    const sx = e.clientX, sy = e.clientY, ox = el.offsetLeft, oy = el.offsetTop;
+    bar.setPointerCapture(e.pointerId);
+    const mv = ev => { el.style.left = Math.max(-el.offsetWidth + 120, Math.min(ox + ev.clientX - sx, desk.clientWidth - 120)) + "px"; el.style.top = Math.max(0, Math.min(oy + ev.clientY - sy, desk.clientHeight - 52)) + "px"; };
+    const up = () => { bar.removeEventListener("pointermove", mv); bar.removeEventListener("pointerup", up); };
+    bar.addEventListener("pointermove", mv); bar.addEventListener("pointerup", up);
+  });
+  win.render(win);
+  focus(key);
+  bounceDock(opts.dockId);
+  return win;
+}
+function setTitle(win, t) { win.title = t; win.el.querySelector(".wtitle").textContent = t; win.el.setAttribute("aria-label", t || win.app); }
+function focus(key) { const w = wins[key]; if (!w) return; activeKey = key; w.el.style.zIndex = ++zTop; Object.values(wins).forEach(o => o.el.classList.toggle("active", o.key === key)); $("appname").textContent = w.app; renderDock(); }
+function topWin() { return Object.values(wins).filter(o => !o.min).sort((a, b) => b.el.style.zIndex - a.el.style.zIndex)[0]; }
+function afterGone() { const t = topWin(); if (t) focus(t.key); else { activeKey = null; $("appname").textContent = "Finder"; renderDock(); } }
+function closeWin(key) {
+  const w = wins[key]; if (!w) return;
+  delete wins[key]; if (w.onClose) w.onClose();
+  if (reduced()) w.el.remove(); else { w.el.classList.add("closing"); setTimeout(() => w.el.remove(), 170); }
+  afterGone();
+}
+function minimize(key) {
+  const w = wins[key]; if (!w || w.min) return;
+  w.min = true; renderDock();
+  const target = $("dock").querySelector(`[data-restore="${key}"]`) || $("dock");
+  const tr = target.getBoundingClientRect(), r = w.el.getBoundingClientRect();
+  const dx = tr.left + tr.width / 2 - (r.left + r.width / 2), dy = tr.top + tr.height / 2 - (r.top + r.height / 2);
+  if (reduced()) { w.el.hidden = true; afterGone(); return; }
+  w.el.classList.add("genie"); w.el.style.transform = `translate(${dx}px, ${dy}px) scale(.06, .04)`; w.el.style.opacity = ".2";
+  setTimeout(() => { w.el.hidden = true; w.el.classList.remove("genie"); }, 380);
+  afterGone();
+}
+function restore(key) {
+  const w = wins[key]; if (!w || !w.min) return;
+  w.min = false; w.el.hidden = false;
+  if (!reduced()) { w.el.classList.add("genie"); requestAnimationFrame(() => { w.el.style.transform = ""; w.el.style.opacity = ""; setTimeout(() => w.el.classList.remove("genie"), 380); }); }
+  else { w.el.style.transform = ""; w.el.style.opacity = ""; }
+  renderDock();
+}
+function refreshOpen(key) { if (wins[key]) wins[key].render(wins[key]); }
+
+/* ================= opening things ================= */
+function openItem(id, fromWin) {
+  const n = FS[id]; if (!n) return;
+  if (n.type === "folder") { if (fromWin && fromWin.state.finder) navigate(fromWin, id); else openFinder(id); }
+  else if (n.type === "image") openPreview();
+  else openNotes(n.sec, n.a);
+}
+function openNotes(secId, anchor) {
+  const W = desk.clientWidth;
+  const w = openWin("notes", { app: "Notes", dockId: "notes", cls: "notesapp", w: 1060, h: 660, x: isPhone() ? 0 : Math.max(20, Math.round((W - Math.min(1060, W - 24)) / 2)), y: 12,
+    render: win => { setTitle(win, ""); Notes.mount(win); },
+    onClose: () => { Notes.root = null; Notes.editing = false; } });
+  if (secId) Notes.open(secId, anchor);
+  return w;
+}
+const finderState = loc => ({ finder: true, loc, hist: [loc], idx: 0, view: "icons", sel: null, q: "" });
+function openFinder(loc = "home", pos = {}) { return openWin("finder-" + (++finderCount), { app: "Finder", dockId: "finder", cls: "finder", w: 780, h: 470, ...pos, state: finderState(loc), render: renderFinder }); }
+function navigate(win, loc) { const s = win.state; s.q = ""; if (s.loc === loc) { renderFinder(win); return; } s.hist = s.hist.slice(0, s.idx + 1); s.hist.push(loc); s.idx++; s.loc = loc; s.sel = null; renderFinder(win); }
+function locName(loc) { if (loc.startsWith("tag:")) return TAGS[loc.slice(4)][0]; return { recents: "Recents", desktop: "Desktop" }[loc] || FS[loc].name; }
+const DESK_ITEMS = ["about", "portfolio", "tracker", "photo"];
+function locItems(s) {
+  if (s.q) { const q = s.q.toLowerCase(); return Object.keys(FS).filter(id => id !== "home" && id !== "trash" && textOf(id).includes(q)); }
+  const loc = s.loc;
+  if (loc.startsWith("tag:")) { const t = loc.slice(4); return Object.keys(FS).filter(id => (FS[id].tags || []).includes(t)); }
+  if (loc === "recents") return allNotes().sort((a, b) => (state[FS[b].sec]?._updated || "").localeCompare(state[FS[a].sec]?._updated || ""));
+  if (loc === "desktop") return DESK_ITEMS;
+  return FS[loc].children || [];
+}
+const modOf = id => { const n = FS[id]; const u = n.sec && state[n.sec] && state[n.sec]._updated; if (!u) return "--"; return u === todayISO() ? "Today" : fmtDate(u); };
+function renderFinder(win) {
+  const s = win.state, el = win.el;
+  setTitle(win, s.q ? `Searching “${s.q}”` : locName(s.loc));
+  el.querySelector(".tools").innerHTML = `<button class="tb" data-act="back" aria-label="Back" ${s.idx ? "" : "disabled"}>${G.chevL}</button><button class="tb" data-act="fwd" aria-label="Forward" ${s.idx < s.hist.length - 1 ? "" : "disabled"}>${G.chevR}</button>`;
+  const searchFocused = document.activeElement && document.activeElement.dataset && document.activeElement.dataset.fq === win.key;
+  el.querySelector(".tools-r").innerHTML = `<div class="seg"><button class="tb ${s.view === "icons" ? "on" : ""}" data-act="icons" aria-label="Icon view">${G.grid}</button><button class="tb ${s.view === "list" ? "on" : ""}" data-act="list" aria-label="List view">${G.list}</button></div>
+    <button class="tb" data-act="tagmenu" aria-label="Tags">${G.tag}</button><button class="tb" data-act="share" aria-label="Share" disabled>${G.share}</button>
+    <span class="fsearch"><svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.8"/><path d="M10.5 10.5 14 14" stroke-linecap="round"/></svg><input data-fq="${win.key}" placeholder="Search" aria-label="Search" value="${esc(s.q)}"></span>`;
+  if (searchFocused) { const i = el.querySelector("[data-fq]"); i.focus(); i.setSelectionRange(i.value.length, i.value.length); }
+  const items = locItems(s); win.items = items;
+  const side = (id, glyph, label) => `<button class="si ${s.loc === id && !s.q ? "cur" : ""}" data-loc="${id}"><span class="g">${glyph}</span><span class="t2">${esc(label)}</span></button>`;
+  const sideHTML = `<h4>Favorites</h4>${side("recents", G.recents, "Recents")}${side("desktop", G.desktop, "Desktop")}${side("home", G.home, "ria")}${side("about", G.folder, "About Me")}${side("portfolio", G.folder, "Portfolio")}
+    <h4>Portfolio</h4>${["s1", "s2", "s3", "s4", "s5", "s6"].map(id => side(id, G.folder, FS[id].name.replace(/^\d · /, ""))).join("")}
+    <h4>Locations</h4>${side("home", G.laptop, "Ria's MacBook Air")}${side("trash", G.trash, "Trash")}
+    <h4>Tags</h4>${Object.entries(TAGS).map(([t, [nm, c]]) => `<button class="si ${s.loc === "tag:" + t && !s.q ? "cur" : ""}" data-loc="tag:${t}"><span class="g"><span class="dot" style="background:${c}"></span></span><span class="t2">${nm}</span></button>`).join("")}`;
+  let main;
+  if (!items.length) main = `<div class="fgrid"><div class="empty-f">${s.q ? "No results" : s.loc === "trash" ? "Trash is empty" : "No items"}</div></div>`;
+  else if (s.view === "icons") main = `<div class="fgrid">${items.map(id => `<button class="ficon ${s.sel === id ? "sel" : ""}" data-item="${id}"><span class="ic">${iconFor(id)}</span><span class="lb">${esc(FS[id].name)}</span><span class="dots">${tagDots(id)}</span></button>`).join("")}</div>`;
+  else main = `<div class="flist"><table><thead><tr><th>Name</th><th>Date Modified</th><th>Size</th><th>Kind</th></tr></thead><tbody>${items.map(id => `<tr class="row ${s.sel === id ? "sel" : ""}" data-item="${id}" tabindex="0"><td><span class="nm"><span class="mini">${iconFor(id)}</span>${esc(FS[id].name)} <span style="display:inline-flex;gap:3px">${tagDots(id)}</span></span></td><td>${modOf(id)}</td><td>${FS[id].type === "folder" ? "--" : sizeOf(id)}</td><td>${kindOf(id)}</td></tr>`).join("")}</tbody></table></div>`;
+  const crumbs = s.loc.startsWith("tag:") ? `<button data-loc="${s.loc}">${esc(locName(s.loc))}</button>` : `<button data-loc="home">Macintosh HD</button><span>›</span><button data-loc="home">Users</button><span>›</span>` + pathOf(s.loc).map(id => `<button data-loc="${id}"><span class="mini">${SVG_FOLDER}</span>${esc(locName(id))}</button>`).join("<span>›</span>");
+  el.querySelector(".wbody").innerHTML = `<aside class="fside">${sideHTML}</aside><div class="fwrap"><div class="fmain">${main}<div class="pathbar">${crumbs}<span class="cnt">${items.length} item${items.length === 1 ? "" : "s"}, 245.1 GB available</span></div></div></div>`;
+  if (!win.wired) wireFinder(win);
+}
+function finderSelect(win, id) { win.state.sel = id; win.el.querySelectorAll("[data-item]").forEach(x => x.classList.toggle("sel", x.dataset.item === id)); }
+function wireFinder(win) {
+  win.wired = true;
+  const el = win.el, s = win.state;
+  el.addEventListener("click", e => {
+    const a = e.target.closest("[data-act]");
+    if (a) {
+      const act = a.dataset.act;
+      if (act === "back") { goBack(win); return; }
+      if (act === "fwd" && s.idx < s.hist.length - 1) { s.idx++; s.loc = s.hist[s.idx]; s.sel = null; s.q = ""; }
+      if (act === "icons" || act === "list") s.view = act;
+      if (act === "tagmenu") { const r = a.getBoundingClientRect(); showMenuAt(r.left, r.bottom + 4, Object.entries(TAGS).map(([t, [nm]]) => [nm, () => navigate(win, "tag:" + t)])); return; }
+      renderFinder(win); return;
+    }
+    const l = e.target.closest("[data-loc]"); if (l) { navigate(win, l.dataset.loc); return; }
+    const it = e.target.closest("[data-item]");
+    if (it) { if (coarse()) openItem(it.dataset.item, win); else finderSelect(win, it.dataset.item); return; }
+    if (e.target.closest(".fgrid, .flist")) finderSelect(win, null);
+  });
+  el.addEventListener("dblclick", e => { const it = e.target.closest("[data-item]"); if (it) openItem(it.dataset.item, win); });
+  el.addEventListener("input", e => { if (e.target.dataset.fq) { s.q = e.target.value.trim(); s.sel = null; renderFinder(win); } });
+  el.addEventListener("contextmenu", e => { const it = e.target.closest("[data-item]"); if (!it) return; e.preventDefault(); finderSelect(win, it.dataset.item); fileMenu(e.clientX, e.clientY, it.dataset.item, win); });
+}
+function goBack(win) { const s = win.state; if (s.q) s.q = ""; else if (s.idx > 0) { s.idx--; s.loc = s.hist[s.idx]; s.sel = null; } renderFinder(win); }
+function wireLinks(win) { win.el.addEventListener("click", e => { const b = e.target.closest("[data-open]"); if (!b) return; e.preventDefault(); openItem(b.dataset.open, win); }); }
+function openPreview() {
+  return openWin("preview", { app: "Preview", dockId: "photo", w: 440, h: 420, render: win => { setTitle(win, "photo.png"); win.el.querySelector(".wbody").innerHTML = `<div class="preview"><div><div class="photo">RR</div><div style="font-weight:600">Professional photo</div><div class="sub">A headshot goes here for the Home page.</div></div></div>`; } });
+}
+function openAboutMac() {
+  return openWin("aboutmac", { app: "System Settings", cls: "slim", noResize: true, w: 300, h: 470, render: win => {
+    setTitle(win, ""); const m = metrics(), a = state.about;
+    win.el.querySelector(".wbody").innerHTML = `<div class="aboutmac"><div class="photo">RR</div><h2>${esc(a.name)}</h2><div class="ver">${esc(a.yearLabel)}</div>
+      <dl><dt>Major</dt><dd>${esc(a.major)}</dd><dt>School</dt><dd>${esc(a.school)}</dd><dt>Program</dt><dd>Johnson Scholars Program</dd><dt>Home</dt><dd>${esc(a.hometown)}</dd><dt>Shadowing</dt><dd>${fmtH(m.shTotal)} hrs</dd><dt>Service</dt><dd>${fmtH(m.svTotal)} hrs</dd></dl>
+      <button class="pill-btn" data-open="about-me">More Info…</button><div class="sub" style="margin-top:18px;font-size:11px">Portfolio for the Johnson Scholars Program<br>Perelman School of Medicine</div></div>`;
+    if (!win.wired) { win.wired = true; wireLinks(win); } } });
+}
+function openInfo(id) {
+  const n = FS[id];
+  return openWin("info:" + id, { app: "Finder", dockId: "finder", cls: "slim", noResize: true, w: 290, h: 430, render: win => {
+    setTitle(win, `${n.name} Info`);
+    const where = pathOf(PARENT[id] || "home").map(locName).join(" › ");
+    const pv = n.pv ? n.pv() : "";
+    win.el.querySelector(".wbody").innerHTML = `<div class="info"><div class="top"><span class="mi">${iconFor(id)}</span><div><b>${esc(n.name)}</b><span class="sub" style="font-size:11.5px">${sizeOf(id)}</span><div class="sub" style="font-size:11.5px">Modified: ${modOf(id)}</div></div></div>
+      <h5>General</h5><dl><dt>Kind:</dt><dd>${kindOf(id)}</dd><dt>Size:</dt><dd>${sizeOf(id)}</dd><dt>Where:</dt><dd>Macintosh HD › Users › ${esc(where)}</dd><dt>Created:</dt><dd>Thursday, October 1, 2026</dd><dt>Modified:</dt><dd>${modOf(id)}</dd></dl>
+      <h5>Tags</h5><div style="display:flex;gap:10px;flex-wrap:wrap">${(n.tags || []).map(t => `<span style="display:inline-flex;gap:5px;align-items:center"><span class="dot" style="background:${TAGS[t][1]}"></span>${TAGS[t][0]}</span>`).join("") || '<span class="sub">None</span>'}</div>
+      ${pv ? `<h5>Comments</h5><div>${esc(pv)}</div>` : ""}</div>`; } });
+}
+function openHelp() {
+  return openWin("help", { app: "Help", w: 500, h: 470, render: win => { setTitle(win, "Tips"); win.el.querySelector(".wbody").innerHTML = `<div class="docwrap"><div class="doc"><h1>Getting around</h1>
+    <ul><li>Open <b>Notes</b> to read and edit the portfolio. Select <b>Edit</b> in the title bar to change anything; edits save automatically.</li>
+    <li>The pinned <b>Summary Tracker</b> note updates as you log hours, rate competencies and write reflections.</li>
+    <li>Double-click a folder or file to open it (one tap on a phone). Select a file and press <b>Space</b> for Quick Look.</li>
+    <li>Right-click anything for Open, Quick Look, Get Info and Tags.</li>
+    <li>Press <b>/</b> or click the magnifying glass for Spotlight. It searches what you have written, too.</li>
+    <li>Calendar shows every dated shadowing session, service entry, event and meeting.</li>
+    <li>System Settings in the dock changes the appearance and wallpaper.</li></ul>
+    <h2>Updating the published site</h2><p>Open the site once with <b>#edit</b> at the end of the address to turn on editing in that browser. Edits save in the browser as you type. Select <b>Export site</b> in Notes to download a new index.html, then upload it to your host to replace the old one. Add <b>#view</b> to the address to switch editing off again.</p></div></div>`; } });
+}
+
+/* quick look */
+function quickLook(id) {
+  closeQL();
+  const n = FS[id]; if (!n) return;
+  const ov = document.createElement("div"); ov.className = "ql"; ov.id = "ql";
+  const box = h("div", { class: "ql-box", role: "dialog", "aria-label": "Quick Look" }, h("div", { class: "ql-bar", html: `<button class="x" data-qlx aria-label="Close">×</button><span class="tt">${esc(n.name)}</span><button class="pill-btn" data-qlo>Open</button>` }));
+  if (n.type === "note") {
+    const wrap = h("div", { class: "pn", style: "display:block;overflow-y:auto;flex:1" });
+    const saveCur = Notes.current;
+    const art = (() => { const prevE = EDIT, prevC = Notes.computed; EDIT = false; Notes.computed = []; const nn = NOTE_LIST.find(x => x.id === n.sec); const head = (n.sec === "about" || n.sec === "tracker") ? [] : [h("div", { class: "note-head" }, h("span", { class: "eyebrow" }, nn.label), h("h1", {}, nn.title))]; const a = h("article", { class: "note" }, ...head, ...R[n.sec]()); EDIT = prevE; Notes.computed = prevC; return a; })();
+    Notes.current = saveCur;
+    wrap.append(art); box.append(wrap);
+    requestAnimationFrame(() => { if (n.a) { const t = wrap.querySelector(`[data-anchor="${n.a}"]`); if (t) wrap.scrollTop = t.offsetTop - 10; } });
+  } else box.insertAdjacentHTML("beforeend", n.type === "image" ? `<div class="preview"><div><div class="photo">RR</div><div class="sub">Professional photo placeholder</div></div></div>` : `<div class="preview"><div><div style="width:120px;margin:0 auto">${SVG_FOLDER}</div><div style="font-weight:600;margin-top:8px">${esc(n.name)}</div><div class="sub">${sizeOf(id)}</div></div></div>`);
+  ov.append(box); screen.appendChild(ov);
+  ov.addEventListener("click", e => {
+    if (e.target.closest("[data-qlx]") || e.target === ov) closeQL();
+    else if (e.target.closest("[data-qlo]")) { closeQL(); openItem(id); }
+  });
+}
+function closeQL() { $("ql")?.remove(); }
+
+/* calendar */
+function calEvents() {
+  const ev = [];
+  state.shadowing.log.forEach(r => { const d = parseD(r.date); if (d) ev.push({ d, t: `Shadowing · ${r.physician || r.specialty || "session"}${r.hours ? ` (${fmtH(num(r.hours))}h)` : ""}`, c: "red", sec: "shadowing", a: "2A" }); });
+  state.service.log.forEach(r => { const d = parseD(r.start); if (d) ev.push({ d, t: `Service · ${r.org || r.role || "entry"}${r.hours ? ` (${fmtH(num(r.hours))}h)` : ""}`, c: "orange", sec: "service", a: "3A" }); });
+  state.leadership.events.forEach(r => { const d = parseD(r.date); if (d) ev.push({ d, t: r.event || "Event", c: "blue", sec: "leadership", a: "5B" }); });
+  state.leadership.meetings.forEach(r => { const d = parseD(r.date); if (d) ev.push({ d, t: `PM meeting${r.pm ? " · " + r.pm : ""}`, c: "blue", sec: "leadership", a: "5C" }); });
+  ev.push({ d: logsDate(), t: "Logs current through today", c: "red", sec: "tracker", dl: true });
+  ev.push({ d: dueDate(), t: "JSP portfolio due", c: "red", sec: "tracker", dl: true });
+  return ev;
+}
+function openCalendar() { const now = new Date(); return openWin("calendar", { app: "Calendar", dockId: "calendar", w: 920, h: 580, state: { y: now.getFullYear(), m: now.getMonth() }, render: renderCalendar }); }
+function renderCalendar(win) {
+  const s = win.state; setTitle(win, "");
+  const first = new Date(s.y, s.m, 1), start = new Date(s.y, s.m, 1 - first.getDay());
+  const today = new Date(), tkey = today.toDateString();
+  const evs = calEvents(), byDay = {};
+  evs.forEach((e, i) => { (byDay[keyOf(e.d)] = byDay[keyOf(e.d)] || []).push(i); });
+  win.el.querySelector(".tools-r").innerHTML = `<div class="seg"><button class="tb" disabled>Day</button><button class="tb" disabled>Week</button><button class="tb on">Month</button><button class="tb" disabled>Year</button></div>`;
+  let cells = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map(d => `<div class="cal-dow">${d}</div>`).join("");
+  for (let i = 0; i < 42; i++) {
+    const d = new Date(start); d.setDate(start.getDate() + i);
+    const list = (byDay[keyOf(d)] || []);
+    cells += `<div class="cal-day ${d.getMonth() !== s.m ? "out" : ""} ${d.toDateString() === tkey ? "today" : ""}"><div class="num"><span>${d.getDate() === 1 ? d.toLocaleDateString("en-US", { month: "short" }) + " " : ""}${d.getDate()}</span></div>${list.map(j => `<button class="chipev" data-ev="${j}" title="${esc(evs[j].t)}">${esc(evs[j].t)}</button>`).join("")}</div>`;
+  }
+  const t0 = new Date(today.toDateString());
+  const up = evs.filter(e => e.d >= t0).sort((a, b) => a.d - b.d).slice(0, 6).map(e => `<div class="ev ${e.c}"><i></i><div><b>${esc(e.t)}</b><div class="d">${e.d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric" })}</div></div></div>`).join("");
+  const m = metrics();
+  win.el.querySelector(".wbody").innerHTML = `<div class="cal"><aside class="cal-side"><h4>Up Next</h4>${up || '<div class="sub">Nothing scheduled</div>'}
+    <h4 style="margin-top:14px">This Year</h4><div class="ev orange"><i></i><div><b>${fmtH(m.shThis)} shadowing hrs</b><div class="d">${fmtH(m.svThis)} service hrs</div></div></div>
+    <h4 style="margin-top:14px">Calendars</h4><div class="ev"><i></i><div>Shadowing &amp; deadlines</div></div><div class="ev orange"><i></i><div>Service</div></div><div class="ev blue"><i></i><div>Events &amp; meetings</div></div></aside>
+    <div class="cal-main"><div class="cal-head"><h3>${first.toLocaleDateString("en-US", { month: "long" })} <span>${s.y}</span></h3><div class="nav"><button class="tb" data-cal="-1" aria-label="Previous month">${G.chevL}</button><button class="pill-btn" data-cal="0">Today</button><button class="tb" data-cal="1" aria-label="Next month">${G.chevR}</button></div></div><div class="cal-grid">${cells}</div></div></div>`;
+  win.evs = evs;
+  if (!win.wired) {
+    win.wired = true;
+    win.el.addEventListener("click", e => {
+      const ev = e.target.closest("[data-ev]"); if (ev) { const x = win.evs[+ev.dataset.ev]; openNotes(x.sec, x.a); return; }
+      const b = e.target.closest("[data-cal]"); if (!b) return;
+      const v = +b.dataset.cal;
+      if (v === 0) { const n = new Date(); s.y = n.getFullYear(); s.m = n.getMonth(); } else { s.m += v; if (s.m < 0) { s.m = 11; s.y--; } if (s.m > 11) { s.m = 0; s.y++; } }
+      renderCalendar(win);
+    });
+  }
+}
+
+/* system settings */
+function openSettings(pane = "appearance") { return openWin("settings", { app: "System Settings", dockId: "settings", w: 760, h: 520, state: { pane }, reuse: w => { w.state.pane = pane; renderSettings(w); }, render: renderSettings }); }
+const SICO = {
+  wifi: ["#2f8cff", `<svg viewBox="0 0 16 16"><path d="M2 6.5a8.5 8.5 0 0 1 12 0M4.3 9a5 5 0 0 1 7.4 0M8 12.5h0"/></svg>`],
+  appearance: ["#1d1d1f", `<svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="5.5"/><path d="M8 2.5v11" /></svg>`],
+  wallpaper: ["#30b0c7", `<svg viewBox="0 0 16 16"><rect x="2" y="3" width="12" height="10" rx="1.5"/><path d="m2.5 11 3.5-3.5 3 3 2-2 2.5 2.5"/></svg>`],
+  about: ["#8e8e93", `<svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6"/><path d="M8 7.5V11M8 5h0"/></svg>`]
+};
+function renderSettings(win) {
+  const s = win.state, names = { wifi: "Wi-Fi", appearance: "Appearance", wallpaper: "Wallpaper", about: "About" };
+  setTitle(win, names[s.pane]);
+  let main = "";
+  if (s.pane === "wifi") main = `<h2>Wi-Fi</h2><div class="group"><div class="r"><span>Wi-Fi</span><span>On</span></div><div class="r"><span><b>AirPennNet</b></span><span>Connected</span></div></div><div class="group"><div class="r"><span>eduroam</span><span>🔒</span></div><div class="r"><span>Penn Guest</span><span></span></div></div>`;
+  if (s.pane === "appearance") main = `<h2>Appearance</h2><div class="group"><div class="choices">${[["light", "Light"], ["dark", "Dark"], ["auto", "Auto"]].map(([k, l]) => `<button class="choice ${curTheme() === k ? "on" : ""}" data-theme-set="${k}"><span class="sw ${k}"></span>${l}</button>`).join("")}</div></div>`;
+  if (s.pane === "wallpaper") main = `<h2>Wallpaper</h2><div class="group"><div class="choices">${[["hills", "Hills"], ["ribbons", "Ribbons"], ["dusk", "Dusk"], ["graphite", "Graphite"]].map(([k, l]) => `<button class="choice ${curWall() === k ? "on" : ""}" data-wall-set="${k}"><span class="sw ${k}"></span>${l}</button>`).join("")}</div></div><p class="sub">Wallpapers adapt to Light and Dark appearance.</p>`;
+  if (s.pane === "about") { const a = state.about; main = `<h2>About</h2><div class="group"><div class="r"><span>Name</span><span>Ria's MacBook Air</span></div><div class="r"><span>Owner</span><span>${esc(a.name)}</span></div><div class="r"><span>Major</span><span>${esc(a.major)}</span></div><div class="r"><span>School</span><span>${esc(a.school)}</span></div><div class="r"><span>Portfolio year</span><span>${YEARS[pfY()]} (Year ${pfY() + 1})</span></div><div class="r"><span>Storage</span><span>${Store.mode === "live" ? "Saved to this site" : "This view only"}</span></div></div><button class="pill-btn" data-open="about-me">More Info…</button>`; }
+  win.el.querySelector(".wbody").innerHTML = `<div class="set"><aside class="set-side"><button class="me" data-pane="about"><span class="photo">RR</span><span><b>${esc(state.about.name)}</b><span>Penn '29 · JSP Scholar</span></span></button>
+    ${Object.keys(names).map(k => `<button class="si ${s.pane === k ? "cur" : ""}" data-pane="${k}"><span class="sico" style="background:${SICO[k][0]}">${SICO[k][1]}</span><span class="t2">${names[k]}</span></button>`).join("")}</aside><div class="set-main">${main}</div></div>`;
+  if (!win.wired) {
+    win.wired = true; wireLinks(win);
+    win.el.addEventListener("click", e => {
+      const p = e.target.closest("[data-pane]"); if (p) { s.pane = p.dataset.pane; renderSettings(win); return; }
+      const t = e.target.closest("[data-theme-set]"); if (t) { setTheme(t.dataset.themeSet); return; }
+      const w = e.target.closest("[data-wall-set]"); if (w) setWall(w.dataset.wallSet);
+    });
+  }
+}
+
+/* ================= desktop icons ================= */
+const deskPos = {};
+let deskSel = new Set();
+function layoutDesk() { const W = desk.clientWidth; DESK_ITEMS.forEach((id, i) => { if (deskPos[id] && deskPos[id].moved) return; deskPos[id] = isPhone() ? { x: 12 + (i % 4) * 88, y: 14 + Math.floor(i / 4) * 100 } : { x: W - 108, y: 12 + i * 102 }; }); }
+function renderDesk() {
+  layoutDesk();
+  desk.querySelectorAll(".dicon").forEach(n => n.remove());
+  DESK_ITEMS.forEach(id => {
+    const b = document.createElement("button");
+    b.className = "dicon" + (deskSel.has(id) ? " sel" : ""); b.dataset.d = id;
+    b.style.left = deskPos[id].x + "px"; b.style.top = deskPos[id].y + "px";
+    b.innerHTML = `<span class="ic">${iconFor(id)}</span><span class="lb">${esc(FS[id].name)}</span>`;
+    desk.insertBefore(b, desk.firstChild);
+  });
+}
+function paintDeskSel() { desk.querySelectorAll(".dicon").forEach(b => b.classList.toggle("sel", deskSel.has(b.dataset.d))); }
+desk.addEventListener("pointerdown", e => {
+  if (e.button !== 0 || e.target.closest(".win")) return;
+  const icon = e.target.closest(".dicon"), dr = desk.getBoundingClientRect();
+  if (icon) {
+    const id = icon.dataset.d;
+    if (!deskSel.has(id)) { deskSel = e.shiftKey || e.metaKey ? new Set([...deskSel, id]) : new Set([id]); paintDeskSel(); }
+    if (coarse()) return;
+    const sx = e.clientX, sy = e.clientY, starts = [...deskSel].map(k => [k, { ...deskPos[k] }]);
+    let moved = false;
+    const mv = ev => { const dx = ev.clientX - sx, dy = ev.clientY - sy; if (!moved && Math.hypot(dx, dy) < 4) return; moved = true;
+      starts.forEach(([k, p]) => { deskPos[k] = { x: Math.max(0, Math.min(p.x + dx, desk.clientWidth - 92)), y: Math.max(0, Math.min(p.y + dy, desk.clientHeight - 110)), moved: true }; const b = desk.querySelector(`[data-d="${k}"]`); b.style.left = deskPos[k].x + "px"; b.style.top = deskPos[k].y + "px"; }); };
+    const up = () => { window.removeEventListener("pointermove", mv); window.removeEventListener("pointerup", up); };
+    window.addEventListener("pointermove", mv); window.addEventListener("pointerup", up);
+    return;
+  }
+  deskSel = new Set(); paintDeskSel();
+  if (coarse()) return;
+  const ox = e.clientX - dr.left, oy = e.clientY - dr.top;
+  const rb = document.createElement("div"); rb.className = "rubber"; desk.appendChild(rb);
+  const mv = ev => { const x = ev.clientX - dr.left, y = ev.clientY - dr.top; const l = Math.min(ox, x), t = Math.min(oy, y), w = Math.abs(x - ox), hh = Math.abs(y - oy);
+    Object.assign(rb.style, { left: l + "px", top: t + "px", width: w + "px", height: hh + "px" });
+    deskSel = new Set(DESK_ITEMS.filter(id => { const p = deskPos[id]; return p.x < l + w && p.x + 92 > l && p.y < t + hh && p.y + 90 > t; })); paintDeskSel(); };
+  const up = () => { rb.remove(); window.removeEventListener("pointermove", mv); window.removeEventListener("pointerup", up); };
+  window.addEventListener("pointermove", mv); window.addEventListener("pointerup", up);
+});
+desk.addEventListener("click", e => { const d = e.target.closest(".dicon"); if (d && coarse()) openItem(d.dataset.d); });
+desk.addEventListener("dblclick", e => { const d = e.target.closest(".dicon"); if (d) openItem(d.dataset.d); });
+desk.addEventListener("contextmenu", e => {
+  if (e.target.closest(".win")) return;
+  e.preventDefault();
+  const d = e.target.closest(".dicon");
+  if (d) { deskSel = new Set([d.dataset.d]); paintDeskSel(); fileMenu(e.clientX, e.clientY, d.dataset.d); return; }
+  showMenuAt(e.clientX, e.clientY, [["New Folder", null], "-", ["Get Info", () => openFinder("desktop")], ["Change Wallpaper…", () => openSettings("wallpaper")], "-", ["Use Stacks", null], ["Clean Up", () => { DESK_ITEMS.forEach(id => { if (deskPos[id]) deskPos[id].moved = false; }); renderDesk(); }], ["Show View Options", null]]);
+});
+function fileMenu(x, y, id, win) { showMenuAt(x, y, [["Open", () => openItem(id, win)], "-", ["Get Info", () => openInfo(id)], ["Quick Look", () => quickLook(id)], ["Show in Enclosing Folder", () => openFinder(PARENT[id] || "home")], "-", ["Copy", null], ["Share…", null], "-", { tags: FS[id].tags || [] }, ["Tags…", null]]); }
+
+/* ================= dock ================= */
+const DOCK = [
+  ["finder", "Finder", () => APP_ICONS.finder, () => { const f = Object.values(wins).filter(w => w.state.finder); if (f.length) { f.forEach(w => restore(w.key)); focus(f[0].key); } else openFinder("home"); }],
+  ["notes", "Notes", () => APP_ICONS.notes, () => openNotes()],
+  ["tracker", "Summary Tracker", () => APP_ICONS.tracker, () => openNotes("tracker")],
+  ["calendar", "Calendar", calIcon, () => openCalendar()],
+  ["photo", "Preview", () => APP_ICONS.photo, () => openPreview()],
+  ["settings", "System Settings", () => APP_ICONS.settings, () => openSettings()]
+];
+const running = id => id === "tracker" ? !!(wins.notes && Notes.current === "tracker") : Object.values(wins).some(w => w.dockId === id);
+function renderDock() {
+  const mins = Object.values(wins).filter(w => w.min);
+  $("dock").innerHTML = DOCK.map(([id, nm, ic], i) => `<button class="dk ${running(id) ? "running" : ""}" data-dock="${i}" data-id="${id}" aria-label="${nm}"><span class="app-ic">${ic()}</span><span class="run"></span><span class="tip">${nm}</span></button>`).join("")
+    + `<span class="dock-sep"></span>`
+    + mins.map(w => `<button class="dk" data-restore="${w.key}" aria-label="Restore ${esc(w.title || w.app)}"><span class="app-ic"><span class="sq minw">${w.state.finder ? SVG_FOLDER : w.key === "notes" ? APP_ICONS.notes : "🗔"}</span></span><span class="run"></span><span class="tip">${esc(w.title || w.app)}</span></button>`).join("")
+    + `<button class="dk trash" data-trash aria-label="Trash"><span class="app-ic">${APP_ICONS.trash}</span><span class="run"></span><span class="tip">Trash</span></button>`;
+}
+function bounceDock(id) { if (!id || reduced()) return; const b = $("dock").querySelector(`[data-id="${id}"]`); if (!b) return; b.classList.remove("bounce"); void b.offsetWidth; b.classList.add("bounce"); setTimeout(() => b.classList.remove("bounce"), 1100); }
+$("dock").addEventListener("click", e => {
+  const d = e.target.closest("[data-dock]"); if (d) { DOCK[+d.dataset.dock][3](); renderDock(); return; }
+  const r = e.target.closest("[data-restore]"); if (r) { restore(r.dataset.restore); focus(r.dataset.restore); return; }
+  if (e.target.closest("[data-trash]")) openFinder("trash");
+});
+$("dock").addEventListener("mousemove", e => {
+  if (coarse() || isPhone()) return;
+  $("dock").classList.add("mag");
+  $("dock").querySelectorAll(".dk .app-ic").forEach(ic => { const r = ic.parentElement.getBoundingClientRect(); const d = Math.abs(e.clientX - (r.left + r.width / 2)); const sz = 52 * (1 + .55 * Math.max(0, 1 - d / 130) ** 1.4); ic.style.width = ic.style.height = sz + "px"; });
+});
+$("dock").addEventListener("mouseleave", () => { $("dock").classList.remove("mag"); $("dock").querySelectorAll(".dk .app-ic").forEach(ic => ic.style.width = ic.style.height = ""); });
+
+/* ================= menus ================= */
+const activeWin = () => activeKey && wins[activeKey] && !wins[activeKey].min ? wins[activeKey] : null;
+const goTo = id => { const w = activeWin(); if (w && w.state.finder) { navigate(w, id); focus(w.key); } else openFinder(id); };
+const MENUS = {
+  logo: () => [["About This Mac", openAboutMac], "-", ["System Settings…", () => openSettings()], "-", ["Sleep", lockScreen], ["Restart…", lockScreen], ["Shut Down…", null], "-", ["Lock Screen", lockScreen, "⌃⌘Q"], [`Log Out ${state.about.name}…`, lockScreen]],
+  app: () => [[`About ${activeWin() ? activeWin().app : "Finder"}`, openAboutMac], "-", ["Settings…", () => openSettings()], "-", ["Hide Others", () => Object.keys(wins).filter(k => k !== activeKey).forEach(minimize)], ["Show All", () => Object.values(wins).filter(w => w.min).forEach(w => restore(w.key))]],
+  file: () => { const w = activeWin(); const sel = w && w.state.finder && w.state.sel; return [["New Finder Window", () => openFinder("home"), "⌘N"], ["Open Notes", () => openNotes()], ["Open", sel ? () => openItem(sel, w) : null, "⌘O"], ["Close Window", w ? () => closeWin(activeKey) : null, "⌘W"], "-", ["Get Info", sel ? () => openInfo(sel) : null, "⌘I"], ["Quick Look", sel ? () => quickLook(sel) : null, "Space"], "-", ["Find", openSpot, "⌘F"], "-", ["Export Website…", Store.canWrite && Store.mode !== "loading" ? exportSite : null]]; },
+  edit: () => { const n = activeWin() && activeWin().key === "notes"; return [[n ? (Notes.editing ? "Done Editing" : "Edit Note") : "Undo", n && Store.canWrite && Notes.current !== "tracker" ? () => { Notes.editing = !Notes.editing; Notes.render(); } : null], "-", ["Cut", null, "⌘X"], ["Copy", null, "⌘C"], ["Paste", null, "⌘V"], ["Select All", null, "⌘A"]]; },
+  view: () => { const w = activeWin(); const f = w && w.state.finder; return [[(f && w.state.view === "icons" ? "✓ " : "") + "as Icons", f ? () => { w.state.view = "icons"; renderFinder(w); } : null, "⌘1"], [(f && w.state.view === "list" ? "✓ " : "") + "as List", f ? () => { w.state.view = "list"; renderFinder(w); } : null, "⌘2"], "-", ["Enter Full Screen", w ? () => w.el.classList.add("maxed") : null, "⌃⌘F"]]; },
+  go: () => { const w = activeWin(); const f = w && w.state.finder; return [["Back", f && (w.state.idx || w.state.q) ? () => goBack(w) : null, "⌘["], "-", ["Summary Tracker", () => openNotes("tracker")], ["Recents", () => goTo("recents"), "⇧⌘F"], ["Desktop", () => goTo("desktop"), "⇧⌘D"], ["Home", () => goTo("home"), "⇧⌘H"], "-", ["About Me", () => openNotes("about")], ...NOTE_LIST.slice(2).map(n => [`    ${n.label} · ${n.title}`, () => openNotes(n.id)]), "-", ["Trash", () => goTo("trash")]]; },
+  window: () => { const list = Object.values(wins); return [["Minimize", activeWin() ? () => minimize(activeKey) : null, "⌘M"], ["Zoom", activeWin() ? () => activeWin().el.classList.toggle("maxed") : null], "-", ["Bring All to Front", list.length ? () => list.forEach(w => { restore(w.key); focus(w.key); }) : null], "-", ...(list.length ? list.map(w => [(w.key === activeKey ? "✓ " : "") + (w.title || w.app), () => { restore(w.key); focus(w.key); }]) : [["No Windows", null]])]; },
+  help: () => [["Getting Around", openHelp], ["Spotlight Search", openSpot, "/"]],
+  battery: () => [{ hd: "Battery" }, ["87%", null], ["Power Source: Battery", null]],
+  wifi: () => [{ hd: "Wi-Fi" }, ["✓ AirPennNet", null], "-", { hd: "Other Networks" }, ["eduroam", null], ["Penn Guest", null], "-", ["Wi-Fi Settings…", () => openSettings("wifi")]]
+};
+let openMenu = null;
+function closeMenu() { document.querySelectorAll(".dropdown").forEach(d => d.remove()); document.querySelectorAll(".mb.open").forEach(b => b.classList.remove("open")); openMenu = null; }
+function showMenuAt(x, y, items, keepKey) {
+  closeMenu(); closePanels();
+  if (keepKey) openMenu = keepKey;
+  const dd = document.createElement("div"); dd.className = "dropdown"; dd.setAttribute("role", "menu");
+  dd.innerHTML = items.map((it, i) => it === "-" ? "<hr>" : it.hd ? `<div class="hd">${esc(it.hd)}</div>` : it.tags ? `<div class="tagrow">${Object.entries(TAGS).map(([t, [, c]]) => `<span class="dot" style="background:${c};${it.tags.includes(t) ? "box-shadow:0 0 0 2px var(--menu),0 0 0 3px " + c : "opacity:.85"}"></span>`).join("")}</div>` : `<button role="menuitem" data-mi="${i}" ${it[1] ? "" : "disabled"}><span>${esc(it[0])}</span>${it[2] ? `<span class="k">${esc(it[2])}</span>` : ""}</button>`).join("");
+  screen.appendChild(dd);
+  const sr = screen.getBoundingClientRect();
+  dd.style.left = Math.max(4, Math.min(x - sr.left, sr.width - dd.offsetWidth - 4)) + "px";
+  dd.style.top = Math.max(26, Math.min(y - sr.top, sr.height - dd.offsetHeight - 4)) + "px";
+  dd.addEventListener("click", e => { const b = e.target.closest("[data-mi]"); if (!b) return; const fn = items[+b.dataset.mi][1]; closeMenu(); fn && fn(); renderDock(); });
+}
+function showMenu(btn) { const r = btn.getBoundingClientRect(); showMenuAt(r.left, r.bottom + 1, MENUS[btn.dataset.menu](), btn.dataset.menu); btn.classList.add("open"); }
+$("menubar").addEventListener("click", e => { const b = e.target.closest("[data-menu]"); if (!b) return; e.stopPropagation(); if (openMenu === b.dataset.menu) closeMenu(); else showMenu(b); });
+$("menubar").addEventListener("mouseover", e => { const b = e.target.closest("[data-menu]"); if (b && openMenu && openMenu !== b.dataset.menu && MENUS[openMenu]) showMenu(b); });
+document.addEventListener("pointerdown", e => { if (!e.target.closest(".dropdown, .menubar")) closeMenu(); if (!e.target.closest(".cc, .ncenter, #ccBtn, #clock")) closePanels(); });
+
+/* ================= control center & notification center ================= */
+function closePanels() { $("cc")?.remove(); $("nc")?.remove(); }
+let bright = 100;
+$("ccBtn").addEventListener("click", e => {
+  e.stopPropagation(); closeMenu();
+  if ($("cc")) { closePanels(); return; } closePanels();
+  const cc = document.createElement("div"); cc.className = "cc"; cc.id = "cc";
+  const t = curTheme(), r = requirements();
+  cc.innerHTML = `<div class="tile">
+      <button class="tg" data-cc="wifi"><span class="c"><svg viewBox="0 0 16 16"><path d="M2 6.5a8.5 8.5 0 0 1 12 0M4.3 9a5 5 0 0 1 7.4 0M8 12.5h0"/></svg></span><span><b>Wi-Fi</b><span>AirPennNet</span></span></button>
+      <button class="tg"><span class="c"><svg viewBox="0 0 16 16"><path d="m4 5 8 6-4 3V2l4 3-8 6"/></svg></span><span><b>Bluetooth</b><span>On</span></span></button>
+      <button class="tg off"><span class="c"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="2"/><path d="M4.5 11.5a5 5 0 0 1 0-7M11.5 4.5a5 5 0 0 1 0 7"/></svg></span><span><b>AirDrop</b><span>Contacts Only</span></span></button></div>
+    <div style="display:grid;gap:10px"><div class="tile"><button class="tg"><span class="c" style="background:#5e5ce6"><svg viewBox="0 0 16 16"><path d="M10 2.5a5.5 5.5 0 1 0 3.5 9.7A5 5 0 0 1 10 2.5z"/></svg></span><span><b>Focus</b><span>Study</span></span></button></div>
+      <div class="tile"><button class="tg" data-cc="tracker"><span class="c" style="background:#0d6b62"><svg viewBox="0 0 16 16"><path d="M3 13V9M8 13V5M13 13V2"/></svg></span><span><b>${r.filter(x => x.done).length}/${r.length}</b><span>requirements</span></span></button></div></div>
+    <div class="tile wide"><label for="ccb">Display</label><input id="ccb" type="range" min="45" max="100" value="${bright}"></div>
+    <div class="tile wide"><label>Appearance</label><div class="segs">${[["light", "Light"], ["dark", "Dark"], ["auto", "Auto"]].map(([k, l]) => `<button class="${t === k ? "on" : ""}" data-cct="${k}">${l}</button>`).join("")}</div></div>`;
+  screen.appendChild(cc);
+  cc.addEventListener("click", ev => {
+    const k = ev.target.closest("[data-cct]"); if (k) { setTheme(k.dataset.cct); cc.querySelectorAll("[data-cct]").forEach(b => b.classList.toggle("on", b === k)); }
+    if (ev.target.closest("[data-cc=wifi]")) { closePanels(); openSettings("wifi"); }
+    if (ev.target.closest("[data-cc=tracker]")) { closePanels(); openNotes("tracker"); }
+  });
+  $("ccb").addEventListener("input", ev => { bright = +ev.target.value; screen.style.filter = bright < 100 ? `brightness(${bright / 100})` : ""; });
+});
+function notifs() {
+  const up = nextUp().slice(0, 2).map(t => ({ app: "tracker", name: "Summary Tracker", t: t.t, p: t.d, open: () => openNotes(t.sec, t.a) }));
+  const days = Math.ceil((dueDate() - new Date()) / 864e5);
+  up.push({ app: "calendar", name: "Calendar", t: "JSP portfolio due", p: `${dueDate().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" })} · ${days} days left`, open: () => openCalendar() });
+  return up;
+}
+const appIcon = k => k === "calendar" ? calIcon() : APP_ICONS[k];
+function notifCard(n, i, tm) { return `<button class="card clickable" data-nf="${i}"><div class="h"><span class="ai">${appIcon(n.app)}</span>${esc(n.name.toUpperCase())}<span class="tm">${tm}</span></div><b>${esc(n.t)}</b><p>${esc(n.p)}</p></button>`; }
+$("clock").addEventListener("click", e => {
+  e.stopPropagation(); closeMenu();
+  if ($("nc")) { closePanels(); return; } closePanels();
+  const nc = document.createElement("div"); nc.className = "ncenter"; nc.id = "nc";
+  const d = new Date(), N = notifs(), m = metrics(), req = requirements();
+  const t0 = new Date(d.toDateString());
+  const up = calEvents().filter(x => x.d >= t0).sort((a, b) => a.d - b.d).slice(0, 2);
+  const bar = (l, have, need) => `<div class="row"><span>${l}</span><span>${fmtH(have)} / ${need}</span><div class="bar3"><i style="width:${Math.min(100, have / need * 100)}%"></i></div></div>`;
+  const shR = req.find(r => /shadowing hours/i.test(r.what)), svR = req.find(r => /service hours/i.test(r.what));
+  nc.innerHTML = N.map((n, i) => notifCard(n, i, "now")).join("") + `
+    <div class="card"><div class="wcal"><div class="big"><div class="dw">${d.toLocaleDateString("en-US", { weekday: "long" })}</div><div class="dn">${d.getDate()}</div></div>
+      <div><div class="sub" style="font-size:11px;font-weight:700">UP NEXT</div>${up.map(x => `<div style="margin-top:6px;border-left:3px solid var(--cal-red);padding-left:7px;font-size:12px"><b style="font-size:12px">${esc(x.t)}</b><span class="sub" style="font-size:11px">${x.d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</span></div>`).join("")}</div></div></div>
+    <button class="card clickable" data-nfo="tracker"><div class="h"><span class="ai">${APP_ICONS.tracker}</span>SUMMARY TRACKER · ${YEARS[pfY()].toUpperCase()}</div>
+      <div class="wprog">${bar("Shadowing hours", shR.have, shR.need)}${bar("Service hours", svR.have, svR.need)}${bar("Requirements met", req.filter(r => r.done).length, req.length)}</div></button>`;
+  screen.appendChild(nc);
+  nc.addEventListener("click", ev => { const n = ev.target.closest("[data-nf]"); if (n) { closePanels(); N[+n.dataset.nf].open(); return; } const o = ev.target.closest("[data-nfo]"); if (o) { closePanels(); openNotes("tracker"); } });
+});
+function showBanners() {
+  const N = notifs();
+  N.slice(0, 2).forEach((n, i) => setTimeout(() => {
+    const wrap = document.createElement("div"); wrap.innerHTML = notifCard(n, i, "now");
+    const c = wrap.firstChild; $("banners").appendChild(c);
+    c.addEventListener("click", () => { c.remove(); n.open(); });
+    setTimeout(() => { c.classList.add("out"); setTimeout(() => c.remove(), 320); }, 6500 + i * 600);
+  }, 1400 + i * 700));
+}
+
+/* ================= spotlight ================= */
+function openSpot() {
+  if (document.querySelector(".spot")) return;
+  closeMenu(); closePanels();
+  const ov = document.createElement("div"); ov.className = "spot";
+  ov.innerHTML = `<div class="spot-box" role="dialog" aria-label="Spotlight"><div class="spot-in"><svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5" stroke-linecap="round"/></svg><input id="spotq" placeholder="Spotlight Search" autocomplete="off" aria-label="Search"></div><div class="spot-res" id="spotres"></div></div>`;
+  screen.appendChild(ov);
+  const inp = $("spotq"); let res = [], on = 0;
+  const draw = () => {
+    const q = inp.value.trim().toLowerCase();
+    const hits = q ? Object.keys(FS).filter(id => id !== "home" && id !== "trash" && textOf(id).includes(q)) : [];
+    const titleHits = hits.filter(id => FS[id].name.toLowerCase().includes(q));
+    const top = titleHits[0] || hits[0];
+    const docs = hits.filter(id => id !== top && FS[id].type !== "folder").slice(0, 7);
+    const folders = hits.filter(id => id !== top && FS[id].type === "folder").slice(0, 4);
+    res = [top, ...docs, ...folders].filter(Boolean);
+    on = Math.min(on, Math.max(0, res.length - 1));
+    const row = id => { const i = res.indexOf(id); const pv = FS[id].pv ? FS[id].pv() : ""; return `<button class="sr ${i === on ? "on" : ""}" data-sr="${id}"><span class="mi">${iconFor(id)}</span><span class="w"><div>${esc(FS[id].name)}</div><div>${kindOf(id)} · ${esc(PARENT[id] ? FS[PARENT[id]].name : "")}${pv ? " · " + esc(pv) : ""}</div></span></button>`; };
+    $("spotres").innerHTML = !q ? "" : !res.length ? `<div class="hd">No results</div>` : (top ? `<div class="hd">Top Hit</div>${row(top)}` : "") + (docs.length ? `<div class="hd">Documents</div>${docs.map(row).join("")}` : "") + (folders.length ? `<div class="hd">Folders</div>${folders.map(row).join("")}` : "");
+  };
+  const done = () => ov.remove();
+  inp.addEventListener("input", () => { on = 0; draw(); });
+  inp.addEventListener("keydown", e => {
+    if (e.key === "ArrowDown") { e.preventDefault(); on = Math.min(on + 1, res.length - 1); draw(); }
+    if (e.key === "ArrowUp") { e.preventDefault(); on = Math.max(on - 1, 0); draw(); }
+    if (e.key === "Enter" && res[on]) { const id = res[on]; done(); openItem(id); }
+    if (e.key === "Escape") done();
+  });
+  ov.addEventListener("click", e => { const b = e.target.closest("[data-sr]"); if (b) { done(); openItem(b.dataset.sr); } else if (!e.target.closest(".spot-box")) done(); });
+  inp.focus();
+}
+$("spotBtn").addEventListener("click", e => { e.stopPropagation(); openSpot(); });
+
+/* ================= keyboard ================= */
+document.addEventListener("keydown", e => {
+  const ae = document.activeElement;
+  const typing = /INPUT|TEXTAREA|SELECT/.test(ae.tagName) || ae.isContentEditable;
+  if (screen.classList.contains("locked")) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); unlock(); } return; }
+  if (e.key === "Escape") { closeMenu(); closePanels(); closeQL(); if (typing && ae.isContentEditable) ae.blur(); return; }
+  if (typing) return;
+  if (e.key === "/" || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k")) { e.preventDefault(); openSpot(); return; }
+  if ($("ql") && e.key === " ") { e.preventDefault(); closeQL(); return; }
+  const w = activeWin();
+  if (w && w.state.finder) {
+    const s = w.state, items = w.items || [];
+    if (e.key === " " && s.sel) { e.preventDefault(); quickLook(s.sel); return; }
+    if ((e.metaKey || e.ctrlKey) && e.key === "[") { e.preventDefault(); goBack(w); return; }
+    if ((e.metaKey || e.ctrlKey) && e.key === "i" && s.sel) { e.preventDefault(); openInfo(s.sel); return; }
+    if ((e.key === "Enter" || ((e.metaKey || e.ctrlKey) && (e.key === "ArrowDown" || e.key === "o"))) && s.sel) { e.preventDefault(); openItem(s.sel, w); return; }
+    if (["ArrowRight", "ArrowLeft", "ArrowDown", "ArrowUp"].includes(e.key) && items.length) {
+      e.preventDefault();
+      let i = items.indexOf(s.sel);
+      const grid = w.el.querySelector(".fgrid");
+      const cols = s.view === "icons" && grid ? Math.max(1, getComputedStyle(grid).gridTemplateColumns.split(" ").length) : 1;
+      const step = { ArrowRight: 1, ArrowLeft: -1, ArrowDown: cols, ArrowUp: -cols }[e.key];
+      i = i < 0 ? 0 : Math.max(0, Math.min(items.length - 1, i + step));
+      finderSelect(w, items[i]); w.el.querySelector(`[data-item="${items[i]}"]`)?.scrollIntoView({ block: "nearest" });
+    }
+    return;
+  }
+  if (!w && deskSel.size === 1) { const id = [...deskSel][0]; if (e.key === " ") { e.preventDefault(); quickLook(id); } if (e.key === "Enter") { e.preventDefault(); openItem(id); } }
+});
+
+/* ================= clock & lock ================= */
+function tick() {
+  const d = new Date();
+  $("clock").textContent = d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" }).replace(",", "") + "  " + d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
+  $("lockDate").textContent = d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+  $("lockTime").textContent = d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }).replace(/\s?[AP]M/, "");
+}
+tick(); setInterval(tick, 15000);
+let booted = false;
+function unlock() {
+  if (!screen.classList.contains("locked")) return;
+  $("lock").classList.add("gone"); screen.classList.remove("locked");
+  try { sessionStorage.setItem("rr-unlocked", "1"); } catch (e) {}
+  if (!booted) { booted = true; boot(); }
+}
+function lockScreen() { closeMenu(); closePanels(); closeQL(); screen.classList.add("locked"); $("lock").classList.remove("gone"); $("lock").focus(); }
+$("lock").addEventListener("click", unlock);
+
+function boot(deep) {
+  renderDesk(); renderDock();
+  if (deep) { openItem(deep); return; }
+  if (isPhone()) { showBanners(); return; }
+  const W = desk.clientWidth;
+  openFinder("portfolio", { x: 30, y: 30, w: 700, h: 420 });
+  openNotes("tracker");
+  if (W > 1100) { const nw = wins.notes.el; nw.style.left = Math.max(120, W - Math.min(1000, W - 160) - 130) + "px"; nw.style.width = Math.min(1000, W - 160) + "px"; nw.style.top = "56px"; }
+  showBanners();
+}
+window.addEventListener("resize", () => { if (booted) { layoutDesk(); renderDesk(); } });
+
+/* ================= website export ================= */
+function snapshotData() { return Object.fromEntries(SECS.map(sc => [sc, state[sc]])); }
+function buildSite() {
+  const data = JSON.stringify(snapshotData()).replace(/</g, "\\u003c");
+  return `<!doctype html>
+<html lang="en">
+<head>
+${HEAD_META}
+<style id="site-style">${PRISTINE.css}</style>
+</head>
+<body style="margin:0">
+${PRISTINE.screen}
+<script type="application/json" id="portfolio-data">${data}<\/script>
+<script id="app">${PRISTINE.app}<\/script>
+</body>
+</html>
+`;
+}
+async function exportSite() {
+  const html = buildSite();
+  if (Store.mode === "live") {
+    try { const dl = await claude.use("downloads"); if (!dl) throw { code: "unavailable" }; await dl.save({ filename: "index.html", data: html }); Store.msg = "Exported index.html"; }
+    catch (e) { if (!e || e.code !== "declined") Store.msg = "Download isn't available in this view"; }
+    updateStatus(); setTimeout(() => { Store.msg = ""; updateStatus(); }, 4000); return;
+  }
+  const blob = new Blob([html], { type: "text/html" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = "index.html";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+  Store.exportedAt = Date.now(); try { localStorage.setItem("rr-exported", String(Store.exportedAt)); } catch (e) {}
+  updateStatus();
+}
+
+/* ================= start ================= */
+renderDock();
+Store.init();
+const startHash = (location.hash || "").slice(1);
+let wasUnlocked = false; try { wasUnlocked = sessionStorage.getItem("rr-unlocked") === "1"; } catch (e) {}
+if (FS[startHash]) { $("lock").classList.add("gone"); screen.classList.remove("locked"); booted = true; boot(startHash); }
+else if (wasUnlocked) { $("lock").classList.add("gone"); screen.classList.remove("locked"); booted = true; boot(); }
+else $("lock").focus({ preventScroll: true });
+
+</script>
+</body>
+</html>
